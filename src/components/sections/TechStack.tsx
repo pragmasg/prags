@@ -9,22 +9,28 @@ const stack = [
 
 export default function TechStack() {
   return (
-    <section className="bg-white py-16 lg:py-20 border-t border-[#E5E5E5]">
+    <section className="bg-[#0D0D1A] py-16 lg:py-20 border-t border-white/[0.08]">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-xs uppercase tracking-widest text-gray-400 mb-10 text-center">
-          — BUILT WITH THE TOOLS MODERN TEAMS USE
+        <p className="text-xs uppercase tracking-widest text-[#8892AA] mb-10 text-center">
+          — Built with the tools modern teams use
         </p>
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-0 border border-[#E5E5E5]">
+
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-0 border border-white/[0.08]">
           {stack.map((item, i) => (
             <div
               key={item.name}
-              className={`group p-6 text-center border-b-2 border-transparent hover:border-[#00D4AA] transition-colors duration-200 ${
-                i < stack.length - 1 ? 'border-r border-[#E5E5E5]' : ''
-              } hover:bg-[#FAFAF8]`}
+              className={`group p-6 lg:p-8 text-center border-r border-white/[0.08] last:border-r-0 hover:bg-white/[0.04] transition-all duration-200 relative overflow-hidden${
+                i < stack.length - 1 ? '' : ' border-r-0'
+              }`}
             >
-              <p className="text-xs uppercase tracking-widest text-[#00D4AA] mb-2">{item.category}</p>
-              <p className="text-sm font-semibold text-[#0A0A0A] mb-1">{item.name}</p>
-              <p className="text-xs text-gray-400">{item.desc}</p>
+              {/* Animated top accent bar */}
+              <div className="h-0.5 bg-[#00FF9D] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left mb-4" />
+
+              <p className="text-[10px] uppercase tracking-widest text-[#00FF9D] mb-2">
+                {item.category}
+              </p>
+              <p className="text-sm font-bold text-[#F0F4FF]">{item.name}</p>
+              <p className="text-xs text-[#8892AA] mt-1">{item.desc}</p>
             </div>
           ))}
         </div>

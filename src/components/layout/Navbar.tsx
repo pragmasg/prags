@@ -64,15 +64,15 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-white border-b border-[#E5E5E5]">
+      <nav className="sticky top-0 z-50 bg-[#050510]/80 backdrop-blur-xl border-b border-white/[0.08]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2.5 text-[#0A0A0A] hover:opacity-80 transition-opacity">
+            <Link href="/" className="flex items-center gap-2.5 text-white hover:opacity-80 transition-opacity">
               <CubeLogo size={22} />
               <span
                 className="text-sm font-semibold tracking-widest uppercase"
-                style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
+                style={{ fontFamily: 'var(--font-sans, "Inter", sans-serif)' }}
               >
                 Pragmas
               </span>
@@ -82,19 +82,19 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-8">
               <Link
                 href="/#services"
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                className="text-sm text-[#8892AA] hover:text-white transition-colors duration-200"
               >
                 {t('services')}
               </Link>
               <Link
                 href="/#pricing"
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                className="text-sm text-[#8892AA] hover:text-white transition-colors duration-200"
               >
                 {t('pricing')}
               </Link>
               <Link
                 href="/about"
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                className="text-sm text-[#8892AA] hover:text-white transition-colors duration-200"
               >
                 {t('about')}
               </Link>
@@ -106,7 +106,7 @@ export default function Navbar() {
               <div className="relative">
                 <button
                   onClick={() => setLangOpen(!langOpen)}
-                  className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center gap-1"
+                  className="text-sm text-[#8892AA] hover:text-white transition-colors duration-200 flex items-center gap-1"
                 >
                   {currentLang.label}
                   <span className="text-xs">↓</span>
@@ -118,15 +118,15 @@ export default function Navbar() {
                       className="fixed inset-0 z-10"
                       onClick={() => setLangOpen(false)}
                     />
-                    <div className="absolute right-0 top-full mt-2 w-40 bg-white border border-[#E5E5E5] shadow-md z-20">
+                    <div className="absolute right-0 top-full mt-2 w-40 bg-[#0D0D1A] border border-white/[0.08] shadow-md z-20">
                       {locales.map((locale) => (
                         <button
                           key={locale.code}
                           onClick={() => handleLocaleChange(locale.code)}
                           className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-colors duration-150 text-left ${
                             currentLocale === locale.code
-                              ? 'text-[#0A0A0A] font-medium bg-[#FAFAF8]'
-                              : 'text-gray-500 hover:text-gray-900 hover:bg-[#FAFAF8]'
+                              ? 'text-white font-medium bg-white/[0.06]'
+                              : 'text-[#8892AA] hover:text-white hover:bg-white/[0.04]'
                           }`}
                         >
                           <span className="font-semibold text-xs w-6">{locale.label}</span>
@@ -141,7 +141,7 @@ export default function Navbar() {
               {/* Sign in link */}
               <Link
                 href="/login"
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                className="text-sm text-[#8892AA] hover:text-white transition-colors duration-200"
               >
                 {t('login')}
               </Link>
@@ -149,7 +149,7 @@ export default function Navbar() {
               {/* Get in touch button */}
               <Link
                 href="/get-started"
-                className="border border-black px-4 py-2 text-sm text-[#0A0A0A] hover:bg-black hover:text-white transition-colors duration-200"
+                className="bg-[#00FF9D] text-[#050510] font-semibold text-sm px-4 py-2 hover:bg-white hover:shadow-[0_0_20px_rgba(0,255,157,0.4)] transition-all duration-200"
               >
                 {t('getStarted')}
               </Link>
@@ -158,7 +158,7 @@ export default function Navbar() {
             {/* Mobile hamburger trigger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden flex flex-col justify-center items-center gap-1.5 w-8 h-8 text-[#0A0A0A]"
+              className="md:hidden flex flex-col justify-center items-center gap-1.5 w-8 h-8 text-white"
               aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             >
               {mobileOpen ? (
@@ -183,32 +183,32 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="fixed inset-0 z-40 md:hidden">
           <div
-            className="absolute inset-0 bg-black/20"
+            className="absolute inset-0 bg-black/40"
             onClick={() => setMobileOpen(false)}
           />
           <div
             ref={mobileMenuRef}
-            className="absolute top-16 left-0 right-0 bg-white border-b border-[#E5E5E5] px-6 py-8 shadow-lg"
+            className="absolute top-16 left-0 right-0 bg-[#0D0D1A] border-b border-white/[0.08] px-6 py-8 shadow-lg"
           >
             <div className="flex flex-col gap-6 mb-8">
               <Link
                 href="/#services"
                 onClick={() => setMobileOpen(false)}
-                className="text-base text-gray-700 hover:text-gray-900 transition-colors"
+                className="text-base text-[#8892AA] hover:text-white transition-colors"
               >
                 {t('services')}
               </Link>
               <Link
                 href="/#pricing"
                 onClick={() => setMobileOpen(false)}
-                className="text-base text-gray-700 hover:text-gray-900 transition-colors"
+                className="text-base text-[#8892AA] hover:text-white transition-colors"
               >
                 {t('pricing')}
               </Link>
               <Link
                 href="/about"
                 onClick={() => setMobileOpen(false)}
-                className="text-base text-gray-700 hover:text-gray-900 transition-colors"
+                className="text-base text-[#8892AA] hover:text-white transition-colors"
               >
                 {t('about')}
               </Link>
@@ -216,7 +216,7 @@ export default function Navbar() {
 
             {/* Mobile language switcher */}
             <div className="mb-8">
-              <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">Language</p>
+              <p className="text-xs uppercase tracking-widest text-[#8892AA] mb-3">Language</p>
               <div className="flex flex-wrap gap-2">
                 {locales.map((locale) => (
                   <button
@@ -224,8 +224,8 @@ export default function Navbar() {
                     onClick={() => handleLocaleChange(locale.code)}
                     className={`px-3 py-1.5 text-sm border transition-colors ${
                       currentLocale === locale.code
-                        ? 'border-[#0A0A0A] text-[#0A0A0A]'
-                        : 'border-[#E5E5E5] text-gray-500 hover:border-gray-400 hover:text-gray-900'
+                        ? 'border-[#00FF9D] text-[#00FF9D]'
+                        : 'border-white/[0.08] text-[#8892AA] hover:border-white/[0.16] hover:text-white'
                     }`}
                   >
                     {locale.label}
@@ -238,14 +238,14 @@ export default function Navbar() {
               <Link
                 href="/login"
                 onClick={() => setMobileOpen(false)}
-                className="text-center py-3 border border-[#E5E5E5] text-gray-700 text-sm hover:border-gray-400 transition-colors"
+                className="text-center py-3 border border-white/[0.08] text-[#8892AA] text-sm hover:border-white/[0.16] hover:text-white transition-colors"
               >
                 {t('login')}
               </Link>
               <Link
                 href="/get-started"
                 onClick={() => setMobileOpen(false)}
-                className="text-center py-3 bg-[#0A0A0A] text-white text-sm hover:bg-[#1F2937] transition-colors"
+                className="text-center py-3 bg-[#00FF9D] text-[#050510] font-semibold text-sm hover:bg-white transition-colors"
               >
                 {t('getStarted')}
               </Link>

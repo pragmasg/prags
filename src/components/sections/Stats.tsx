@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 export default function Stats() {
@@ -11,23 +14,27 @@ export default function Stats() {
   ];
 
   return (
-    <section className="bg-[#0A0A0A] py-16">
+    <section className="bg-[#0D0D1A] border-y border-white/8 py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8">
           {stats.map((stat, index) => (
-            <div
+            <motion.div
               key={stat.label}
-              className={`flex flex-col px-8 py-8 ${
-                index < stats.length - 1 ? 'md:border-r border-white/10' : ''
-              } ${index < 2 ? 'border-b md:border-b-0 border-white/10' : ''}`}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-white/[0.03] border border-white/8 p-8 hover:bg-white/[0.06] hover:border-white/12 transition-all duration-300"
             >
-              <span className="text-4xl text-[#00D4AA] mb-3">
+              <span
+                className="text-4xl font-bold text-[#00FF9D] block"
+              >
                 {stat.value}
               </span>
-              <span className="text-xs uppercase tracking-widest text-gray-400">
+              <span className="text-xs uppercase tracking-widest text-[#8892AA] mt-2 block">
                 {stat.label}
               </span>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

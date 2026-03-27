@@ -1,30 +1,33 @@
-export default function SocialProof() {
-  const sectors = [
-    { name: 'E-commerce', desc: 'Revenue & inventory dashboards' },
-    { name: 'SaaS', desc: 'Product analytics & onboarding' },
-    { name: 'Fintech', desc: 'Reporting & compliance automation' },
-    { name: 'Logistics', desc: 'Operations & tracking workflows' },
-    { name: 'Healthcare', desc: 'Data pipelines & reporting' },
-    { name: 'Agencies', desc: 'White-label AI tooling' },
-  ];
+const sectors = [
+  { name: 'E-commerce', desc: 'Revenue & inventory dashboards' },
+  { name: 'SaaS', desc: 'Product analytics & onboarding' },
+  { name: 'Fintech', desc: 'Reporting & compliance automation' },
+  { name: 'Logistics', desc: 'Operations & tracking workflows' },
+  { name: 'Healthcare', desc: 'Data pipelines & reporting' },
+  { name: 'Agencies', desc: 'White-label AI tooling' },
+];
 
+export default function SocialProof() {
   return (
-    <section className="bg-[#FAFAF8] py-16 border-y border-[#E5E5E5]">
+    <section className="bg-[#050510] py-20 border-b border-white/[0.08]">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-xs uppercase tracking-widest text-gray-400 mb-8 text-center">
-          — INDUSTRIES WE WORK WITH
+        <p className="text-xs uppercase tracking-widest text-[#00FF9D] mb-4 text-center">
+          Industries we work with
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 border border-[#E5E5E5]">
-          {sectors.map((sector, i) => (
+        <p className="text-2xl font-bold text-[#F0F4FF] text-center mb-12">
+          Built for teams that move fast
+        </p>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0">
+          {sectors.map((sector, index) => (
             <div
               key={sector.name}
-              className={`group text-center py-8 px-4 bg-white hover:bg-[#0A0A0A] transition-colors duration-200 ${
-                i < sectors.length - 1 ? 'border-r border-[#E5E5E5]' : ''
-              }`}
+              className="group relative bg-white/[0.03] border border-white/[0.08] p-6 hover:bg-white/[0.07] hover:border-[#00FF9D]/30 hover:shadow-[0_0_30px_rgba(0,255,157,0.06)] transition-all duration-300 cursor-default animate-[fadeInUp_0.5s_ease-out_both]"
+              style={{ animationDelay: `${index * 0.08}s` }}
             >
-              <div className="w-1.5 h-1.5 bg-[#00D4AA] mx-auto mb-3" />
-              <p className="text-sm font-medium text-[#0A0A0A] group-hover:text-white mb-1 transition-colors">{sector.name}</p>
-              <p className="text-xs text-gray-400 group-hover:text-gray-500 leading-tight transition-colors">{sector.desc}</p>
+              <div className="w-1.5 h-1.5 bg-[#00FF9D] mb-4" />
+              <p className="text-sm font-semibold text-[#F0F4FF] mb-1.5">{sector.name}</p>
+              <p className="text-xs text-[#8892AA] leading-relaxed">{sector.desc}</p>
             </div>
           ))}
         </div>

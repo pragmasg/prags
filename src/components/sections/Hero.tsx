@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import CubeLogo from '@/components/ui/CubeLogo';
@@ -7,51 +8,89 @@ import CubeLogo from '@/components/ui/CubeLogo';
 function TerminalMockup() {
   return (
     <div className="hidden lg:block">
-      <div className="bg-[#0D1117] border border-[#30363D]">
-        <div className="flex items-center gap-2 px-4 py-3 border-b border-[#30363D]">
+      {/* Terminal window */}
+      <div className="bg-[#0D1117] border border-white/8">
+        {/* Title bar */}
+        <div className="bg-[#161B22] border-b border-white/8 px-4 py-2.5 flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-[#FF5F57]" />
           <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
           <div className="w-3 h-3 rounded-full bg-[#28C840]" />
-          <span className="ml-4 text-xs text-gray-500" style={{ fontFamily: 'var(--font-mono, monospace)' }}>
+          <span
+            className="ml-4 text-xs text-[#8892AA]"
+            style={{ fontFamily: 'var(--font-mono, monospace)' }}
+          >
             pragmas — workflow runner
           </span>
         </div>
-        <div className="p-6 space-y-2.5 min-h-[280px]" style={{ fontFamily: 'var(--font-mono, monospace)' }}>
-          <p className="text-sm text-gray-400">$ pragmas deploy --project invoice-automation</p>
-          <p className="text-sm text-[#3FB950]">✓ Connected to data source (127 records)</p>
-          <p className="text-sm text-[#3FB950]">✓ Extracted vendor &amp; amount data</p>
-          <p className="text-sm text-[#3FB950]">✓ Validated against accounting rules</p>
-          <p className="text-sm text-[#3FB950]">✓ Posted to accounting system</p>
-          <p className="text-sm text-gray-600 py-1">— — —</p>
-          <p className="text-sm text-white">↳ 127 invoices processed in 1.4s</p>
+
+        {/* Terminal body */}
+        <div
+          className="p-6 space-y-2 min-h-[260px]"
+          style={{ fontFamily: 'var(--font-mono, monospace)' }}
+        >
+          <p className="text-[#8892AA] text-sm">$ pragmas deploy --project invoice-automation</p>
+          <p className="text-[#00FF9D] text-sm">✓ Connected to data source (127 records)</p>
+          <p className="text-[#00FF9D] text-sm">✓ Extracted vendor &amp; amount data</p>
+          <p className="text-[#00FF9D] text-sm">✓ Validated against accounting rules</p>
+          <p className="text-[#00FF9D] text-sm">✓ Posted to accounting system</p>
+          <p className="text-[#4B5563] text-sm py-1">— — —</p>
+          <p className="text-white text-sm">↳ 127 invoices processed in 1.4s</p>
           <div className="pt-3">
-            <p className="text-sm text-gray-400">$ pragmas status</p>
+            <p className="text-[#8892AA] text-sm">$ pragmas status</p>
           </div>
-          <p className="text-sm text-[#58A6FF]">● Pipeline: <span className="text-[#3FB950]">operational</span></p>
-          <p className="text-sm text-[#58A6FF]">● Next run: <span className="text-white">in 14 minutes</span></p>
-          <p className="text-sm text-[#58A6FF]">● Errors: <span className="text-[#3FB950]">0</span></p>
+          <p className="text-[#67E8F9] text-sm">
+            ● Pipeline: <span className="text-[#00FF9D]">operational</span>
+          </p>
+          <p className="text-[#67E8F9] text-sm">
+            ● Next run: <span className="text-white">in 14 minutes</span>
+          </p>
+          <p className="text-[#67E8F9] text-sm">
+            ● Errors: <span className="text-[#00FF9D]">0</span>
+          </p>
           <div className="flex items-center gap-1 pt-3">
-            <span className="text-sm text-gray-400">$ </span>
-            <span className="inline-block w-2 h-4 bg-gray-400 animate-pulse" />
+            <span className="text-[#8892AA] text-sm">$ </span>
+            <span className="inline-block w-2 h-4 bg-[#00FF9D] animate-[blink_1s_step-end_infinite]" />
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 border border-[#E5E5E5] border-t-0">
-        <div className="p-5 border-r border-b border-[#E5E5E5]">
-          <p className="text-base font-semibold text-[#0A0A0A] mb-1" style={{ fontFamily: 'var(--font-mono, monospace)' }}>3–5 days</p>
-          <p className="text-xs uppercase tracking-widest text-gray-400">Avg. delivery</p>
+
+      {/* Stats grid below terminal */}
+      <div className="grid grid-cols-2 border border-white/8 border-t-0">
+        <div className="bg-[#0D1117] hover:bg-[#161B22] transition-colors p-4 border-r border-b border-white/8">
+          <p
+            className="text-sm font-bold text-[#F0F4FF] mb-1"
+            style={{ fontFamily: 'var(--font-mono, monospace)' }}
+          >
+            3–5 days
+          </p>
+          <p className="text-xs uppercase tracking-widest text-[#4B5563]">Avg. delivery</p>
         </div>
-        <div className="p-5 border-b border-[#E5E5E5]">
-          <p className="text-base font-semibold text-[#0A0A0A] mb-1" style={{ fontFamily: 'var(--font-mono, monospace)' }}>Fixed price</p>
-          <p className="text-xs uppercase tracking-widest text-gray-400">No scope creep</p>
+        <div className="bg-[#0D1117] hover:bg-[#161B22] transition-colors p-4 border-b border-white/8">
+          <p
+            className="text-sm font-bold text-[#F0F4FF] mb-1"
+            style={{ fontFamily: 'var(--font-mono, monospace)' }}
+          >
+            Fixed price
+          </p>
+          <p className="text-xs uppercase tracking-widest text-[#4B5563]">No scope creep</p>
         </div>
-        <div className="p-5 border-r border-[#E5E5E5]">
-          <p className="text-base font-semibold text-[#0A0A0A] mb-1" style={{ fontFamily: 'var(--font-mono, monospace)' }}>100% yours</p>
-          <p className="text-xs uppercase tracking-widest text-gray-400">Full IP transfer</p>
+        <div className="bg-[#0D1117] hover:bg-[#161B22] transition-colors p-4 border-r border-white/8">
+          <p
+            className="text-sm font-bold text-[#F0F4FF] mb-1"
+            style={{ fontFamily: 'var(--font-mono, monospace)' }}
+          >
+            100% yours
+          </p>
+          <p className="text-xs uppercase tracking-widest text-[#4B5563]">Full IP transfer</p>
         </div>
-        <div className="p-5">
-          <p className="text-base font-semibold text-[#0A0A0A] mb-1" style={{ fontFamily: 'var(--font-mono, monospace)' }}>5 languages</p>
-          <p className="text-xs uppercase tracking-widest text-gray-400">EN · ES · PT · FR · DE</p>
+        <div className="bg-[#0D1117] hover:bg-[#161B22] transition-colors p-4">
+          <p
+            className="text-sm font-bold text-[#F0F4FF] mb-1"
+            style={{ fontFamily: 'var(--font-mono, monospace)' }}
+          >
+            5 languages
+          </p>
+          <p className="text-xs uppercase tracking-widest text-[#4B5563]">EN · ES · PT · FR · DE</p>
         </div>
       </div>
     </div>
@@ -62,44 +101,106 @@ export default function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="min-h-screen flex items-center bg-white bg-grid">
-      <div className="max-w-7xl mx-auto px-6 py-24 lg:py-32 w-full">
+    <section className="min-h-screen flex items-center bg-[#050510] relative overflow-hidden bg-grid">
+      {/* Radial gradient glow */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0,255,157,0.08), transparent)',
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto px-6 py-24 lg:py-32 w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          <div>
-            <div className="flex items-center gap-3 mb-8">
-              <CubeLogo size={18} />
-              <p className="text-xs uppercase tracking-widest text-gray-400">
-                {t('label')}
-              </p>
-            </div>
-            <h1
-              className="text-4xl lg:text-6xl leading-tight text-[#0A0A0A] mb-8"
-              style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
+
+          {/* Left column */}
+          <motion.div
+            initial={{ opacity: 0, y: 32 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          >
+            {/* Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className="mb-8"
             >
-              {t('title')}
-            </h1>
-            <p className="text-gray-500 text-lg leading-relaxed max-w-lg mb-10">
-              {t('subtitle')}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 items-start mb-10">
-              <Link
-                href="/get-started"
-                className="bg-black text-white px-8 py-3.5 text-sm font-medium hover:bg-[#1F2937] transition-colors duration-200"
-              >
-                {t('cta')}
-              </Link>
-              <Link
-                href="#how-it-works"
-                className="text-sm underline underline-offset-4 text-gray-500 hover:text-gray-900 transition-colors duration-200 py-3.5"
-              >
-                {t('ctaSecondary')} ↓
-              </Link>
-            </div>
-            <p className="text-sm text-gray-400">
-              {t('trustLine')}
-            </p>
-          </div>
-          <TerminalMockup />
+              <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-widest border border-[#00FF9D]/30 text-[#00FF9D] bg-[#00FF9D]/5">
+                <CubeLogo size={14} />
+                ● AI · Analytics · Automation
+              </span>
+            </motion.div>
+
+            {/* H1 */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="mb-8"
+            >
+              <h1 className="text-5xl lg:text-7xl font-bold leading-[1.08] tracking-tight">
+                <span className="text-[#F0F4FF]">The automation gap{'\n'}</span>
+                <span
+                  style={{
+                    background: 'linear-gradient(135deg, #00FF9D 0%, #67E8F9 60%, #A855F7 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  is costing you.
+                </span>
+              </h1>
+            </motion.div>
+
+            {/* Subtitle */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              className="mb-10"
+            >
+              <p className="text-[#8892AA] text-lg leading-relaxed max-w-lg">
+                {t('subtitle')}
+              </p>
+            </motion.div>
+
+            {/* CTAs + trust line */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <div className="flex flex-col sm:flex-row gap-4 items-start mb-10">
+                <Link
+                  href="/get-started"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#00FF9D] text-[#050510] font-bold text-sm hover:bg-white transition-colors duration-200"
+                  style={{ boxShadow: '0 0 24px rgba(0,255,157,0.35)' }}
+                >
+                  Start a project →
+                </Link>
+                <Link
+                  href="#how-it-works"
+                  className="inline-flex items-center gap-2 px-8 py-4 border border-white/16 text-[#8892AA] text-sm hover:text-white hover:border-white/30 transition-colors duration-200"
+                >
+                  See how it works
+                </Link>
+              </div>
+              <p className="text-xs text-[#4B5563]">{t('trustLine')}</p>
+            </motion.div>
+          </motion.div>
+
+          {/* Right column — terminal */}
+          <motion.div
+            initial={{ opacity: 0, x: 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <TerminalMockup />
+          </motion.div>
+
         </div>
       </div>
     </section>
