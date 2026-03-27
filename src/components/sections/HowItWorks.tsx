@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 const timelineDays = [
-  { label: 'Day 0', desc: 'Brief & scope', color: 'bg-[#A855F7]' },
-  { label: 'Day 1', desc: 'Staging link', color: 'bg-[#67E8F9]' },
-  { label: 'Day 3', desc: 'Review', color: 'bg-[#00FF9D]' },
-  { label: 'Day 5', desc: 'Handover', color: 'bg-[#00FF9D]' },
+  { label: 'Day 0', desc: 'Brief & scope', color: 'bg-white/20' },
+  { label: 'Day 1', desc: 'Staging link', color: 'bg-white/40' },
+  { label: 'Day 3', desc: 'Review', color: 'bg-[#00D4AA]' },
+  { label: 'Day 5', desc: 'Handover', color: 'bg-[#00D4AA]' },
 ];
 
 export default function HowItWorks() {
@@ -32,17 +32,17 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="bg-[#050510] py-24 lg:py-32">
+    <section id="how-it-works" className="bg-[#0A0A0A] py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section header */}
         <div className="mb-0">
-          <p className="text-xs uppercase tracking-widest text-[#00FF9D] mb-4">
+          <p className="text-xs uppercase tracking-widest text-[#00D4AA] mb-4">
             {t('label')}
           </p>
-          <h2 className="text-3xl lg:text-5xl font-bold text-[#F0F4FF] leading-tight max-w-3xl">
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#F5F5F5] leading-tight max-w-3xl">
             {t('title')}
           </h2>
-          <p className="text-[#8892AA] text-base leading-relaxed mt-4 max-w-2xl">
+          <p className="text-[#999999] text-base leading-relaxed mt-4 max-w-2xl">
             {t('subtitle')}
           </p>
         </div>
@@ -70,21 +70,21 @@ export default function HowItWorks() {
 
               {/* Step number badge */}
               <div className="flex items-center gap-2 mb-6">
-                <span className="text-[#00FF9D] text-xs font-mono tracking-widest">
+                <span className="text-[#00D4AA] text-xs font-mono tracking-widest">
                   {step.number}
                 </span>
                 <div className="flex-1 h-px bg-white/[0.08]" />
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-bold text-[#F0F4FF] mb-3">{step.title}</h3>
+              <h3 className="text-xl font-bold text-[#F5F5F5] mb-3">{step.title}</h3>
 
               {/* Description */}
-              <p className="text-sm text-[#8892AA] leading-relaxed">{step.desc}</p>
+              <p className="text-sm text-[#999999] leading-relaxed">{step.desc}</p>
 
               {/* Arrow connector (not last) */}
               {index < 2 && (
-                <span className="hidden md:block absolute top-12 -right-3 text-[#00FF9D] text-lg z-10 select-none">
+                <span className="hidden md:block absolute top-12 -right-3 text-[#00D4AA] text-lg z-10 select-none">
                   →
                 </span>
               )}
@@ -98,8 +98,8 @@ export default function HowItWorks() {
             {timelineDays.map((day) => (
               <div key={day.label} className="flex-1 text-center">
                 <div className={`h-1 ${day.color} mb-3`} />
-                <span className="text-xs font-mono text-[#8892AA]">{day.label}</span>
-                <p className="text-[10px] text-[#4B5563] mt-1">{day.desc}</p>
+                <span className="text-xs font-mono text-[#999999]">{day.label}</span>
+                <p className="text-[10px] text-[#555555] mt-1">{day.desc}</p>
               </div>
             ))}
           </div>

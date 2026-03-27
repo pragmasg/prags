@@ -9,9 +9,9 @@ const stack = [
 
 export default function TechStack() {
   return (
-    <section className="bg-[#0D0D1A] py-16 lg:py-20 border-t border-white/[0.08]">
+    <section className="bg-[#111111] py-16 lg:py-20 border-t border-white/[0.08]">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-xs uppercase tracking-widest text-[#8892AA] mb-10 text-center">
+        <p className="text-xs uppercase tracking-widest text-[#999999] mb-10 text-center">
           — Built with the tools modern teams use
         </p>
 
@@ -24,13 +24,13 @@ export default function TechStack() {
               }`}
             >
               {/* Animated top accent bar */}
-              <div className="h-0.5 bg-[#00FF9D] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left mb-4" />
+              <div className="h-0.5 bg-[#00D4AA] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left mb-4" />
 
-              <p className="text-[10px] uppercase tracking-widest text-[#00FF9D] mb-2">
+              <p className="text-[10px] uppercase tracking-widest text-[#00D4AA] mb-2">
                 {item.category}
               </p>
-              <p className="text-sm font-bold text-[#F0F4FF]">{item.name}</p>
-              <p className="text-xs text-[#8892AA] mt-1">{item.desc}</p>
+              <p className="text-sm font-bold text-[#F5F5F5]">{item.name}</p>
+              <p className="text-xs text-[#999999] mt-1">{item.desc}</p>
             </div>
           ))}
         </div>

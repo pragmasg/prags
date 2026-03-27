@@ -14,7 +14,7 @@ export default function Stats() {
   ];
 
   return (
-    <section className="bg-[#0D0D1A] border-y border-white/8 py-16">
+    <section className="bg-[#111111] border-y border-white/8 py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8">
           {stats.map((stat, index) => (
@@ -27,11 +27,11 @@ export default function Stats() {
               className="bg-white/[0.03] border border-white/8 p-8 hover:bg-white/[0.06] hover:border-white/12 transition-all duration-300"
             >
               <span
-                className="text-4xl font-bold text-[#00FF9D] block"
+                className="text-4xl font-bold text-[#00D4AA] block"
               >
                 {stat.value}
               </span>
-              <span className="text-xs uppercase tracking-widest text-[#8892AA] mt-2 block">
+              <span className="text-xs uppercase tracking-widest text-[#999999] mt-2 block">
                 {stat.label}
               </span>
             </motion.div>

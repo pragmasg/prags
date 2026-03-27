@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter, IBM_Plex_Mono } from 'next/font/google';
+import { JetBrains_Mono, IBM_Plex_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
 
-const inter = Inter({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  weight: ['300', '400', '500', '600', '700', '800'],
   variable: '--font-sans',
   display: 'swap',
 });
@@ -74,8 +74,8 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${ibmPlexMono.variable}`} suppressHydrationWarning>
-      <body className="bg-[#050510] text-[#F0F4FF] antialiased">
+    <html lang={locale} className={`${jetbrainsMono.variable} ${ibmPlexMono.variable}`} suppressHydrationWarning>
+      <body className="bg-[#0A0A0A] text-[#F5F5F5] antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

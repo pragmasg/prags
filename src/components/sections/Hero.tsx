@@ -9,14 +9,14 @@ function TerminalMockup() {
   return (
     <div className="hidden lg:block">
       {/* Terminal window */}
-      <div className="bg-[#0D1117] border border-white/8">
+      <div className="bg-[#0F0F0F] border border-white/8">
         {/* Title bar */}
-        <div className="bg-[#161B22] border-b border-white/8 px-4 py-2.5 flex items-center gap-2">
+        <div className="bg-[#1A1A1A] border-b border-white/8 px-4 py-2.5 flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-[#FF5F57]" />
           <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
           <div className="w-3 h-3 rounded-full bg-[#28C840]" />
           <span
-            className="ml-4 text-xs text-[#8892AA]"
+            className="ml-4 text-xs text-[#999999]"
             style={{ fontFamily: 'var(--font-mono, monospace)' }}
           >
             pragmas — workflow runner
@@ -28,69 +28,69 @@ function TerminalMockup() {
           className="p-6 space-y-2 min-h-[260px]"
           style={{ fontFamily: 'var(--font-mono, monospace)' }}
         >
-          <p className="text-[#8892AA] text-sm">$ pragmas deploy --project invoice-automation</p>
-          <p className="text-[#00FF9D] text-sm">✓ Connected to data source (127 records)</p>
-          <p className="text-[#00FF9D] text-sm">✓ Extracted vendor &amp; amount data</p>
-          <p className="text-[#00FF9D] text-sm">✓ Validated against accounting rules</p>
-          <p className="text-[#00FF9D] text-sm">✓ Posted to accounting system</p>
-          <p className="text-[#4B5563] text-sm py-1">— — —</p>
+          <p className="text-[#999999] text-sm">$ pragmas deploy --project invoice-automation</p>
+          <p className="text-[#00D4AA] text-sm">✓ Connected to data source (127 records)</p>
+          <p className="text-[#00D4AA] text-sm">✓ Extracted vendor &amp; amount data</p>
+          <p className="text-[#00D4AA] text-sm">✓ Validated against accounting rules</p>
+          <p className="text-[#00D4AA] text-sm">✓ Posted to accounting system</p>
+          <p className="text-[#555555] text-sm py-1">— — —</p>
           <p className="text-white text-sm">↳ 127 invoices processed in 1.4s</p>
           <div className="pt-3">
-            <p className="text-[#8892AA] text-sm">$ pragmas status</p>
+            <p className="text-[#999999] text-sm">$ pragmas status</p>
           </div>
-          <p className="text-[#67E8F9] text-sm">
-            ● Pipeline: <span className="text-[#00FF9D]">operational</span>
+          <p className="text-[#999999] text-sm">
+            ● Pipeline: <span className="text-[#00D4AA]">operational</span>
           </p>
-          <p className="text-[#67E8F9] text-sm">
+          <p className="text-[#999999] text-sm">
             ● Next run: <span className="text-white">in 14 minutes</span>
           </p>
-          <p className="text-[#67E8F9] text-sm">
-            ● Errors: <span className="text-[#00FF9D]">0</span>
+          <p className="text-[#999999] text-sm">
+            ● Errors: <span className="text-[#00D4AA]">0</span>
           </p>
           <div className="flex items-center gap-1 pt-3">
-            <span className="text-[#8892AA] text-sm">$ </span>
-            <span className="inline-block w-2 h-4 bg-[#00FF9D] animate-[blink_1s_step-end_infinite]" />
+            <span className="text-[#999999] text-sm">$ </span>
+            <span className="inline-block w-2 h-4 bg-[#00D4AA] animate-[blink_1s_step-end_infinite]" />
           </div>
         </div>
       </div>
 
       {/* Stats grid below terminal */}
       <div className="grid grid-cols-2 border border-white/8 border-t-0">
-        <div className="bg-[#0D1117] hover:bg-[#161B22] transition-colors p-4 border-r border-b border-white/8">
+        <div className="bg-[#0F0F0F] hover:bg-[#1A1A1A] transition-colors p-4 border-r border-b border-white/8">
           <p
-            className="text-sm font-bold text-[#F0F4FF] mb-1"
+            className="text-sm font-bold text-[#F5F5F5] mb-1"
             style={{ fontFamily: 'var(--font-mono, monospace)' }}
           >
             3–5 days
           </p>
-          <p className="text-xs uppercase tracking-widest text-[#4B5563]">Avg. delivery</p>
+          <p className="text-xs uppercase tracking-widest text-[#555555]">Avg. delivery</p>
         </div>
-        <div className="bg-[#0D1117] hover:bg-[#161B22] transition-colors p-4 border-b border-white/8">
+        <div className="bg-[#0F0F0F] hover:bg-[#1A1A1A] transition-colors p-4 border-b border-white/8">
           <p
-            className="text-sm font-bold text-[#F0F4FF] mb-1"
+            className="text-sm font-bold text-[#F5F5F5] mb-1"
             style={{ fontFamily: 'var(--font-mono, monospace)' }}
           >
             Fixed price
           </p>
-          <p className="text-xs uppercase tracking-widest text-[#4B5563]">No scope creep</p>
+          <p className="text-xs uppercase tracking-widest text-[#555555]">No scope creep</p>
         </div>
-        <div className="bg-[#0D1117] hover:bg-[#161B22] transition-colors p-4 border-r border-white/8">
+        <div className="bg-[#0F0F0F] hover:bg-[#1A1A1A] transition-colors p-4 border-r border-white/8">
           <p
-            className="text-sm font-bold text-[#F0F4FF] mb-1"
+            className="text-sm font-bold text-[#F5F5F5] mb-1"
             style={{ fontFamily: 'var(--font-mono, monospace)' }}
           >
             100% yours
           </p>
-          <p className="text-xs uppercase tracking-widest text-[#4B5563]">Full IP transfer</p>
+          <p className="text-xs uppercase tracking-widest text-[#555555]">Full IP transfer</p>
         </div>
-        <div className="bg-[#0D1117] hover:bg-[#161B22] transition-colors p-4">
+        <div className="bg-[#0F0F0F] hover:bg-[#1A1A1A] transition-colors p-4">
           <p
-            className="text-sm font-bold text-[#F0F4FF] mb-1"
+            className="text-sm font-bold text-[#F5F5F5] mb-1"
             style={{ fontFamily: 'var(--font-mono, monospace)' }}
           >
             5 languages
           </p>
-          <p className="text-xs uppercase tracking-widest text-[#4B5563]">EN · ES · PT · FR · DE</p>
+          <p className="text-xs uppercase tracking-widest text-[#555555]">EN · ES · PT · FR · DE</p>
         </div>
       </div>
     </div>
@@ -101,13 +101,13 @@ export default function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="min-h-screen flex items-center bg-[#050510] relative overflow-hidden bg-grid">
+    <section className="min-h-screen flex items-center bg-[#0A0A0A] relative overflow-hidden bg-grid">
       {/* Radial gradient glow */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0,255,157,0.08), transparent)',
+            'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0,212,170,0.08), transparent)',
         }}
       />
 
@@ -127,7 +127,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="mb-8"
             >
-              <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-widest border border-[#00FF9D]/30 text-[#00FF9D] bg-[#00FF9D]/5">
+              <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-widest border border-[#00D4AA]/30 text-[#00D4AA] bg-[#00D4AA]/5">
                 <CubeLogo size={14} />
                 ● AI · Analytics · Automation
               </span>
@@ -141,15 +141,8 @@ export default function Hero() {
               className="mb-8"
             >
               <h1 className="text-5xl lg:text-7xl font-bold leading-[1.08] tracking-tight">
-                <span className="text-[#F0F4FF]">The automation gap{'\n'}</span>
-                <span
-                  style={{
-                    background: 'linear-gradient(135deg, #00FF9D 0%, #67E8F9 60%, #A855F7 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                  }}
-                >
+                <span className="text-[#F5F5F5]">The automation gap{'\n'}</span>
+                <span className="text-[#00D4AA]">
                   is costing you.
                 </span>
               </h1>
@@ -162,7 +155,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
               className="mb-10"
             >
-              <p className="text-[#8892AA] text-lg leading-relaxed max-w-lg">
+              <p className="text-[#999999] text-lg leading-relaxed max-w-lg">
                 {t('subtitle')}
               </p>
             </motion.div>
@@ -176,19 +169,19 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row gap-4 items-start mb-10">
                 <Link
                   href="/get-started"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#00FF9D] text-[#050510] font-bold text-sm hover:bg-white transition-colors duration-200"
-                  style={{ boxShadow: '0 0 24px rgba(0,255,157,0.35)' }}
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#00D4AA] text-[#0A0A0A] font-bold text-sm hover:bg-white transition-colors duration-200"
+                  style={{ boxShadow: '0 0 24px rgba(0,212,170,0.35)' }}
                 >
                   Start a project →
                 </Link>
                 <Link
                   href="#how-it-works"
-                  className="inline-flex items-center gap-2 px-8 py-4 border border-white/16 text-[#8892AA] text-sm hover:text-white hover:border-white/30 transition-colors duration-200"
+                  className="inline-flex items-center gap-2 px-8 py-4 border border-white/16 text-[#999999] text-sm hover:text-white hover:border-white/30 transition-colors duration-200"
                 >
                   See how it works
                 </Link>
               </div>
-              <p className="text-xs text-[#4B5563]">{t('trustLine')}</p>
+              <p className="text-xs text-[#555555]">{t('trustLine')}</p>
             </motion.div>
           </motion.div>
 
