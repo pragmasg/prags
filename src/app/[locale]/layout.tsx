@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { DM_Serif_Display, Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -8,18 +8,25 @@ import '../globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const dmSerif = DM_Serif_Display({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-serif',
   display: 'swap',
 });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Pragmas — AI-Powered Tools for Startups & SMEs',
+    default: 'Pragmas — AI Infrastructure for Growing Businesses',
     template: '%s | Pragmas',
   },
   description:
-    'Skip the agency. Get analytics dashboards, automation workflows, and AI tools — built for you, priced for startups.',
-  keywords: ['AI tools', 'automation', 'analytics', 'startup', 'SME', 'dashboard', 'workflow'],
+    'We build AI infrastructure, analytics systems, and automation workflows for growing businesses. Premium consultancy, startup-friendly pricing.',
+  keywords: ['AI infrastructure', 'automation', 'analytics', 'consultancy', 'SME', 'workflow'],
   authors: [{ name: 'Pragmas' }],
   creator: 'Pragmas',
   openGraph: {
@@ -27,15 +34,15 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://pragmas.io',
     siteName: 'Pragmas',
-    title: 'Pragmas — AI-Powered Tools for Startups & SMEs',
+    title: 'Pragmas — AI Infrastructure for Growing Businesses',
     description:
-      'Skip the agency. Get analytics dashboards, automation workflows, and AI tools — built for you, priced for startups.',
+      'We build AI infrastructure, analytics systems, and automation workflows for growing businesses.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pragmas — AI-Powered Tools for Startups & SMEs',
+    title: 'Pragmas — AI Infrastructure for Growing Businesses',
     description:
-      'Skip the agency. Get analytics dashboards, automation workflows, and AI tools — built for you, priced for startups.',
+      'We build AI infrastructure, analytics systems, and automation workflows for growing businesses.',
     creator: '@pragmasio',
   },
   robots: {
@@ -63,8 +70,8 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={inter.variable}>
-      <body className="bg-[#0D0D14] text-white antialiased">
+    <html lang={locale} className={`${inter.variable} ${dmSerif.variable}`} suppressHydrationWarning>
+      <body className="bg-white text-[#0a0a0a] antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

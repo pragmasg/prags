@@ -1,63 +1,60 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
-import { BarChart3, Zap, Brain, ArrowRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
-interface ServiceCardProps {
-  icon: React.ReactNode;
+interface ServiceRowProps {
+  number: string;
   name: string;
   desc: string;
   learnMore: string;
-  index: number;
+  isLast: boolean;
 }
 
-function ServiceCard({ icon, name, desc, learnMore, index }: ServiceCardProps) {
+function ServiceRow({ number, name, desc, learnMore, isLast }: ServiceRowProps) {
   const [hovered, setHovered] = useState(false);
 
   return (
     <div
-      className={cn(
-        'group relative p-8 rounded-2xl border transition-all duration-300 cursor-pointer',
-        'bg-[#13131F]/60 border-white/6',
-        'hover:border-purple-500/40 hover:bg-[#13131F]/80',
-        'hover:shadow-2xl hover:shadow-purple-500/10 hover:-translate-y-1'
-      )}
+      className={`border-t border-[#E5E5E5] ${isLast ? 'border-b' : ''} ${
+        hovered ? 'bg-[#FAFAF8]' : 'bg-white'
+      } transition-colors duration-200 cursor-pointer`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      style={{ animationDelay: `${index * 150}ms` }}
     >
-      {/* Gradient border glow on hover */}
-      <div className={cn(
-        'absolute inset-0 rounded-2xl transition-opacity duration-300 pointer-events-none',
-        'bg-gradient-to-br from-purple-500/5 via-transparent to-violet-500/5',
-        hovered ? 'opacity-100' : 'opacity-0'
-      )} />
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-12 gap-6 py-8 lg:py-10 items-start">
+          {/* Number */}
+          <div className="col-span-2 lg:col-span-1">
+            <span className="text-xs uppercase tracking-widest text-gray-400 font-medium">
+              {number}
+            </span>
+          </div>
 
-      {/* Icon */}
-      <div className={cn(
-        'w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-all duration-300',
-        'bg-purple-500/10 border border-purple-500/20',
-        'group-hover:bg-purple-500/20 group-hover:border-purple-500/40 group-hover:shadow-lg group-hover:shadow-purple-500/20'
-      )}>
-        <span className="text-purple-400 group-hover:text-purple-300 transition-colors">
-          {icon}
-        </span>
-      </div>
+          {/* Service name */}
+          <div className="col-span-10 lg:col-span-4">
+            <h3
+              className="text-2xl lg:text-3xl text-[#0A0A0A] leading-snug"
+              style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+            >
+              {name}
+            </h3>
+          </div>
 
-      {/* Content */}
-      <h3 className="text-white font-bold text-xl mb-3 group-hover:text-white/95">
-        {name}
-      </h3>
-      <p className="text-white/50 text-sm leading-relaxed mb-6">
-        {desc}
-      </p>
+          {/* Description */}
+          <div className="col-span-12 lg:col-span-5 lg:col-start-6">
+            <p className="text-gray-500 text-sm leading-relaxed">
+              {desc}
+            </p>
+          </div>
 
-      {/* Learn more link */}
-      <div className="flex items-center gap-1.5 text-purple-400 text-sm font-semibold group-hover:gap-2.5 transition-all duration-200">
-        {learnMore}
-        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+          {/* Explore link */}
+          <div className="col-span-12 lg:col-span-2 lg:text-right flex lg:justify-end items-center">
+            <span className="text-sm text-gray-400 hover:text-gray-900 transition-colors">
+              {learnMore} →
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -68,64 +65,47 @@ export default function Services() {
 
   const services = [
     {
-      icon: <BarChart3 className="w-6 h-6" />,
+      number: '01',
       name: t('analytics.name'),
       desc: t('analytics.desc'),
     },
     {
-      icon: <Zap className="w-6 h-6" />,
+      number: '02',
       name: t('automation.name'),
       desc: t('automation.desc'),
     },
     {
-      icon: <Brain className="w-6 h-6" />,
+      number: '03',
       name: t('ai.name'),
       desc: t('ai.desc'),
     },
   ];
 
   return (
-    <section id="services" className="relative py-24 lg:py-32">
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-600/5 rounded-full blur-[100px]" />
+    <section id="services" className="bg-white py-24 lg:py-32">
+      {/* Section header */}
+      <div className="max-w-7xl mx-auto px-6 mb-16">
+        <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">
+          — WHAT WE DO
+        </p>
+        <h2
+          className="text-4xl lg:text-5xl text-[#0A0A0A] leading-tight max-w-2xl"
+          style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+        >
+          Three practice areas. One outcome: growth.
+        </h2>
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/20 bg-purple-500/5 text-purple-400 text-xs font-semibold uppercase tracking-wider mb-4">
-            What we do
-          </div>
-          <h2 className="text-4xl sm:text-5xl font-black text-white mb-4 tracking-tight">
-            {t('title')}
-          </h2>
-          <p className="text-white/50 text-lg max-w-2xl mx-auto leading-relaxed">
-            {t('subtitle')}
-          </p>
-        </div>
-
-        {/* Cards grid */}
-        <div className="grid md:grid-cols-3 gap-6">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={service.name}
-              {...service}
-              learnMore={t('learnMore')}
-              index={index}
-            />
-          ))}
-        </div>
-
-        {/* Bottom CTA hint */}
-        <div className="mt-12 text-center">
-          <p className="text-white/30 text-sm">
-            Need something custom?{' '}
-            <a href="mailto:hello@pragmas.io" className="text-purple-400 hover:text-purple-300 transition-colors">
-              Talk to us →
-            </a>
-          </p>
-        </div>
+      {/* Service rows */}
+      <div>
+        {services.map((service, index) => (
+          <ServiceRow
+            key={service.number}
+            {...service}
+            learnMore={t('learnMore')}
+            isLast={index === services.length - 1}
+          />
+        ))}
       </div>
     </section>
   );

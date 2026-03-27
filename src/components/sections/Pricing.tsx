@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Check, Zap, Star } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 interface PricingCardProps {
   name: string;
@@ -14,7 +12,6 @@ interface PricingCardProps {
   features: string[];
   isPopular?: boolean;
   isAnnual: boolean;
-  annualDiscount?: number;
 }
 
 function PricingCard({
@@ -26,109 +23,76 @@ function PricingCard({
   features,
   isPopular,
   isAnnual,
-  annualDiscount = 0.8,
 }: PricingCardProps) {
-  // Parse numeric price for discount calculation
   const numericPrice = parseInt(price.replace(/[^0-9]/g, ''), 10);
-  const isOneTime = priceSuffix.includes('one') || priceSuffix.includes('único') ||
-    priceSuffix.includes('einmalig') || priceSuffix.includes('unique') || priceSuffix.includes('pagamento');
+  const isOneTime =
+    priceSuffix.includes('one') ||
+    priceSuffix.includes('único') ||
+    priceSuffix.includes('einmalig') ||
+    priceSuffix.includes('unique') ||
+    priceSuffix.includes('pagamento');
 
-  const displayPrice = isAnnual && !isOneTime
-    ? `$${Math.round(numericPrice * annualDiscount)}`
-    : price;
+  const displayPrice =
+    isAnnual && !isOneTime ? `$${Math.round(numericPrice * 0.8)}` : price;
 
   return (
     <div
-      className={cn(
-        'relative flex flex-col rounded-2xl border transition-all duration-300',
-        'hover:shadow-2xl hover:-translate-y-1',
+      className={`flex flex-col p-8 lg:p-12 border ${
         isPopular
-          ? 'bg-gradient-to-b from-purple-600/20 to-[#13131F] border-purple-500/50 shadow-xl shadow-purple-500/15'
-          : 'bg-[#13131F]/60 border-white/8 hover:border-white/15'
-      )}
+          ? 'border-2 border-[#0A0A0A]'
+          : 'border border-[#E5E5E5]'
+      }`}
     >
-      {/* Popular badge */}
-      {isPopular && (
-        <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-          <div className="flex items-center gap-1.5 px-4 py-1.5 bg-gradient-to-r from-purple-600 to-violet-600 rounded-full text-white text-xs font-bold shadow-lg shadow-purple-500/30">
-            <Star className="w-3 h-3 fill-current" />
-            Most Popular
-          </div>
-        </div>
-      )}
-
-      <div className="p-8 flex flex-col h-full">
-        {/* Header */}
-        <div className="mb-8">
-          <div className="flex items-center gap-2 mb-2">
-            <h3 className={cn(
-              'font-bold text-xl',
-              isPopular ? 'text-white' : 'text-white/90'
-            )}>
-              {name}
-            </h3>
-          </div>
-          <p className="text-white/50 text-sm leading-relaxed">
-            {desc}
+      {/* Header */}
+      <div className="mb-8">
+        {isPopular && (
+          <p className="text-xs uppercase tracking-widest text-[#0A0A0A] font-medium mb-3">
+            Most popular
           </p>
-        </div>
-
-        {/* Price */}
-        <div className="mb-8">
-          <div className="flex items-end gap-2">
-            <span className={cn(
-              'text-5xl font-black tracking-tight',
-              isPopular ? 'text-white' : 'text-white'
-            )}>
-              {displayPrice}
-            </span>
-            <span className="text-white/40 text-sm mb-2 pb-1">
-              {priceSuffix}
-            </span>
-          </div>
-          {isAnnual && !isOneTime && (
-            <p className="text-green-400 text-xs font-medium mt-1">
-              Save ${Math.round(numericPrice * 0.2 * 12)}/year with annual billing
-            </p>
-          )}
-        </div>
-
-        {/* CTA */}
-        <a
-          href="/get-started"
-          className={cn(
-            'w-full py-3 rounded-xl font-semibold text-sm text-center transition-all duration-200 mb-8',
-            isPopular
-              ? 'bg-purple-600 hover:bg-purple-500 text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50'
-              : 'border border-white/10 hover:border-white/20 text-white hover:bg-white/5'
-          )}
-        >
-          {cta}
-        </a>
-
-        {/* Divider */}
-        <div className="w-full h-px bg-white/6 mb-8" />
-
-        {/* Features */}
-        <ul className="space-y-4 flex-1">
-          {features.map((feature, i) => (
-            <li key={i} className="flex items-start gap-3">
-              <div className={cn(
-                'w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5',
-                isPopular ? 'bg-purple-500/20' : 'bg-white/8'
-              )}>
-                <Check className={cn(
-                  'w-3 h-3',
-                  isPopular ? 'text-purple-400' : 'text-white/60'
-                )} strokeWidth={2.5} />
-              </div>
-              <span className="text-white/65 text-sm leading-snug">
-                {feature}
-              </span>
-            </li>
-          ))}
-        </ul>
+        )}
+        <h3 className="text-lg font-medium text-[#0A0A0A] mb-2">{name}</h3>
+        <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
       </div>
+
+      {/* Price */}
+      <div className="mb-8 pb-8 border-b border-[#E5E5E5]">
+        <div className="flex items-end gap-2">
+          <span
+            className="text-4xl text-[#0A0A0A]"
+            style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+          >
+            {displayPrice}
+          </span>
+          <span className="text-sm text-gray-400 mb-1">{priceSuffix}</span>
+        </div>
+        {isAnnual && !isOneTime && (
+          <p className="text-xs text-gray-400 mt-2">
+            Save ${Math.round(numericPrice * 0.2 * 12)}/year with annual billing
+          </p>
+        )}
+      </div>
+
+      {/* CTA */}
+      <a
+        href="/get-started"
+        className={`w-full py-3 text-sm text-center transition-colors duration-200 mb-8 ${
+          isPopular
+            ? 'bg-[#0A0A0A] text-white hover:bg-[#1F2937]'
+            : 'border border-[#0A0A0A] text-[#0A0A0A] hover:bg-[#0A0A0A] hover:text-white'
+        }`}
+      >
+        {cta}
+      </a>
+
+      {/* Features */}
+      <ul className="space-y-4 flex-1">
+        {features.map((feature, i) => (
+          <li key={i} className="flex items-start gap-3 text-sm text-gray-600">
+            <span className="text-gray-400 flex-shrink-0 mt-0.5">—</span>
+            <span className="leading-snug">{feature}</span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
@@ -187,72 +151,65 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="relative py-24 lg:py-32 border-t border-white/5">
-      {/* Background glow */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-purple-600/5 rounded-full blur-[120px]" />
-      </div>
-
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="pricing" className="bg-white py-24 lg:py-32">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Section header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/20 bg-purple-500/5 text-purple-400 text-xs font-semibold uppercase tracking-wider mb-4">
-            <Zap className="w-3 h-3" />
-            Pricing
-          </div>
-          <h2 className="text-4xl sm:text-5xl font-black text-white mb-4 tracking-tight">
-            {t('title')}
+        <div className="mb-12">
+          <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">
+            — ENGAGEMENT MODELS
+          </p>
+          <h2
+            className="text-4xl lg:text-5xl text-[#0A0A0A] leading-tight mb-4"
+            style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+          >
+            Choose how we work together.
           </h2>
-          <p className="text-white/50 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-            {t('subtitle')}
+          <p className="text-gray-500 text-sm mb-8">
+            Transparent pricing. No hidden fees. Cancel anytime.
           </p>
 
           {/* Billing toggle */}
-          <div className="inline-flex items-center gap-4 p-1 bg-[#13131F] border border-white/8 rounded-xl">
+          <div className="flex items-center gap-4">
             <button
               onClick={() => setIsAnnual(false)}
-              className={cn(
-                'px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-200',
+              className={`text-sm transition-colors duration-200 ${
                 !isAnnual
-                  ? 'bg-white/10 text-white shadow-sm'
-                  : 'text-white/50 hover:text-white/70'
-              )}
+                  ? 'text-[#0A0A0A] font-medium'
+                  : 'text-gray-400 hover:text-gray-600'
+              }`}
             >
-              {t('monthly')}
+              Monthly
             </button>
+            <span className="text-gray-300">·</span>
             <button
               onClick={() => setIsAnnual(true)}
-              className={cn(
-                'px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex items-center gap-2',
+              className={`text-sm transition-colors duration-200 ${
                 isAnnual
-                  ? 'bg-white/10 text-white shadow-sm'
-                  : 'text-white/50 hover:text-white/70'
-              )}
+                  ? 'text-[#0A0A0A] font-medium'
+                  : 'text-gray-400 hover:text-gray-600'
+              }`}
             >
-              {t('annual')}
-              <span className="text-xs px-2 py-0.5 bg-green-500/20 text-green-400 rounded-full font-bold">
-                {t('save')}
-              </span>
+              Annual{' '}
+              <span className="text-gray-400 font-normal">(save 20%)</span>
             </button>
           </div>
         </div>
 
         {/* Pricing cards */}
-        <div className="grid md:grid-cols-3 gap-6 mt-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {plans.map((plan) => (
-            <PricingCard
-              key={plan.name}
-              {...plan}
-              isAnnual={isAnnual}
-            />
+            <PricingCard key={plan.name} {...plan} isAnnual={isAnnual} />
           ))}
         </div>
 
         {/* Bottom note */}
-        <p className="text-center text-white/30 text-sm mt-10">
-          All prices in USD. No hidden fees. Cancel anytime.{' '}
-          <a href="mailto:hello@pragmas.io" className="text-purple-400 hover:text-purple-300 transition-colors">
-            Need a custom plan?
+        <p className="text-sm text-gray-400 mt-8">
+          All prices in USD.{' '}
+          <a
+            href="mailto:hello@pragmas.io"
+            className="text-[#2563EB] hover:underline transition-colors"
+          >
+            Need a custom arrangement?
           </a>
         </p>
       </div>
