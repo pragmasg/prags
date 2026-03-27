@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "pricing": "Preise",
+    "blog": "Blog",
+    "login": "Anmelden",
+    "getStarted": "Loslegen"
+  },
+  "hero": {
+    "badge": "KI-gestützte Tools für wachsende Unternehmen",
+    "title": "KI-gestützte Tools für",
+    "titleHighlight": "Startups und KMU",
+    "subtitle": "Keine Agentur mehr nötig. Erhalten Sie Analyse-Dashboards, Automatisierungs-Workflows und KI-Tools — für Sie entwickelt, zu Startup-Preisen.",
+    "cta": "Jetzt loslegen",
+    "ctaSecondary": "So funktioniert es",
+    "trustedBy": "Über 100 Startups vertrauen uns"
+  },
+  "stats": {
+    "clients": "100+",
+    "clientsLabel": "Betreute Kunden",
+    "retention": "94%",
+    "retentionLabel": "Ø Kundenbindung",
+    "savings": "40h/Monat",
+    "savingsLabel": "Zeitersparnis",
+    "support": "24/7",
+    "supportLabel": "Support verfügbar"
+  },
+  "services": {
+    "title": "Alles, was Sie zum Skalieren brauchen",
+    "subtitle": "Drei leistungsstarke Services, die Ihr Unternehmen vom Datenchaos zu automatisiertem Wachstum führen.",
+    "analytics": {
+      "name": "Analyse-Dashboards",
+      "desc": "Verwandeln Sie Ihre Daten in Entscheidungen mit eingebetteten, gebrandeten Analyse-Dashboards. Echtzeit-Einblicke, angepasst an Ihre KPIs."
+    },
+    "automation": {
+      "name": "Automatisierungs-Workflows",
+      "desc": "Eliminieren Sie repetitive Aufgaben mit n8n-gestützten Automatisierungen, die auf Ihren Stack zugeschnitten sind. Verbinden Sie beliebige Tools, automatisieren Sie beliebige Prozesse."
+    },
+    "ai": {
+      "name": "KI-gestützte Tools",
+      "desc": "Setzen Sie Claude-gestützte Assistenten und Tools ein — Kundensupport, Datenextraktion, Content-Erstellung. Alles unter Ihrer Marke."
+    },
+    "learnMore": "Mehr erfahren"
+  },
+  "howItWorks": {
+    "title": "Einfacher Prozess, starke Ergebnisse",
+    "subtitle": "Wir nehmen die Komplexität aus der digitalen Transformation. Vom Kickoff bis zum Launch in Tagen, nicht Monaten.",
+    "step1": {
+      "title": "Wählen Sie Ihren Service",
+      "desc": "Sagen Sie uns, was Sie brauchen — Analyse, Automatisierung oder KI. Wir definieren das Projekt und geben Ihnen ein klares Angebot ohne Überraschungen."
+    },
+    "step2": {
+      "title": "Wir bauen und liefern",
+      "desc": "Unser Team beginnt sofort. Sie erhalten Updates, eine Staging-Umgebung und können während des gesamten Prozesses Feedback geben."
+    },
+    "step3": {
+      "title": "Sie wachsen",
+      "desc": "Starten Sie Ihre neuen Funktionen und beobachten Sie, wie sich Ihre Kennzahlen verbessern. Wir bieten laufenden Support und Iterationen, während Sie skalieren."
+    }
+  },
+  "pricing": {
+    "title": "Transparente Preise, keine Überraschungen",
+    "subtitle": "Startup-freundliche Preise, die mit Ihnen skalieren. Kein Retainer erforderlich, um zu starten.",
+    "monthly": "Monatlich",
+    "annual": "Jährlich",
+    "save": "20% sparen",
+    "starter": {
+      "name": "Starter",
+      "desc": "Perfekt für Startups, die einen einmaligen Aufbau benötigen",
+      "price": "$299",
+      "priceSuffix": "einmalig",
+      "cta": "Loslegen",
+      "features": [
+        "Ein benutzerdefiniertes Dashboard oder Workflow",
+        "Bis zu 3 Datenquellen-Integrationen",
+        "Mobile-responsives Design",
+        "2 Wochen Post-Launch-Support",
+        "Quellcode inklusive"
+      ]
+    },
+    "growth": {
+      "name": "Growth",
+      "desc": "Laufende Partnerschaft für schnell wachsende Teams",
+      "price": "$499",
+      "priceSuffix": "/Monat",
+      "cta": "Retainer starten",
+      "popular": "Am beliebtesten",
+      "features": [
+        "Alles aus dem Starter-Plan",
+        "Bis zu 4 Projekte pro Monat",
+        "Priorisierte Lieferung in 24h",
+        "Unbegrenzte Überarbeitungen",
+        "Dedizierter Slack-Kanal",
+        "Monatliches Strategiegespräch"
+      ]
+    },
+    "platform": {
+      "name": "Platform",
+      "desc": "Self-Service-Zugang zu allen Pragmas-Tools",
+      "price": "$49",
+      "priceSuffix": "/Monat",
+      "cta": "Plattform nutzen",
+      "features": [
+        "Vollständige Dashboard-Vorlagenbibliothek",
+        "Vorgefertigte Automatisierungs-Workflows",
+        "KI-Tools-Playground",
+        "Community & Dokumentation",
+        "API-Zugang"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über Pragmas und unsere Arbeitsweise wissen müssen.",
+    "q1": {
+      "q": "Wie schnell können Sie ein Projekt liefern?",
+      "a": "Die meisten Starter-Projekte werden innerhalb von 5-10 Werktagen geliefert. Growth-Retainer-Kunden erhalten eine priorisierte Lieferung von 24-48 Stunden pro Anfrage. Platform-Abonnenten haben sofortigen Zugang zu allen Vorlagen und Tools."
+    },
+    "q2": {
+      "q": "Welchen Tech-Stack verwenden Sie?",
+      "a": "Wir arbeiten mit dem modernen Stack: Next.js, Supabase, n8n für Automatisierungen, Metabase oder benutzerdefinierte React-Dashboards für Analysen und Anthropic Claude für KI-Funktionen. Wir passen uns bei Bedarf Ihrem bestehenden Stack an."
+    },
+    "q3": {
+      "q": "Besitze ich den Code und die Daten?",
+      "a": "Absolut. Alle Lieferables gehören Ihnen. Starter- und Growth-Kunden erhalten den vollständigen Quellcode. Ihre Daten verbleiben in Ihrer Infrastruktur — wir speichern niemals Kundendaten auf unseren Servern."
+    },
+    "q4": {
+      "q": "Kann ich meinen Retainer jederzeit kündigen?",
+      "a": "Ja, ohne Bindungsverträge. Kündigen Sie jederzeit mit 30 Tagen Vorankündigung. Wir glauben daran, Ihr Vertrauen jeden Monat durch Qualität und Schnelligkeit zu verdienen."
+    }
+  },
+  "cta": {
+    "title": "Bereit, intelligenter zu bauen?",
+    "subtitle": "Schließen Sie sich über 100 Startups an, die Pragmas bereits nutzen, um zu automatisieren, zu analysieren und ihr Wachstum zu beschleunigen.",
+    "button": "Projekt starten"
+  },
+  "footer": {
+    "description": "KI-gestützte Tools und digitale Beratung für Startups und KMU. Schneller bauen, klüger wachsen.",
+    "services": "Leistungen",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookie-Richtlinie",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

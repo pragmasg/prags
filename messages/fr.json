@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "pricing": "Tarifs",
+    "blog": "Blog",
+    "login": "Connexion",
+    "getStarted": "Commencer"
+  },
+  "hero": {
+    "badge": "Outils IA pour les entreprises en croissance",
+    "title": "Outils IA pour",
+    "titleHighlight": "startups et PME",
+    "subtitle": "Oubliez l'agence. Obtenez des tableaux de bord analytiques, des flux d'automatisation et des outils IA — conçus pour vous, tarifés pour les startups.",
+    "cta": "Commencer maintenant",
+    "ctaSecondary": "Voir comment ça fonctionne",
+    "trustedBy": "Plus de 100 startups nous font confiance"
+  },
+  "stats": {
+    "clients": "100+",
+    "clientsLabel": "Clients Servis",
+    "retention": "94%",
+    "retentionLabel": "Rétention Moyenne",
+    "savings": "40h/mois",
+    "savingsLabel": "Temps Économisé",
+    "support": "24/7",
+    "supportLabel": "Support Disponible"
+  },
+  "services": {
+    "title": "Tout ce qu'il vous faut pour évoluer",
+    "subtitle": "Trois services puissants conçus pour faire passer votre entreprise du chaos des données à une croissance automatisée.",
+    "analytics": {
+      "name": "Tableaux de Bord Analytiques",
+      "desc": "Transformez vos données en décisions avec des tableaux de bord analytiques intégrés et personnalisés. Des insights en temps réel adaptés à vos KPIs."
+    },
+    "automation": {
+      "name": "Flux d'Automatisation",
+      "desc": "Éliminez les tâches répétitives avec des automatisations n8n adaptées à votre stack. Connectez n'importe quel outil, automatisez n'importe quel processus."
+    },
+    "ai": {
+      "name": "Outils IA",
+      "desc": "Déployez des assistants et outils propulsés par Claude — support client, extraction de données, génération de contenu. Tout sous votre marque."
+    },
+    "learnMore": "En savoir plus"
+  },
+  "howItWorks": {
+    "title": "Processus simple, résultats puissants",
+    "subtitle": "Nous éliminons la complexité de la transformation numérique. Du lancement à la mise en ligne en jours, pas en mois.",
+    "step1": {
+      "title": "Choisissez votre service",
+      "desc": "Dites-nous ce dont vous avez besoin — analytique, automatisation ou IA. Nous définirons le projet et vous fournirons un devis clair sans surprises."
+    },
+    "step2": {
+      "title": "Nous construisons et livrons",
+      "desc": "Notre équipe commence immédiatement. Vous recevez des mises à jour, un environnement de staging et pouvez fournir des retours tout au long du processus."
+    },
+    "step3": {
+      "title": "Vous grandissez",
+      "desc": "Lancez vos nouvelles capacités et observez l'amélioration de vos métriques. Nous offrons un support continu et des itérations à mesure que vous évoluez."
+    }
+  },
+  "pricing": {
+    "title": "Tarifs transparents, sans surprises",
+    "subtitle": "Tarifs adaptés aux startups qui évoluent avec vous. Aucun contrat de rétention requis pour commencer.",
+    "monthly": "Mensuel",
+    "annual": "Annuel",
+    "save": "Économisez 20%",
+    "starter": {
+      "name": "Starter",
+      "desc": "Parfait pour les startups ayant besoin d'un développement unique",
+      "price": "$299",
+      "priceSuffix": "paiement unique",
+      "cta": "Commencer",
+      "features": [
+        "Un tableau de bord ou flux personnalisé",
+        "Jusqu'à 3 intégrations de sources de données",
+        "Design responsive mobile",
+        "2 semaines de support post-lancement",
+        "Code source inclus"
+      ]
+    },
+    "growth": {
+      "name": "Growth",
+      "desc": "Partenariat continu pour les équipes en mouvement rapide",
+      "price": "$499",
+      "priceSuffix": "/mois",
+      "cta": "Démarrer le Retainer",
+      "popular": "Le Plus Populaire",
+      "features": [
+        "Tout du plan Starter",
+        "Jusqu'à 4 projets par mois",
+        "Livraison prioritaire en 24h",
+        "Révisions illimitées",
+        "Canal Slack dédié",
+        "Appel stratégique mensuel"
+      ]
+    },
+    "platform": {
+      "name": "Platform",
+      "desc": "Accès en libre-service à tous les outils Pragmas",
+      "price": "$49",
+      "priceSuffix": "/mois",
+      "cta": "Accéder à la Plateforme",
+      "features": [
+        "Bibliothèque complète de templates de tableaux de bord",
+        "Flux d'automatisation pré-construits",
+        "Playground d'outils IA",
+        "Communauté et documentation",
+        "Accès API"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "subtitle": "Tout ce que vous devez savoir sur Pragmas et notre façon de travailler.",
+    "q1": {
+      "q": "En combien de temps livrez-vous un projet ?",
+      "a": "La plupart des projets Starter sont livrés en 5-10 jours ouvrables. Les clients du retainer Growth bénéficient d'une livraison prioritaire en 24-48 heures par demande. Les abonnés Platform ont un accès immédiat à tous les templates et outils."
+    },
+    "q2": {
+      "q": "Quelle stack technologique utilisez-vous ?",
+      "a": "Nous travaillons avec la stack moderne : Next.js, Supabase, n8n pour les automatisations, Metabase ou des tableaux de bord React personnalisés pour l'analytique, et Anthropic Claude pour les fonctionnalités IA. Nous nous adaptons à votre stack existante si nécessaire."
+    },
+    "q3": {
+      "q": "Suis-je propriétaire du code et des données ?",
+      "a": "Absolument. Tous les livrables vous appartiennent. Les clients Starter et Growth reçoivent le code source complet. Vos données restent dans votre infrastructure — nous ne stockons jamais les données clients sur nos serveurs."
+    },
+    "q4": {
+      "q": "Puis-je annuler mon retainer à tout moment ?",
+      "a": "Oui, sans contrats contraignants. Annulez quand vous voulez avec 30 jours de préavis. Nous croyons en gagner votre confiance chaque mois grâce à la qualité et la rapidité."
+    }
+  },
+  "cta": {
+    "title": "Prêt à construire plus intelligemment ?",
+    "subtitle": "Rejoignez plus de 100 startups qui utilisent déjà Pragmas pour automatiser, analyser et accélérer leur croissance.",
+    "button": "Démarrez votre Projet"
+  },
+  "footer": {
+    "description": "Outils IA et conseil numérique pour startups et PME. Construisez plus vite, grandissez plus intelligemment.",
+    "services": "Services",
+    "company": "Entreprise",
+    "legal": "Mentions Légales",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "cookies": "Politique des Cookies",
+    "rights": "Tous droits réservés."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "login": "Login",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "AI-powered tools for growing businesses",
+    "title": "AI-powered tools for",
+    "titleHighlight": "startups and SMEs",
+    "subtitle": "Skip the agency. Get analytics dashboards, automation workflows, and AI tools — built for you, priced for startups.",
+    "cta": "Get Started",
+    "ctaSecondary": "See how it works",
+    "trustedBy": "Trusted by 100+ startups worldwide"
+  },
+  "stats": {
+    "clients": "100+",
+    "clientsLabel": "Clients Served",
+    "retention": "94%",
+    "retentionLabel": "Avg. Retention",
+    "savings": "40h/mo",
+    "savingsLabel": "Time Saved",
+    "support": "24/7",
+    "supportLabel": "Support Available"
+  },
+  "services": {
+    "title": "Everything you need to scale",
+    "subtitle": "Three powerful services designed to take your business from data chaos to automated growth.",
+    "analytics": {
+      "name": "Analytics Dashboards",
+      "desc": "Turn your data into decisions with embedded, branded analytics dashboards. Real-time insights tailored to your KPIs."
+    },
+    "automation": {
+      "name": "Automation Workflows",
+      "desc": "Eliminate repetitive tasks with n8n-powered automations tailored to your stack. Connect any tool, automate any process."
+    },
+    "ai": {
+      "name": "AI-Powered Tools",
+      "desc": "Deploy Claude-powered assistants and tools — customer support, data extraction, content generation. All on your brand."
+    },
+    "learnMore": "Learn more"
+  },
+  "howItWorks": {
+    "title": "Simple process, powerful results",
+    "subtitle": "We take the complexity out of digital transformation. From kickoff to launch in days, not months.",
+    "step1": {
+      "title": "Choose your service",
+      "desc": "Tell us what you need — analytics, automation, or AI. We'll scope the project and give you a clear quote with no surprises."
+    },
+    "step2": {
+      "title": "We build & deliver",
+      "desc": "Our team gets to work immediately. You get updates, a staging environment, and can provide feedback throughout the process."
+    },
+    "step3": {
+      "title": "You grow",
+      "desc": "Launch your new capabilities and watch your metrics improve. We provide ongoing support and iterations as you scale."
+    }
+  },
+  "pricing": {
+    "title": "Transparent pricing, no surprises",
+    "subtitle": "Startup-friendly pricing that scales with you. No retainers required to get started.",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "save": "Save 20%",
+    "starter": {
+      "name": "Starter",
+      "desc": "Perfect for startups needing a one-time build",
+      "price": "$299",
+      "priceSuffix": "one-time",
+      "cta": "Get Started",
+      "features": [
+        "One custom dashboard or workflow",
+        "Up to 3 data source integrations",
+        "Mobile-responsive design",
+        "2 weeks of post-launch support",
+        "Source code included"
+      ]
+    },
+    "growth": {
+      "name": "Growth",
+      "desc": "Ongoing partnership for fast-moving teams",
+      "price": "$499",
+      "priceSuffix": "/month",
+      "cta": "Start Retainer",
+      "popular": "Most Popular",
+      "features": [
+        "Everything in Starter",
+        "Up to 4 projects per month",
+        "Priority 24h turnaround",
+        "Unlimited revisions",
+        "Dedicated Slack channel",
+        "Monthly strategy call"
+      ]
+    },
+    "platform": {
+      "name": "Platform",
+      "desc": "Self-serve access to all Pragmas tools",
+      "price": "$49",
+      "priceSuffix": "/month",
+      "cta": "Access Platform",
+      "features": [
+        "Full dashboard template library",
+        "Pre-built automation workflows",
+        "AI tool playground",
+        "Community & documentation",
+        "API access"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know about Pragmas and how we work.",
+    "q1": {
+      "q": "How quickly can you deliver a project?",
+      "a": "Most Starter projects are delivered within 5-10 business days. Growth retainer clients get priority turnaround of 24-48 hours per request. Platform subscribers get immediate access to all templates and tools."
+    },
+    "q2": {
+      "q": "What tech stack do you use?",
+      "a": "We work with the modern stack: Next.js, Supabase, n8n for automations, Metabase or custom React dashboards for analytics, and Anthropic Claude for AI features. We adapt to your existing stack where needed."
+    },
+    "q3": {
+      "q": "Do I own the code and data?",
+      "a": "Absolutely. All deliverables are yours. Starter and Growth clients receive full source code. Your data stays in your infrastructure — we never store client data on our servers."
+    },
+    "q4": {
+      "q": "Can I cancel my retainer anytime?",
+      "a": "Yes, no lock-in contracts. Cancel anytime with 30 days notice. We believe in earning your business every month with quality and speed."
+    }
+  },
+  "cta": {
+    "title": "Ready to build smarter?",
+    "subtitle": "Join 100+ startups already using Pragmas to automate, analyze, and accelerate their growth.",
+    "button": "Start Your Project"
+  },
+  "footer": {
+    "description": "AI-powered tools and digital consultancy for startups and SMEs. Build faster, grow smarter.",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "pricing": "Preços",
+    "blog": "Blog",
+    "login": "Entrar",
+    "getStarted": "Começar"
+  },
+  "hero": {
+    "badge": "Ferramentas com IA para negócios em crescimento",
+    "title": "Ferramentas com IA para",
+    "titleHighlight": "startups e PMEs",
+    "subtitle": "Esqueça a agência. Tenha dashboards de análise, fluxos de automação e ferramentas de IA — construídos para você, com preços para startups.",
+    "cta": "Começar agora",
+    "ctaSecondary": "Ver como funciona",
+    "trustedBy": "Mais de 100 startups confiam em nós"
+  },
+  "stats": {
+    "clients": "100+",
+    "clientsLabel": "Clientes Atendidos",
+    "retention": "94%",
+    "retentionLabel": "Retenção Média",
+    "savings": "40h/mês",
+    "savingsLabel": "Tempo Economizado",
+    "support": "24/7",
+    "supportLabel": "Suporte Disponível"
+  },
+  "services": {
+    "title": "Tudo o que você precisa para escalar",
+    "subtitle": "Três serviços poderosos projetados para levar seu negócio do caos de dados ao crescimento automatizado.",
+    "analytics": {
+      "name": "Dashboards de Análise",
+      "desc": "Transforme seus dados em decisões com dashboards de análise incorporados e personalizados. Insights em tempo real adaptados aos seus KPIs."
+    },
+    "automation": {
+      "name": "Fluxos de Automação",
+      "desc": "Elimine tarefas repetitivas com automações n8n adaptadas ao seu stack. Conecte qualquer ferramenta, automatize qualquer processo."
+    },
+    "ai": {
+      "name": "Ferramentas com IA",
+      "desc": "Implante assistentes e ferramentas com Claude — suporte ao cliente, extração de dados, geração de conteúdo. Tudo sob a sua marca."
+    },
+    "learnMore": "Saiba mais"
+  },
+  "howItWorks": {
+    "title": "Processo simples, resultados poderosos",
+    "subtitle": "Tiramos a complexidade da transformação digital. Do kickoff ao lançamento em dias, não meses.",
+    "step1": {
+      "title": "Escolha seu serviço",
+      "desc": "Nos diga o que você precisa — análise, automação ou IA. Vamos definir o projeto e dar a você uma proposta clara sem surpresas."
+    },
+    "step2": {
+      "title": "Construímos e entregamos",
+      "desc": "Nossa equipe começa imediatamente. Você recebe atualizações, um ambiente de staging e pode fornecer feedback durante todo o processo."
+    },
+    "step3": {
+      "title": "Você cresce",
+      "desc": "Lance suas novas capacidades e veja suas métricas melhorarem. Oferecemos suporte contínuo e iterações enquanto você escala."
+    }
+  },
+  "pricing": {
+    "title": "Preços transparentes, sem surpresas",
+    "subtitle": "Preços amigáveis para startups que escalam com você. Não são necessários contratos de retenção para começar.",
+    "monthly": "Mensal",
+    "annual": "Anual",
+    "save": "Economize 20%",
+    "starter": {
+      "name": "Starter",
+      "desc": "Perfeito para startups que precisam de um desenvolvimento único",
+      "price": "$299",
+      "priceSuffix": "pagamento único",
+      "cta": "Começar",
+      "features": [
+        "Um dashboard ou fluxo personalizado",
+        "Até 3 integrações de fontes de dados",
+        "Design responsivo para mobile",
+        "2 semanas de suporte pós-lançamento",
+        "Código-fonte incluído"
+      ]
+    },
+    "growth": {
+      "name": "Growth",
+      "desc": "Parceria contínua para equipes em rápido movimento",
+      "price": "$499",
+      "priceSuffix": "/mês",
+      "cta": "Iniciar Retainer",
+      "popular": "Mais Popular",
+      "features": [
+        "Tudo do plano Starter",
+        "Até 4 projetos por mês",
+        "Entrega prioritária em 24h",
+        "Revisões ilimitadas",
+        "Canal dedicado no Slack",
+        "Reunião estratégica mensal"
+      ]
+    },
+    "platform": {
+      "name": "Platform",
+      "desc": "Acesso self-service a todas as ferramentas da Pragmas",
+      "price": "$49",
+      "priceSuffix": "/mês",
+      "cta": "Acessar Plataforma",
+      "features": [
+        "Biblioteca completa de templates de dashboards",
+        "Fluxos de automação pré-construídos",
+        "Playground de ferramentas IA",
+        "Comunidade e documentação",
+        "Acesso à API"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "subtitle": "Tudo o que você precisa saber sobre a Pragmas e como trabalhamos.",
+    "q1": {
+      "q": "Com que rapidez vocês entregam um projeto?",
+      "a": "A maioria dos projetos Starter é entregue em 5-10 dias úteis. Clientes do retainer Growth têm entrega prioritária de 24-48 horas por solicitação. Assinantes do Platform têm acesso imediato a todos os templates e ferramentas."
+    },
+    "q2": {
+      "q": "Qual stack tecnológico vocês usam?",
+      "a": "Trabalhamos com o stack moderno: Next.js, Supabase, n8n para automações, Metabase ou dashboards React personalizados para análise, e Anthropic Claude para funcionalidades de IA. Nos adaptamos ao seu stack existente quando necessário."
+    },
+    "q3": {
+      "q": "Sou dono do código e dos dados?",
+      "a": "Com certeza. Todos os entregáveis são seus. Clientes Starter e Growth recebem o código-fonte completo. Seus dados ficam na sua infraestrutura — nunca armazenamos dados de clientes em nossos servidores."
+    },
+    "q4": {
+      "q": "Posso cancelar meu retainer a qualquer momento?",
+      "a": "Sim, sem contratos de fidelidade. Cancele quando quiser com 30 dias de aviso. Acreditamos em conquistar seu negócio todo mês com qualidade e velocidade."
+    }
+  },
+  "cta": {
+    "title": "Pronto para construir de forma mais inteligente?",
+    "subtitle": "Junte-se a mais de 100 startups que já usam a Pragmas para automatizar, analisar e acelerar seu crescimento.",
+    "button": "Inicie seu Projeto"
+  },
+  "footer": {
+    "description": "Ferramentas com IA e consultoria digital para startups e PMEs. Construa mais rápido, cresça com mais inteligência.",
+    "services": "Serviços",
+    "company": "Empresa",
+    "legal": "Legal",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "cookies": "Política de Cookies",
+    "rights": "Todos os direitos reservados."
+  }
+}
