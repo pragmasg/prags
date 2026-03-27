@@ -5,7 +5,7 @@
   --color-foreground: #0a0a0a;
   --color-muted: #6b7280;
   --color-border: #e5e5e5;
-  --color-accent: #2563eb;
+  --color-accent: #00D4AA;
   --color-warm: #fafaf8;
   --color-dark: #0d1117;
 }
@@ -15,7 +15,28 @@
   --foreground: #0a0a0a;
   --muted: #6b7280;
   --border: #e5e5e5;
-  --accent: #2563eb;
+  --accent: #00D4AA;
+  --surface: #FAFAF8;
+}
+
+/* Accent color utilities */
+.accent-hover:hover { color: var(--accent); }
+.bg-accent { background: var(--accent); }
+
+/* Scroll reveal animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 * {

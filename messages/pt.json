@@ -27,14 +27,14 @@
     }
   },
   "stats": {
-    "v1": "3–5 dias",
-    "v1label": "Entrega média",
+    "v1": "24h",
+    "v1label": "Proposta em 24 horas",
     "v2": "Preço fixo",
-    "v2label": "Sem taxas ocultas",
-    "v3": "O código é seu",
-    "v3label": "Transferência total de PI",
-    "v4": "5 idiomas",
-    "v4label": "Pronto para o mundo"
+    "v2label": "Zero custos extras",
+    "v3": "Dia 1",
+    "v3label": "Link de staging",
+    "v4": "100%",
+    "v4label": "PI transferida na entrega"
   },
   "services": {
     "label": "— O QUE FAZEMOS",
@@ -55,8 +55,8 @@
   },
   "howItWorks": {
     "label": "— COMO TRABALHAMOS",
-    "title": "Do briefing ao deploy em dias, não meses.",
-    "subtitle": "Sem sprints de discovery. Sem propostas intermináveis. Definimos, construímos e entregamos rápido.",
+    "title": "Brief na segunda. Link de staging na terça. Seu na sexta.",
+    "subtitle": "Sem sprints de discovery. Sem propostas intermináveis. Definimos, construímos e entregamos.",
     "s1num": "01",
     "s1title": "Brief & escopo",
     "s1desc": "Conte o que você precisa. Transformamos isso em uma proposta clara e com preço fixo em até 24 horas.",
@@ -136,6 +136,14 @@
     "q4": {
       "q": "Posso cancelar meu retainer?",
       "a": "Sim. Sem fidelidade. Cancele com 30 dias de aviso. Conquistamos seu negócio todo mês com velocidade e qualidade — não com contratos."
+    },
+    "q5": {
+      "q": "E se o entregável não atender às minhas expectativas?",
+      "a": "Iteramos até que atenda. Nosso processo inclui uma fase de revisão antes da entrega final. Se algo não estiver certo, corrigimos sem custo adicional. Não consideramos um projeto concluído até que você esteja satisfeito."
+    },
+    "q6": {
+      "q": "Vocês assinam NDAs?",
+      "a": "Sim. Assinamos NDAs antes de qualquer informação sensível ser compartilhada. Todos os dados do cliente e contexto de negócio são tratados como confidenciais. Nunca referenciamos projetos de clientes em nossos materiais sem permissão explícita."
     }
   },
   "cta": {

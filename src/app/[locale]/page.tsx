@@ -1,7 +1,9 @@
 import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/sections/Hero';
 import Stats from '@/components/sections/Stats';
+import SocialProof from '@/components/sections/SocialProof';
 import Services from '@/components/sections/Services';
+import TechStack from '@/components/sections/TechStack';
 import HowItWorks from '@/components/sections/HowItWorks';
 import Pricing from '@/components/sections/Pricing';
 import FAQ from '@/components/sections/FAQ';
@@ -14,7 +16,9 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <Stats />
+      <SocialProof />
       <Services />
+      <TechStack />
       <HowItWorks />
       <Pricing />
       <FAQ />

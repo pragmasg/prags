@@ -27,14 +27,14 @@
     }
   },
   "stats": {
-    "v1": "3–5 Tage",
-    "v1label": "Durchschnittliche Lieferung",
+    "v1": "24h",
+    "v1label": "Angebot in 24 Stunden",
     "v2": "Festpreis",
-    "v2label": "Keine versteckten Kosten",
-    "v3": "Code gehört Ihnen",
-    "v3label": "Vollständige IP-Übertragung",
-    "v4": "5 Sprachen",
-    "v4label": "Global einsatzbereit"
+    "v2label": "Null Kostenüberschreitungen",
+    "v3": "Tag 1",
+    "v3label": "Staging-Link",
+    "v4": "100%",
+    "v4label": "IP-Übergabe bei Lieferung"
   },
   "services": {
     "label": "— WAS WIR TUN",
@@ -55,8 +55,8 @@
   },
   "howItWorks": {
     "label": "— UNSERE ARBEITSWEISE",
-    "title": "Vom Brief zum Deployment in Tagen, nicht Monaten.",
-    "subtitle": "Keine Discovery-Sprints. Keine langen Angebote. Wir definieren, bauen und liefern schnell.",
+    "title": "Brief am Montag. Staging-Link am Dienstag. Ihres am Freitag.",
+    "subtitle": "Keine Discovery-Sprints. Keine langen Angebote. Wir definieren, bauen und liefern.",
     "s1num": "01",
     "s1title": "Brief & Umfang",
     "s1desc": "Sagen Sie uns, was Sie brauchen. Wir machen daraus ein klares Festpreisangebot innerhalb von 24 Stunden.",
@@ -136,6 +136,14 @@
     "q4": {
       "q": "Kann ich meinen Retainer kündigen?",
       "a": "Ja. Kein Lock-in. Kündigung mit 30 Tagen Vorankündigung. Wir verdienen Ihr Vertrauen jeden Monat durch Geschwindigkeit und Qualität — nicht durch Verträge."
+    },
+    "q5": {
+      "q": "Was passiert, wenn das Ergebnis meine Erwartungen nicht erfüllt?",
+      "a": "Wir iterieren, bis es das tut. Unser Prozess umfasst eine Überprüfungsphase vor der endgültigen Übergabe. Wenn etwas nicht stimmt, korrigieren wir es ohne zusätzliche Kosten. Wir betrachten ein Projekt erst als abgeschlossen, wenn Sie zufrieden sind."
+    },
+    "q6": {
+      "q": "Unterzeichnen Sie NDAs?",
+      "a": "Ja. Wir unterzeichnen NDAs, bevor sensible Informationen geteilt werden. Alle Kundendaten und Geschäftskontexte werden als vertraulich behandelt. Wir verweisen niemals ohne ausdrückliche Genehmigung auf Kundenprojekte in unseren eigenen Materialien."
     }
   },
   "cta": {

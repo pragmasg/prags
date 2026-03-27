@@ -48,6 +48,8 @@ export default function FAQ() {
     { q: t('q2.q'), a: t('q2.a') },
     { q: t('q3.q'), a: t('q3.a') },
     { q: t('q4.q'), a: t('q4.a') },
+    { q: t('q5.q'), a: t('q5.a') },
+    { q: t('q6.q'), a: t('q6.a') },
   ];
 
   return (
@@ -58,10 +60,7 @@ export default function FAQ() {
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">
             {t('label')}
           </p>
-          <h2
-            className="text-4xl lg:text-5xl text-[#0A0A0A] leading-tight"
-            style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
-          >
+          <h2 className="text-3xl lg:text-4xl font-semibold text-[#0A0A0A] leading-tight">
             {t('title')}
           </h2>
         </div>
@@ -84,16 +83,21 @@ export default function FAQ() {
         </div>
 
         {/* Contact note */}
-        <div className="mt-10">
-          <p className="text-sm text-gray-500">
-            Still have questions?{' '}
-            <a
-              href="mailto:hello@pragmas.io"
-              className="text-[#2563EB] hover:underline transition-colors"
-            >
-              hello@pragmas.io
-            </a>
-          </p>
+        <div className="mt-10 flex flex-col sm:flex-row gap-4 items-start">
+          <a
+            href="https://calendly.com/pragmas/30min"
+            target="_blank"
+            rel="noopener"
+            className="text-sm border border-[#0A0A0A] px-6 py-3 hover:bg-black hover:text-white transition-colors"
+          >
+            Book a 20-min call →
+          </a>
+          <a
+            href="mailto:hello@pragmas.io"
+            className="text-sm text-gray-500 underline underline-offset-4 hover:text-gray-900 py-3"
+          >
+            Or email us
+          </a>
         </div>
       </div>
     </section>

@@ -27,14 +27,14 @@
     }
   },
   "stats": {
-    "v1": "3–5 days",
-    "v1label": "Average delivery",
+    "v1": "24h",
+    "v1label": "Scope turnaround",
     "v2": "Fixed price",
-    "v2label": "No hidden fees",
-    "v3": "You own the code",
-    "v3label": "Full IP transfer",
-    "v4": "5 languages",
-    "v4label": "Global ready"
+    "v2label": "Zero cost overruns",
+    "v3": "Day 1",
+    "v3label": "Staging link",
+    "v4": "100%",
+    "v4label": "IP transfer on delivery"
   },
   "services": {
     "label": "— WHAT WE DO",
@@ -55,8 +55,8 @@
   },
   "howItWorks": {
     "label": "— HOW WE WORK",
-    "title": "From brief to deployment in days, not months.",
-    "subtitle": "No discovery sprints. No lengthy proposals. We scope, build, and ship fast.",
+    "title": "Brief on Monday. Staging link on Tuesday. Yours on Friday.",
+    "subtitle": "No discovery sprints. No lengthy proposals. We scope, build, and ship.",
     "s1num": "01",
     "s1title": "Brief & scope",
     "s1desc": "Tell us what you need. We turn it into a clear, fixed-price proposal within 24 hours.",
@@ -136,6 +136,14 @@
     "q4": {
       "q": "Can I cancel my retainer?",
       "a": "Yes. No lock-in. Cancel with 30 days notice. We earn your business every month through speed and quality — not contracts."
+    },
+    "q5": {
+      "q": "What if the deliverable doesn't meet my expectations?",
+      "a": "We iterate until it does. Our process includes a review phase before final handover. If something isn't right, we fix it at no additional cost. We don't consider a project done until you're satisfied."
+    },
+    "q6": {
+      "q": "Do you sign NDAs?",
+      "a": "Yes. We sign NDAs before any sensitive information is shared. All client data and business context is treated as confidential. We never reference client projects in our own materials without explicit permission."
     }
   },
   "cta": {

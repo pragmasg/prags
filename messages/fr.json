@@ -27,14 +27,14 @@
     }
   },
   "stats": {
-    "v1": "3–5 jours",
-    "v1label": "Livraison moyenne",
+    "v1": "24h",
+    "v1label": "Proposition en 24 heures",
     "v2": "Prix fixe",
-    "v2label": "Sans frais cachés",
-    "v3": "Le code vous appartient",
-    "v3label": "Transfert complet de PI",
-    "v4": "5 langues",
-    "v4label": "Prêt pour le monde entier"
+    "v2label": "Zéro dépassement de coût",
+    "v3": "Jour 1",
+    "v3label": "Lien de staging",
+    "v4": "100%",
+    "v4label": "PI transférée à la livraison"
   },
   "services": {
     "label": "— CE QUE NOUS FAISONS",
@@ -55,8 +55,8 @@
   },
   "howItWorks": {
     "label": "— NOTRE MÉTHODE",
-    "title": "Du brief au déploiement en jours, pas en mois.",
-    "subtitle": "Pas de sprints de découverte. Pas de longues propositions. Nous cadrons, construisons et livrons vite.",
+    "title": "Brief le lundi. Lien de staging le mardi. Le vôtre le vendredi.",
+    "subtitle": "Pas de sprints de découverte. Pas de longues propositions. Nous cadrons, construisons et livrons.",
     "s1num": "01",
     "s1title": "Brief & cadrage",
     "s1desc": "Dites-nous ce dont vous avez besoin. Nous en faisons une proposition claire et à prix fixe en 24 heures.",
@@ -136,6 +136,14 @@
     "q4": {
       "q": "Puis-je résilier mon retainer ?",
       "a": "Oui. Sans engagement. Résiliez avec 30 jours de préavis. Nous méritons votre confiance chaque mois par la rapidité et la qualité — pas par des contrats."
+    },
+    "q5": {
+      "q": "Et si le livrable ne répond pas à mes attentes ?",
+      "a": "Nous itérons jusqu'à ce qu'il les satisfasse. Notre processus comprend une phase de révision avant la remise finale. Si quelque chose ne va pas, nous le corrigeons sans frais supplémentaires. Nous ne considérons pas un projet terminé tant que vous n'êtes pas satisfait."
+    },
+    "q6": {
+      "q": "Signez-vous des NDAs ?",
+      "a": "Oui. Nous signons des NDAs avant tout partage d'informations sensibles. Toutes les données client et le contexte métier sont traités comme confidentiels. Nous ne faisons jamais référence aux projets clients dans nos propres supports sans permission explicite."
     }
   },
   "cta": {

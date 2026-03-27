@@ -90,7 +90,7 @@ function PricingCard({
       <ul className="space-y-4 flex-1">
         {features.map((feature, i) => (
           <li key={i} className="flex items-start gap-3 text-sm text-gray-600">
-            <span className="text-gray-400 flex-shrink-0 mt-0.5">—</span>
+            <span className="text-[#00D4AA] flex-shrink-0 mt-0.5 text-base">✓</span>
             <span className="leading-snug">{feature}</span>
           </li>
         ))}
@@ -161,10 +161,7 @@ export default function Pricing() {
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">
             {t('label')}
           </p>
-          <h2
-            className="text-4xl lg:text-5xl text-[#0A0A0A] leading-tight mb-4"
-            style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
-          >
+          <h2 className="text-3xl lg:text-4xl font-semibold text-[#0A0A0A] leading-tight mb-4">
             {t('title')}
           </h2>
           <p className="text-gray-500 text-sm mb-8">
@@ -204,14 +201,28 @@ export default function Pricing() {
           ))}
         </div>
 
+        {/* Enterprise tier */}
+        <div className="mt-6 border border-[#E5E5E5] p-8 lg:p-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">— ENTERPRISE</p>
+            <h3 className="text-xl font-semibold text-[#0A0A0A] mb-2">Custom engagement</h3>
+            <p className="text-sm text-gray-500 max-w-xl">For organizations with complex infrastructure needs, compliance requirements, or multi-team rollouts. Dedicated team, SLA included, custom pricing.</p>
+          </div>
+          <div className="flex-shrink-0">
+            <a href="mailto:hello@pragmas.io" className="border border-[#0A0A0A] px-8 py-3 text-sm hover:bg-black hover:text-white transition-colors whitespace-nowrap">
+              Contact us →
+            </a>
+          </div>
+        </div>
+
         {/* Bottom note */}
         <p className="text-sm text-gray-400 mt-8">
           All prices in USD.{' '}
           <a
             href="mailto:hello@pragmas.io"
-            className="text-[#2563EB] hover:underline transition-colors"
+            className="text-[#0A0A0A] hover:underline transition-colors"
           >
-            Need a custom arrangement?
+            Need a custom arrangement? See Enterprise above or email us.
           </a>
         </p>
       </div>

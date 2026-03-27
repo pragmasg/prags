@@ -7,10 +7,7 @@ export default function CTA() {
     <section className="bg-[#0D1117] py-32">
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Heading */}
-        <h2
-          className="text-4xl lg:text-6xl text-white leading-tight mb-6"
-          style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
-        >
+        <h2 className="text-4xl lg:text-5xl text-white font-semibold leading-tight mb-6">
           {t('title')}
         </h2>
 
@@ -29,12 +26,16 @@ export default function CTA() {
           </a>
 
           <a
-            href="mailto:hello@pragmas.io"
-            className="text-sm text-gray-400 underline underline-offset-4 hover:text-white transition-colors duration-200"
+            href="https://calendly.com/pragmas/30min"
+            target="_blank"
+            rel="noopener"
+            className="text-sm text-white border border-white/30 px-8 py-3 hover:border-white transition-colors"
           >
-            {t('email')}
+            Book a 20-min call →
           </a>
         </div>
+
+        <p className="text-xs text-gray-500 mt-6">No commitment. No discovery sprints. Scope document within 24h.</p>
       </div>
     </section>
   );

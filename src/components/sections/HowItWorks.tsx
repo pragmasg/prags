@@ -29,10 +29,7 @@ export default function HowItWorks() {
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">
             {t('label')}
           </p>
-          <h2
-            className="text-4xl lg:text-5xl text-[#0A0A0A] leading-tight max-w-2xl"
-            style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
-          >
+          <h2 className="text-3xl lg:text-5xl font-semibold text-[#0A0A0A] leading-tight max-w-3xl">
             {t('title')}
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mt-4 max-w-2xl">
@@ -45,28 +42,41 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <div
               key={step.number}
-              className={`pt-8 pb-8 ${
+              className={`pt-8 pb-8 relative ${
                 index < steps.length - 1 ? 'md:pr-12 md:border-r border-[#E5E5E5]' : ''
               } ${index > 0 ? 'md:pl-12' : ''}`}
             >
-              {/* Number */}
+              {/* Large background number decoration */}
               <p
-                className="text-5xl text-[#E5E5E5] mb-6 leading-none"
+                className="text-8xl text-[#F0F0F0] leading-none absolute top-4 right-4 select-none pointer-events-none"
                 style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
+                aria-hidden="true"
               >
                 {step.number}
               </p>
 
-              {/* Step title */}
-              <h3
-                className="text-xl text-[#0A0A0A] mb-4 leading-snug"
-                style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
+              {/* Numbered label */}
+              <p
+                className="text-xs uppercase tracking-widest text-gray-400 mb-4 mt-16 relative z-10"
+                style={{ fontFamily: 'var(--font-mono, monospace)' }}
               >
+                {step.number}
+              </p>
+
+              {/* Step title — IBM Plex Sans, NOT mono */}
+              <h3 className="text-xl font-semibold text-[#0A0A0A] mb-4 leading-snug relative z-10">
                 {step.title}
               </h3>
 
+              {/* Arrow connector */}
+              {index < steps.length - 1 && (
+                <span className="hidden md:block absolute top-12 -right-4 text-[#CCCCCC] text-2xl leading-none z-20 select-none">
+                  →
+                </span>
+              )}
+
               {/* Description */}
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <p className="text-sm text-gray-500 leading-relaxed relative z-10">
                 {step.desc}
               </p>
             </div>
