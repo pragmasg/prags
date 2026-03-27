@@ -18,8 +18,11 @@ export default function TechStack() {
           {stack.map((item, i) => (
             <div
               key={item.name}
-              className={`p-6 text-center ${i < stack.length - 1 ? 'border-r border-[#E5E5E5]' : ''} hover:bg-[#FAFAF8] transition-colors`}
+              className={`group p-6 text-center border-b-2 border-transparent hover:border-[#00D4AA] transition-colors duration-200 ${
+                i < stack.length - 1 ? 'border-r border-[#E5E5E5]' : ''
+              } hover:bg-[#FAFAF8]`}
             >
+              <p className="text-xs uppercase tracking-widest text-[#00D4AA] mb-2">{item.category}</p>
               <p className="text-sm font-semibold text-[#0A0A0A] mb-1">{item.name}</p>
               <p className="text-xs text-gray-400">{item.desc}</p>
             </div>

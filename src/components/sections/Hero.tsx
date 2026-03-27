@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import CubeLogo from '@/components/ui/CubeLogo';
 
 function TerminalMockup() {
   return (
@@ -61,13 +62,16 @@ export default function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="min-h-screen flex items-center bg-white">
+    <section className="min-h-screen flex items-center bg-white bg-grid">
       <div className="max-w-7xl mx-auto px-6 py-24 lg:py-32 w-full">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div>
-            <p className="text-xs uppercase tracking-widest text-gray-400 mb-8">
-              {t('label')}
-            </p>
+            <div className="flex items-center gap-3 mb-8">
+              <CubeLogo size={18} />
+              <p className="text-xs uppercase tracking-widest text-gray-400">
+                {t('label')}
+              </p>
+            </div>
             <h1
               className="text-4xl lg:text-6xl leading-tight text-[#0A0A0A] mb-8"
               style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}

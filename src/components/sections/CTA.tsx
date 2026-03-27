@@ -4,7 +4,7 @@ export default function CTA() {
   const t = useTranslations('cta');
 
   return (
-    <section className="bg-[#0D1117] py-32">
+    <section className="bg-[#0D1117] bg-grid-dark py-32">
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Heading */}
         <h2 className="text-4xl lg:text-5xl text-white font-semibold leading-tight mb-6">

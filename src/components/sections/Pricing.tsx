@@ -48,8 +48,8 @@ function PricingCard({
       {/* Header */}
       <div className="mb-8">
         {isPopular && popular && (
-          <p className="text-xs uppercase tracking-widest text-[#0A0A0A] font-medium mb-3">
-            {popular}
+          <p className="text-xs uppercase tracking-widest text-[#00D4AA] font-medium mb-3">
+            ● {popular}
           </p>
         )}
         <h3 className="text-lg font-medium text-[#0A0A0A] mb-2">{name}</h3>

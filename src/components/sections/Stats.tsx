@@ -21,10 +21,7 @@ export default function Stats() {
                 index < stats.length - 1 ? 'md:border-r border-white/10' : ''
               } ${index < 2 ? 'border-b md:border-b-0 border-white/10' : ''}`}
             >
-              <span
-                className="text-4xl text-white mb-3"
-                style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
-              >
+              <span className="text-4xl text-[#00D4AA] mb-3">
                 {stat.value}
               </span>
               <span className="text-xs uppercase tracking-widest text-gray-400">

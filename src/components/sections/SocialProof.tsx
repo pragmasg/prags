@@ -14,14 +14,17 @@ export default function SocialProof() {
         <p className="text-xs uppercase tracking-widest text-gray-400 mb-8 text-center">
           — INDUSTRIES WE WORK WITH
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {sectors.map((sector) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 border border-[#E5E5E5]">
+          {sectors.map((sector, i) => (
             <div
               key={sector.name}
-              className="text-center py-6 px-4 border border-[#E5E5E5] bg-white hover:border-[#0A0A0A] transition-colors"
+              className={`group text-center py-8 px-4 bg-white hover:bg-[#0A0A0A] transition-colors duration-200 ${
+                i < sectors.length - 1 ? 'border-r border-[#E5E5E5]' : ''
+              }`}
             >
-              <p className="text-sm font-medium text-[#0A0A0A] mb-1">{sector.name}</p>
-              <p className="text-xs text-gray-400 leading-tight">{sector.desc}</p>
+              <div className="w-1.5 h-1.5 bg-[#00D4AA] mx-auto mb-3" />
+              <p className="text-sm font-medium text-[#0A0A0A] group-hover:text-white mb-1 transition-colors">{sector.name}</p>
+              <p className="text-xs text-gray-400 group-hover:text-gray-500 leading-tight transition-colors">{sector.desc}</p>
             </div>
           ))}
         </div>
