@@ -5,19 +5,19 @@ export default function HowItWorks() {
 
   const steps = [
     {
-      number: '01',
-      title: t('step1.title'),
-      desc: t('step1.desc'),
+      number: t('s1num'),
+      title: t('s1title'),
+      desc: t('s1desc'),
     },
     {
-      number: '02',
-      title: t('step2.title'),
-      desc: t('step2.desc'),
+      number: t('s2num'),
+      title: t('s2title'),
+      desc: t('s2desc'),
     },
     {
-      number: '03',
-      title: t('step3.title'),
-      desc: t('step3.desc'),
+      number: t('s3num'),
+      title: t('s3title'),
+      desc: t('s3desc'),
     },
   ];
 
@@ -27,14 +27,17 @@ export default function HowItWorks() {
         {/* Section header */}
         <div className="mb-16">
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">
-            — HOW WE WORK
+            {t('label')}
           </p>
           <h2
             className="text-4xl lg:text-5xl text-[#0A0A0A] leading-tight max-w-2xl"
-            style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+            style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
           >
-            From brief to deployment in days, not months.
+            {t('title')}
           </h2>
+          <p className="text-gray-500 text-base leading-relaxed mt-4 max-w-2xl">
+            {t('subtitle')}
+          </p>
         </div>
 
         {/* Steps */}
@@ -49,7 +52,7 @@ export default function HowItWorks() {
               {/* Number */}
               <p
                 className="text-5xl text-[#E5E5E5] mb-6 leading-none"
-                style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+                style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
               >
                 {step.number}
               </p>
@@ -57,7 +60,7 @@ export default function HowItWorks() {
               {/* Step title */}
               <h3
                 className="text-xl text-[#0A0A0A] mb-4 leading-snug"
-                style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+                style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
               >
                 {step.title}
               </h3>

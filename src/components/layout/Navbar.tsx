@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
+import CubeLogo from '@/components/ui/CubeLogo';
 
 const locales = [
   { code: 'en', label: 'EN', name: 'English' },
@@ -20,6 +21,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [currentLocale, setCurrentLocale] = useState('en');
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const lang = document.documentElement.lang;
@@ -39,9 +41,22 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
+  // Close mobile menu on outside click
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const handleClick = (e: MouseEvent) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target as Node)) {
+        setMobileOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [mobileOpen]);
+
   const handleLocaleChange = (locale: string) => {
     setCurrentLocale(locale);
     setLangOpen(false);
+    setMobileOpen(false);
     router.replace(pathname, { locale });
   };
 
@@ -53,12 +68,13 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center gap-2.5 text-[#0A0A0A] hover:opacity-80 transition-opacity">
+              <CubeLogo size={22} />
               <span
-                className="text-[#0A0A0A] text-sm font-semibold tracking-widest uppercase"
-                style={{ fontFamily: 'var(--font-sans, Inter, sans-serif)' }}
+                className="text-sm font-semibold tracking-widest uppercase"
+                style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
               >
-                PRAGMAS
+                Pragmas
               </span>
             </Link>
 
@@ -80,7 +96,7 @@ export default function Navbar() {
                 href="/about"
                 className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
               >
-                About
+                {t('about')}
               </Link>
             </div>
 
@@ -127,7 +143,7 @@ export default function Navbar() {
                 href="/login"
                 className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
               >
-                Sign in
+                {t('login')}
               </Link>
 
               {/* Get in touch button */}
@@ -135,16 +151,29 @@ export default function Navbar() {
                 href="/get-started"
                 className="border border-black px-4 py-2 text-sm text-[#0A0A0A] hover:bg-black hover:text-white transition-colors duration-200"
               >
-                Get in touch
+                {t('getStarted')}
               </Link>
             </div>
 
-            {/* Mobile menu trigger */}
+            {/* Mobile hamburger trigger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              className="md:hidden flex flex-col justify-center items-center gap-1.5 w-8 h-8 text-[#0A0A0A]"
+              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             >
-              {mobileOpen ? 'Close' : 'Menu'}
+              {mobileOpen ? (
+                <>
+                  <span className="block w-5 h-px bg-current rotate-45 translate-y-[5px] transition-all duration-200" />
+                  <span className="block w-5 h-px bg-current opacity-0 transition-all duration-200" />
+                  <span className="block w-5 h-px bg-current -rotate-45 -translate-y-[5px] transition-all duration-200" />
+                </>
+              ) : (
+                <>
+                  <span className="block w-5 h-px bg-current transition-all duration-200" />
+                  <span className="block w-5 h-px bg-current transition-all duration-200" />
+                  <span className="block w-5 h-px bg-current transition-all duration-200" />
+                </>
+              )}
             </button>
           </div>
         </div>
@@ -154,10 +183,13 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="fixed inset-0 z-40 md:hidden">
           <div
-            className="absolute inset-0 bg-white/80"
+            className="absolute inset-0 bg-black/20"
             onClick={() => setMobileOpen(false)}
           />
-          <div className="absolute top-16 left-0 right-0 bg-white border-b border-[#E5E5E5] px-6 py-8">
+          <div
+            ref={mobileMenuRef}
+            className="absolute top-16 left-0 right-0 bg-white border-b border-[#E5E5E5] px-6 py-8 shadow-lg"
+          >
             <div className="flex flex-col gap-6 mb-8">
               <Link
                 href="/#services"
@@ -178,7 +210,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="text-base text-gray-700 hover:text-gray-900 transition-colors"
               >
-                About
+                {t('about')}
               </Link>
             </div>
 
@@ -208,14 +240,14 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="text-center py-3 border border-[#E5E5E5] text-gray-700 text-sm hover:border-gray-400 transition-colors"
               >
-                Sign in
+                {t('login')}
               </Link>
               <Link
                 href="/get-started"
                 onClick={() => setMobileOpen(false)}
                 className="text-center py-3 bg-[#0A0A0A] text-white text-sm hover:bg-[#1F2937] transition-colors"
               >
-                Get in touch
+                {t('getStarted')}
               </Link>
             </div>
           </div>

@@ -35,7 +35,7 @@ function ServiceRow({ number, name, desc, learnMore, isLast }: ServiceRowProps) 
           <div className="col-span-10 lg:col-span-4">
             <h3
               className="text-2xl lg:text-3xl text-[#0A0A0A] leading-snug"
-              style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+              style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
             >
               {name}
             </h3>
@@ -51,7 +51,7 @@ function ServiceRow({ number, name, desc, learnMore, isLast }: ServiceRowProps) 
           {/* Explore link */}
           <div className="col-span-12 lg:col-span-2 lg:text-right flex lg:justify-end items-center">
             <span className="text-sm text-gray-400 hover:text-gray-900 transition-colors">
-              {learnMore} →
+              {learnMore}
             </span>
           </div>
         </div>
@@ -65,19 +65,19 @@ export default function Services() {
 
   const services = [
     {
-      number: '01',
-      name: t('analytics.name'),
-      desc: t('analytics.desc'),
+      number: t('s1num'),
+      name: t('s1name'),
+      desc: t('s1desc'),
     },
     {
-      number: '02',
-      name: t('automation.name'),
-      desc: t('automation.desc'),
+      number: t('s2num'),
+      name: t('s2name'),
+      desc: t('s2desc'),
     },
     {
-      number: '03',
-      name: t('ai.name'),
-      desc: t('ai.desc'),
+      number: t('s3num'),
+      name: t('s3name'),
+      desc: t('s3desc'),
     },
   ];
 
@@ -86,14 +86,17 @@ export default function Services() {
       {/* Section header */}
       <div className="max-w-7xl mx-auto px-6 mb-16">
         <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">
-          — WHAT WE DO
+          {t('label')}
         </p>
         <h2
           className="text-4xl lg:text-5xl text-[#0A0A0A] leading-tight max-w-2xl"
-          style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+          style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
         >
-          Three practice areas. One outcome: growth.
+          {t('title')}
         </h2>
+        <p className="text-gray-500 text-base leading-relaxed mt-4 max-w-2xl">
+          {t('subtitle')}
+        </p>
       </div>
 
       {/* Service rows */}

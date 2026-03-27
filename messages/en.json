@@ -3,104 +3,112 @@
     "home": "Home",
     "services": "Services",
     "pricing": "Pricing",
-    "blog": "Blog",
-    "login": "Login",
-    "getStarted": "Get Started"
+    "about": "About",
+    "login": "Sign in",
+    "getStarted": "Get in touch"
   },
   "hero": {
-    "badge": "AI-powered tools for growing businesses",
-    "title": "AI-powered tools for",
-    "titleHighlight": "startups and SMEs",
-    "subtitle": "Skip the agency. Get analytics dashboards, automation workflows, and AI tools — built for you, priced for startups.",
-    "cta": "Get Started",
+    "label": "AI · ANALYTICS · AUTOMATION",
+    "title": "The automation gap is costing you more than you think.",
+    "subtitle": "Your team is spending hours on work that should run itself. We build the AI infrastructure to fix that — delivered in days, not months.",
+    "cta": "Start a project",
     "ctaSecondary": "See how it works",
-    "trustedBy": "Trusted by 100+ startups worldwide"
-  },
-  "stats": {
-    "clients": "100+",
-    "clientsLabel": "Clients Served",
-    "retention": "94%",
-    "retentionLabel": "Avg. Retention",
-    "savings": "40h/mo",
-    "savingsLabel": "Time Saved",
-    "support": "24/7",
-    "supportLabel": "Support Available"
-  },
-  "services": {
-    "title": "Everything you need to scale",
-    "subtitle": "Three powerful services designed to take your business from data chaos to automated growth.",
-    "analytics": {
-      "name": "Analytics Dashboards",
-      "desc": "Turn your data into decisions with embedded, branded analytics dashboards. Real-time insights tailored to your KPIs."
-    },
-    "automation": {
-      "name": "Automation Workflows",
-      "desc": "Eliminate repetitive tasks with n8n-powered automations tailored to your stack. Connect any tool, automate any process."
-    },
-    "ai": {
-      "name": "AI-Powered Tools",
-      "desc": "Deploy Claude-powered assistants and tools — customer support, data extraction, content generation. All on your brand."
-    },
-    "learnMore": "Learn more"
-  },
-  "howItWorks": {
-    "title": "Simple process, powerful results",
-    "subtitle": "We take the complexity out of digital transformation. From kickoff to launch in days, not months.",
-    "step1": {
-      "title": "Choose your service",
-      "desc": "Tell us what you need — analytics, automation, or AI. We'll scope the project and give you a clear quote with no surprises."
-    },
-    "step2": {
-      "title": "We build & deliver",
-      "desc": "Our team gets to work immediately. You get updates, a staging environment, and can provide feedback throughout the process."
-    },
-    "step3": {
-      "title": "You grow",
-      "desc": "Launch your new capabilities and watch your metrics improve. We provide ongoing support and iterations as you scale."
+    "trustLine": "Fixed-price projects. No agency overhead. You own the code.",
+    "panel": {
+      "header": "What you get",
+      "m1": "Days, not months",
+      "m1label": "Typical delivery time",
+      "m2": "Fixed price",
+      "m2label": "No scope creep, ever",
+      "m3": "Source code included",
+      "m3label": "You own everything built",
+      "m4": "5 languages",
+      "m4label": "EN · ES · PT · FR · DE"
     }
   },
+  "stats": {
+    "v1": "3–5 days",
+    "v1label": "Average delivery",
+    "v2": "Fixed price",
+    "v2label": "No hidden fees",
+    "v3": "You own the code",
+    "v3label": "Full IP transfer",
+    "v4": "5 languages",
+    "v4label": "Global ready"
+  },
+  "services": {
+    "label": "— WHAT WE DO",
+    "title": "Three practice areas. One outcome: growth.",
+    "subtitle": "We don't sell software. We build the infrastructure that makes your business run without you.",
+    "s1num": "01",
+    "s1name": "Analytics & Intelligence",
+    "s1desc": "Stop guessing. Turn your raw data into real-time dashboards that surface the decisions you actually need to make.",
+    "s2num": "02",
+    "s2name": "Automation & Workflows",
+    "s2desc": "Every hour your team spends on repetitive work is an hour not spent on growth. We automate the former so you can focus on the latter.",
+    "s3num": "03",
+    "s3name": "AI-Powered Products",
+    "s3desc": "Deploy AI assistants, extractors, and generators trained on your business context — not generic prompts.",
+    "learnMore": "Explore →",
+    "custom": "Need something specific?",
+    "talk": "Talk to us →"
+  },
+  "howItWorks": {
+    "label": "— HOW WE WORK",
+    "title": "From brief to deployment in days, not months.",
+    "subtitle": "No discovery sprints. No lengthy proposals. We scope, build, and ship fast.",
+    "s1num": "01",
+    "s1title": "Brief & scope",
+    "s1desc": "Tell us what you need. We turn it into a clear, fixed-price proposal within 24 hours.",
+    "s2num": "02",
+    "s2title": "Build & iterate",
+    "s2desc": "We build in the open. You get a staging link on day one and can provide feedback throughout.",
+    "s3num": "03",
+    "s3title": "Ship & own",
+    "s3desc": "We hand over everything: source code, documentation, and full IP. No lock-in, no dependencies."
+  },
   "pricing": {
-    "title": "Transparent pricing, no surprises",
-    "subtitle": "Startup-friendly pricing that scales with you. No retainers required to get started.",
+    "label": "— ENGAGEMENT MODELS",
+    "title": "Choose how we work together.",
+    "subtitle": "Transparent pricing. No hidden fees. Cancel anytime.",
     "monthly": "Monthly",
-    "annual": "Annual",
-    "save": "Save 20%",
+    "annual": "Annual (save 20%)",
     "starter": {
-      "name": "Starter",
-      "desc": "Perfect for startups needing a one-time build",
-      "price": "$299",
+      "name": "Project",
+      "desc": "A single, fixed-scope delivery for teams that know what they need.",
+      "price": "From $299",
       "priceSuffix": "one-time",
-      "cta": "Get Started",
+      "cta": "Start a project",
       "features": [
         "One custom dashboard or workflow",
         "Up to 3 data source integrations",
         "Mobile-responsive design",
         "2 weeks of post-launch support",
-        "Source code included"
+        "Full source code included"
       ]
     },
     "growth": {
-      "name": "Growth",
-      "desc": "Ongoing partnership for fast-moving teams",
+      "name": "Retainer",
+      "desc": "An ongoing partnership for teams moving fast and shipping constantly.",
       "price": "$499",
       "priceSuffix": "/month",
-      "cta": "Start Retainer",
-      "popular": "Most Popular",
+      "cta": "Start retainer",
+      "popular": "Most requested",
       "features": [
-        "Everything in Starter",
-        "Up to 4 projects per month",
-        "Priority 24h turnaround",
+        "Everything in Project",
+        "Up to 4 deliverables per month",
+        "24h priority turnaround",
         "Unlimited revisions",
-        "Dedicated Slack channel",
-        "Monthly strategy call"
+        "Dedicated async channel",
+        "Monthly strategy session"
       ]
     },
     "platform": {
       "name": "Platform",
-      "desc": "Self-serve access to all Pragmas tools",
+      "desc": "Self-serve access to our entire library of templates, tools, and automations.",
       "price": "$49",
       "priceSuffix": "/month",
-      "cta": "Access Platform",
+      "cta": "Access platform",
       "features": [
         "Full dashboard template library",
         "Pre-built automation workflows",
@@ -111,32 +119,33 @@
     }
   },
   "faq": {
-    "title": "Frequently asked questions",
-    "subtitle": "Everything you need to know about Pragmas and how we work.",
+    "label": "— FAQ",
+    "title": "Common questions.",
     "q1": {
-      "q": "How quickly can you deliver a project?",
-      "a": "Most Starter projects are delivered within 5-10 business days. Growth retainer clients get priority turnaround of 24-48 hours per request. Platform subscribers get immediate access to all templates and tools."
+      "q": "How fast is the typical delivery?",
+      "a": "Most project-tier deliveries are completed within 3–5 business days. Retainer clients get priority: new requests are scoped and started within 24 hours of submission."
     },
     "q2": {
       "q": "What tech stack do you use?",
-      "a": "We work with the modern stack: Next.js, Supabase, n8n for automations, Metabase or custom React dashboards for analytics, and Anthropic Claude for AI features. We adapt to your existing stack where needed."
+      "a": "We work with modern, open-source tools: Next.js, Supabase, n8n for automations, and Anthropic Claude for AI features. We adapt to your existing stack — we don't impose ours."
     },
     "q3": {
       "q": "Do I own the code and data?",
-      "a": "Absolutely. All deliverables are yours. Starter and Growth clients receive full source code. Your data stays in your infrastructure — we never store client data on our servers."
+      "a": "Always. Every deliverable includes full source code and documentation. Your data stays in your infrastructure — we never store client data on our systems."
     },
     "q4": {
-      "q": "Can I cancel my retainer anytime?",
-      "a": "Yes, no lock-in contracts. Cancel anytime with 30 days notice. We believe in earning your business every month with quality and speed."
+      "q": "Can I cancel my retainer?",
+      "a": "Yes. No lock-in. Cancel with 30 days notice. We earn your business every month through speed and quality — not contracts."
     }
   },
   "cta": {
-    "title": "Ready to build smarter?",
-    "subtitle": "Join 100+ startups already using Pragmas to automate, analyze, and accelerate their growth.",
-    "button": "Start Your Project"
+    "title": "Ready to stop doing manually what AI can do in hours?",
+    "subtitle": "Start with a single project. No commitment, no discovery sprints, no sales pitch.",
+    "button": "Start a project",
+    "email": "Or email us →"
   },
   "footer": {
-    "description": "AI-powered tools and digital consultancy for startups and SMEs. Build faster, grow smarter.",
+    "description": "AI infrastructure and automation for startups and growing businesses.",
     "services": "Services",
     "company": "Company",
     "legal": "Legal",

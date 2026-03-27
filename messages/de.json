@@ -3,106 +3,114 @@
     "home": "Startseite",
     "services": "Leistungen",
     "pricing": "Preise",
-    "blog": "Blog",
+    "about": "Über uns",
     "login": "Anmelden",
-    "getStarted": "Loslegen"
+    "getStarted": "Kontakt aufnehmen"
   },
   "hero": {
-    "badge": "KI-gestützte Tools für wachsende Unternehmen",
-    "title": "KI-gestützte Tools für",
-    "titleHighlight": "Startups und KMU",
-    "subtitle": "Keine Agentur mehr nötig. Erhalten Sie Analyse-Dashboards, Automatisierungs-Workflows und KI-Tools — für Sie entwickelt, zu Startup-Preisen.",
-    "cta": "Jetzt loslegen",
+    "label": "KI · ANALYTICS · AUTOMATISIERUNG",
+    "title": "Die Automatisierungslücke kostet Sie mehr als Sie denken.",
+    "subtitle": "Ihr Team verbringt Stunden mit Arbeit, die von selbst laufen sollte. Wir bauen die KI-Infrastruktur, um das zu beheben — geliefert in Tagen, nicht Monaten.",
+    "cta": "Projekt starten",
     "ctaSecondary": "So funktioniert es",
-    "trustedBy": "Über 100 Startups vertrauen uns"
-  },
-  "stats": {
-    "clients": "100+",
-    "clientsLabel": "Betreute Kunden",
-    "retention": "94%",
-    "retentionLabel": "Ø Kundenbindung",
-    "savings": "40h/Monat",
-    "savingsLabel": "Zeitersparnis",
-    "support": "24/7",
-    "supportLabel": "Support verfügbar"
-  },
-  "services": {
-    "title": "Alles, was Sie zum Skalieren brauchen",
-    "subtitle": "Drei leistungsstarke Services, die Ihr Unternehmen vom Datenchaos zu automatisiertem Wachstum führen.",
-    "analytics": {
-      "name": "Analyse-Dashboards",
-      "desc": "Verwandeln Sie Ihre Daten in Entscheidungen mit eingebetteten, gebrandeten Analyse-Dashboards. Echtzeit-Einblicke, angepasst an Ihre KPIs."
-    },
-    "automation": {
-      "name": "Automatisierungs-Workflows",
-      "desc": "Eliminieren Sie repetitive Aufgaben mit n8n-gestützten Automatisierungen, die auf Ihren Stack zugeschnitten sind. Verbinden Sie beliebige Tools, automatisieren Sie beliebige Prozesse."
-    },
-    "ai": {
-      "name": "KI-gestützte Tools",
-      "desc": "Setzen Sie Claude-gestützte Assistenten und Tools ein — Kundensupport, Datenextraktion, Content-Erstellung. Alles unter Ihrer Marke."
-    },
-    "learnMore": "Mehr erfahren"
-  },
-  "howItWorks": {
-    "title": "Einfacher Prozess, starke Ergebnisse",
-    "subtitle": "Wir nehmen die Komplexität aus der digitalen Transformation. Vom Kickoff bis zum Launch in Tagen, nicht Monaten.",
-    "step1": {
-      "title": "Wählen Sie Ihren Service",
-      "desc": "Sagen Sie uns, was Sie brauchen — Analyse, Automatisierung oder KI. Wir definieren das Projekt und geben Ihnen ein klares Angebot ohne Überraschungen."
-    },
-    "step2": {
-      "title": "Wir bauen und liefern",
-      "desc": "Unser Team beginnt sofort. Sie erhalten Updates, eine Staging-Umgebung und können während des gesamten Prozesses Feedback geben."
-    },
-    "step3": {
-      "title": "Sie wachsen",
-      "desc": "Starten Sie Ihre neuen Funktionen und beobachten Sie, wie sich Ihre Kennzahlen verbessern. Wir bieten laufenden Support und Iterationen, während Sie skalieren."
+    "trustLine": "Festpreisprojekte. Kein Agenturaufwand. Der Code gehört Ihnen.",
+    "panel": {
+      "header": "Was Sie erhalten",
+      "m1": "Tage, nicht Monate",
+      "m1label": "Typische Lieferzeit",
+      "m2": "Festpreis",
+      "m2label": "Kein Scope-Creep",
+      "m3": "Quellcode inklusive",
+      "m3label": "Alles Gebaute gehört Ihnen",
+      "m4": "5 Sprachen",
+      "m4label": "EN · ES · PT · FR · DE"
     }
   },
+  "stats": {
+    "v1": "3–5 Tage",
+    "v1label": "Durchschnittliche Lieferung",
+    "v2": "Festpreis",
+    "v2label": "Keine versteckten Kosten",
+    "v3": "Code gehört Ihnen",
+    "v3label": "Vollständige IP-Übertragung",
+    "v4": "5 Sprachen",
+    "v4label": "Global einsatzbereit"
+  },
+  "services": {
+    "label": "— WAS WIR TUN",
+    "title": "Drei Fachbereiche. Ein Ergebnis: Wachstum.",
+    "subtitle": "Wir verkaufen keine Software. Wir bauen die Infrastruktur, die Ihr Unternehmen ohne Sie am Laufen hält.",
+    "s1num": "01",
+    "s1name": "Analytics & Intelligence",
+    "s1desc": "Hören Sie auf zu raten. Verwandeln Sie Ihre Rohdaten in Echtzeit-Dashboards, die die Entscheidungen aufzeigen, die Sie wirklich treffen müssen.",
+    "s2num": "02",
+    "s2name": "Automatisierung & Workflows",
+    "s2desc": "Jede Stunde, die Ihr Team mit repetitiver Arbeit verbringt, ist eine Stunde, die nicht in Wachstum investiert wird. Wir automatisieren ersteres, damit Sie sich auf letzteres konzentrieren können.",
+    "s3num": "03",
+    "s3name": "KI-gestützte Produkte",
+    "s3desc": "Setzen Sie KI-Assistenten, Extraktoren und Generatoren ein, die auf den Kontext Ihres Unternehmens trainiert sind — keine generischen Prompts.",
+    "learnMore": "Entdecken →",
+    "custom": "Brauchen Sie etwas Spezifisches?",
+    "talk": "Sprechen Sie mit uns →"
+  },
+  "howItWorks": {
+    "label": "— UNSERE ARBEITSWEISE",
+    "title": "Vom Brief zum Deployment in Tagen, nicht Monaten.",
+    "subtitle": "Keine Discovery-Sprints. Keine langen Angebote. Wir definieren, bauen und liefern schnell.",
+    "s1num": "01",
+    "s1title": "Brief & Umfang",
+    "s1desc": "Sagen Sie uns, was Sie brauchen. Wir machen daraus ein klares Festpreisangebot innerhalb von 24 Stunden.",
+    "s2num": "02",
+    "s2title": "Bauen & iterieren",
+    "s2desc": "Wir bauen transparent. Sie erhalten am ersten Tag einen Staging-Link und können jederzeit Feedback geben.",
+    "s3num": "03",
+    "s3title": "Liefern & besitzen",
+    "s3desc": "Wir übergeben alles: Quellcode, Dokumentation und vollständiges geistiges Eigentum. Kein Lock-in, keine Abhängigkeiten."
+  },
   "pricing": {
-    "title": "Transparente Preise, keine Überraschungen",
-    "subtitle": "Startup-freundliche Preise, die mit Ihnen skalieren. Kein Retainer erforderlich, um zu starten.",
+    "label": "— ZUSAMMENARBEITSMODELLE",
+    "title": "Wählen Sie, wie wir zusammenarbeiten.",
+    "subtitle": "Transparente Preise. Keine versteckten Kosten. Jederzeit kündbar.",
     "monthly": "Monatlich",
-    "annual": "Jährlich",
-    "save": "20% sparen",
+    "annual": "Jährlich (20% sparen)",
     "starter": {
-      "name": "Starter",
-      "desc": "Perfekt für Startups, die einen einmaligen Aufbau benötigen",
-      "price": "$299",
+      "name": "Projekt",
+      "desc": "Eine Lieferung mit festem Umfang für Teams, die wissen, was sie brauchen.",
+      "price": "Ab $299",
       "priceSuffix": "einmalig",
-      "cta": "Loslegen",
+      "cta": "Projekt starten",
       "features": [
-        "Ein benutzerdefiniertes Dashboard oder Workflow",
+        "Ein individuelles Dashboard oder Workflow",
         "Bis zu 3 Datenquellen-Integrationen",
         "Mobile-responsives Design",
         "2 Wochen Post-Launch-Support",
-        "Quellcode inklusive"
+        "Vollständiger Quellcode inklusive"
       ]
     },
     "growth": {
-      "name": "Growth",
-      "desc": "Laufende Partnerschaft für schnell wachsende Teams",
+      "name": "Retainer",
+      "desc": "Eine laufende Partnerschaft für Teams, die schnell vorankommen und ständig liefern.",
       "price": "$499",
       "priceSuffix": "/Monat",
       "cta": "Retainer starten",
-      "popular": "Am beliebtesten",
+      "popular": "Am häufigsten gewählt",
       "features": [
-        "Alles aus dem Starter-Plan",
-        "Bis zu 4 Projekte pro Monat",
-        "Priorisierte Lieferung in 24h",
+        "Alles aus dem Projektplan",
+        "Bis zu 4 Lieferables pro Monat",
+        "Priorität mit 24h-Lieferung",
         "Unbegrenzte Überarbeitungen",
-        "Dedizierter Slack-Kanal",
-        "Monatliches Strategiegespräch"
+        "Dedizierter asynchroner Kanal",
+        "Monatliche Strategiesitzung"
       ]
     },
     "platform": {
-      "name": "Platform",
-      "desc": "Self-Service-Zugang zu allen Pragmas-Tools",
+      "name": "Plattform",
+      "desc": "Self-Service-Zugang zu unserer gesamten Bibliothek an Templates, Tools und Automatisierungen.",
       "price": "$49",
       "priceSuffix": "/Monat",
       "cta": "Plattform nutzen",
       "features": [
-        "Vollständige Dashboard-Vorlagenbibliothek",
+        "Vollständige Dashboard-Template-Bibliothek",
         "Vorgefertigte Automatisierungs-Workflows",
         "KI-Tools-Playground",
         "Community & Dokumentation",
@@ -111,32 +119,33 @@
     }
   },
   "faq": {
-    "title": "Häufig gestellte Fragen",
-    "subtitle": "Alles, was Sie über Pragmas und unsere Arbeitsweise wissen müssen.",
+    "label": "— FAQ",
+    "title": "Häufige Fragen.",
     "q1": {
-      "q": "Wie schnell können Sie ein Projekt liefern?",
-      "a": "Die meisten Starter-Projekte werden innerhalb von 5-10 Werktagen geliefert. Growth-Retainer-Kunden erhalten eine priorisierte Lieferung von 24-48 Stunden pro Anfrage. Platform-Abonnenten haben sofortigen Zugang zu allen Vorlagen und Tools."
+      "q": "Wie schnell ist die typische Lieferung?",
+      "a": "Die meisten Projektlieferungen werden innerhalb von 3–5 Werktagen abgeschlossen. Retainer-Kunden haben Priorität: Neue Anfragen werden innerhalb von 24 Stunden nach Eingang definiert und gestartet."
     },
     "q2": {
       "q": "Welchen Tech-Stack verwenden Sie?",
-      "a": "Wir arbeiten mit dem modernen Stack: Next.js, Supabase, n8n für Automatisierungen, Metabase oder benutzerdefinierte React-Dashboards für Analysen und Anthropic Claude für KI-Funktionen. Wir passen uns bei Bedarf Ihrem bestehenden Stack an."
+      "a": "Wir arbeiten mit modernen Open-Source-Tools: Next.js, Supabase, n8n für Automatisierungen und Anthropic Claude für KI-Funktionen. Wir passen uns Ihrem bestehenden Stack an — wir zwingen Ihnen unseren nicht auf."
     },
     "q3": {
       "q": "Besitze ich den Code und die Daten?",
-      "a": "Absolut. Alle Lieferables gehören Ihnen. Starter- und Growth-Kunden erhalten den vollständigen Quellcode. Ihre Daten verbleiben in Ihrer Infrastruktur — wir speichern niemals Kundendaten auf unseren Servern."
+      "a": "Immer. Jedes Deliverable enthält vollständigen Quellcode und Dokumentation. Ihre Daten verbleiben in Ihrer Infrastruktur — wir speichern niemals Kundendaten auf unseren Systemen."
     },
     "q4": {
-      "q": "Kann ich meinen Retainer jederzeit kündigen?",
-      "a": "Ja, ohne Bindungsverträge. Kündigen Sie jederzeit mit 30 Tagen Vorankündigung. Wir glauben daran, Ihr Vertrauen jeden Monat durch Qualität und Schnelligkeit zu verdienen."
+      "q": "Kann ich meinen Retainer kündigen?",
+      "a": "Ja. Kein Lock-in. Kündigung mit 30 Tagen Vorankündigung. Wir verdienen Ihr Vertrauen jeden Monat durch Geschwindigkeit und Qualität — nicht durch Verträge."
     }
   },
   "cta": {
-    "title": "Bereit, intelligenter zu bauen?",
-    "subtitle": "Schließen Sie sich über 100 Startups an, die Pragmas bereits nutzen, um zu automatisieren, zu analysieren und ihr Wachstum zu beschleunigen.",
-    "button": "Projekt starten"
+    "title": "Bereit aufzuhören, manuell zu tun, was KI in Stunden erledigt?",
+    "subtitle": "Starten Sie mit einem einzigen Projekt. Kein Engagement, keine Discovery-Sprints, kein Verkaufsgespräch.",
+    "button": "Projekt starten",
+    "email": "Oder schreiben Sie uns →"
   },
   "footer": {
-    "description": "KI-gestützte Tools und digitale Beratung für Startups und KMU. Schneller bauen, klüger wachsen.",
+    "description": "KI-Infrastruktur und Automatisierung für Startups und wachsende Unternehmen.",
     "services": "Leistungen",
     "company": "Unternehmen",
     "legal": "Rechtliches",

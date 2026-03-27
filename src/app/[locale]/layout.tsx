@@ -1,21 +1,22 @@
 import type { Metadata } from 'next';
-import { DM_Serif_Display, Inter } from 'next/font/google';
+import { IBM_Plex_Mono, IBM_Plex_Sans } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
 
-const inter = Inter({
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
   variable: '--font-sans',
   display: 'swap',
 });
 
-const dmSerif = DM_Serif_Display({
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
-  weight: '400',
-  variable: '--font-serif',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-mono',
   display: 'swap',
 });
 
@@ -29,6 +30,9 @@ export const metadata: Metadata = {
   keywords: ['AI infrastructure', 'automation', 'analytics', 'consultancy', 'SME', 'workflow'],
   authors: [{ name: 'Pragmas' }],
   creator: 'Pragmas',
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -70,7 +74,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${dmSerif.variable}`} suppressHydrationWarning>
+    <html lang={locale} className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`} suppressHydrationWarning>
       <body className="bg-white text-[#0a0a0a] antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}

@@ -9,14 +9,14 @@ export default function CTA() {
         {/* Heading */}
         <h2
           className="text-4xl lg:text-6xl text-white leading-tight mb-6"
-          style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+          style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
         >
-          Ready to build smarter infrastructure?
+          {t('title')}
         </h2>
 
         {/* Subtitle */}
         <p className="text-gray-400 text-base leading-relaxed max-w-xl mx-auto mb-12">
-          Let's start with a 30-minute call. No commitment, no sales pitch.
+          {t('subtitle')}
         </p>
 
         {/* CTAs */}
@@ -25,14 +25,14 @@ export default function CTA() {
             href="/get-started"
             className="border border-white px-8 py-3 text-sm text-white hover:bg-white hover:text-[#0D1117] transition-colors duration-200"
           >
-            Schedule a call
+            {t('button')}
           </a>
 
           <a
             href="mailto:hello@pragmas.io"
             className="text-sm text-gray-400 underline underline-offset-4 hover:text-white transition-colors duration-200"
           >
-            Or email us →
+            {t('email')}
           </a>
         </div>
       </div>

@@ -11,6 +11,7 @@ interface PricingCardProps {
   cta: string;
   features: string[];
   isPopular?: boolean;
+  popular?: string;
   isAnnual: boolean;
 }
 
@@ -22,6 +23,7 @@ function PricingCard({
   cta,
   features,
   isPopular,
+  popular,
   isAnnual,
 }: PricingCardProps) {
   const numericPrice = parseInt(price.replace(/[^0-9]/g, ''), 10);
@@ -45,9 +47,9 @@ function PricingCard({
     >
       {/* Header */}
       <div className="mb-8">
-        {isPopular && (
+        {isPopular && popular && (
           <p className="text-xs uppercase tracking-widest text-[#0A0A0A] font-medium mb-3">
-            Most popular
+            {popular}
           </p>
         )}
         <h3 className="text-lg font-medium text-[#0A0A0A] mb-2">{name}</h3>
@@ -59,7 +61,7 @@ function PricingCard({
         <div className="flex items-end gap-2">
           <span
             className="text-4xl text-[#0A0A0A]"
-            style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+            style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
           >
             {displayPrice}
           </span>
@@ -132,6 +134,7 @@ export default function Pricing() {
         t('growth.features.5'),
       ],
       isPopular: true,
+      popular: t('growth.popular'),
     },
     {
       name: t('platform.name'),
@@ -156,16 +159,16 @@ export default function Pricing() {
         {/* Section header */}
         <div className="mb-12">
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">
-            — ENGAGEMENT MODELS
+            {t('label')}
           </p>
           <h2
             className="text-4xl lg:text-5xl text-[#0A0A0A] leading-tight mb-4"
-            style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+            style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
           >
-            Choose how we work together.
+            {t('title')}
           </h2>
           <p className="text-gray-500 text-sm mb-8">
-            Transparent pricing. No hidden fees. Cancel anytime.
+            {t('subtitle')}
           </p>
 
           {/* Billing toggle */}
@@ -178,7 +181,7 @@ export default function Pricing() {
                   : 'text-gray-400 hover:text-gray-600'
               }`}
             >
-              Monthly
+              {t('monthly')}
             </button>
             <span className="text-gray-300">·</span>
             <button
@@ -189,8 +192,7 @@ export default function Pricing() {
                   : 'text-gray-400 hover:text-gray-600'
               }`}
             >
-              Annual{' '}
-              <span className="text-gray-400 font-normal">(save 20%)</span>
+              {t('annual')}
             </button>
           </div>
         </div>

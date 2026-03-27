@@ -4,10 +4,10 @@ export default function Stats() {
   const t = useTranslations('stats');
 
   const stats = [
-    { value: t('clients'), label: t('clientsLabel') },
-    { value: t('retention'), label: t('retentionLabel') },
-    { value: t('savings'), label: t('savingsLabel') },
-    { value: t('support'), label: t('supportLabel') },
+    { value: t('v1'), label: t('v1label') },
+    { value: t('v2'), label: t('v2label') },
+    { value: t('v3'), label: t('v3label') },
+    { value: t('v4'), label: t('v4label') },
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function Stats() {
             >
               <span
                 className="text-4xl text-white mb-3"
-                style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+                style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
               >
                 {stat.value}
               </span>

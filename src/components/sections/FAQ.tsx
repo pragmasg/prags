@@ -56,13 +56,13 @@ export default function FAQ() {
         {/* Section header */}
         <div className="mb-12">
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">
-            — FAQ
+            {t('label')}
           </p>
           <h2
             className="text-4xl lg:text-5xl text-[#0A0A0A] leading-tight"
-            style={{ fontFamily: 'var(--font-serif, "DM Serif Display", serif)' }}
+            style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
           >
-            Common questions.
+            {t('title')}
           </h2>
         </div>
 

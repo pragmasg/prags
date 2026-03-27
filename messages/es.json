@@ -3,146 +3,155 @@
     "home": "Inicio",
     "services": "Servicios",
     "pricing": "Precios",
-    "blog": "Blog",
+    "about": "Nosotros",
     "login": "Iniciar sesión",
-    "getStarted": "Comenzar"
+    "getStarted": "Contáctanos"
   },
   "hero": {
-    "badge": "Herramientas con IA para negocios en crecimiento",
-    "title": "Herramientas con IA para",
-    "titleHighlight": "startups y PYMEs",
-    "subtitle": "Olvídate de la agencia. Obtén dashboards de análisis, flujos de automatización y herramientas de IA — construidos para ti, con precios para startups.",
-    "cta": "Comenzar ahora",
+    "label": "IA · ANALÍTICA · AUTOMATIZACIÓN",
+    "title": "La brecha de automatización te está costando más de lo que crees.",
+    "subtitle": "Tu equipo dedica horas a trabajo que debería ejecutarse solo. Construimos la infraestructura de IA para solucionarlo — entregada en días, no en meses.",
+    "cta": "Iniciar un proyecto",
     "ctaSecondary": "Ver cómo funciona",
-    "trustedBy": "Más de 100 startups confían en nosotros"
-  },
-  "stats": {
-    "clients": "100+",
-    "clientsLabel": "Clientes Atendidos",
-    "retention": "94%",
-    "retentionLabel": "Retención Promedio",
-    "savings": "40h/mes",
-    "savingsLabel": "Tiempo Ahorrado",
-    "support": "24/7",
-    "supportLabel": "Soporte Disponible"
-  },
-  "services": {
-    "title": "Todo lo que necesitas para escalar",
-    "subtitle": "Tres servicios poderosos diseñados para llevar tu negocio del caos de datos al crecimiento automatizado.",
-    "analytics": {
-      "name": "Dashboards de Análisis",
-      "desc": "Convierte tus datos en decisiones con dashboards de análisis embebidos y personalizados. Insights en tiempo real adaptados a tus KPIs."
-    },
-    "automation": {
-      "name": "Flujos de Automatización",
-      "desc": "Elimina las tareas repetitivas con automatizaciones n8n adaptadas a tu stack. Conecta cualquier herramienta, automatiza cualquier proceso."
-    },
-    "ai": {
-      "name": "Herramientas con IA",
-      "desc": "Despliega asistentes y herramientas con Claude — soporte al cliente, extracción de datos, generación de contenido. Todo bajo tu marca."
-    },
-    "learnMore": "Saber más"
-  },
-  "howItWorks": {
-    "title": "Proceso simple, resultados poderosos",
-    "subtitle": "Eliminamos la complejidad de la transformación digital. Del inicio al lanzamiento en días, no meses.",
-    "step1": {
-      "title": "Elige tu servicio",
-      "desc": "Cuéntanos qué necesitas — análisis, automatización o IA. Definiremos el proyecto y te daremos una cotización clara sin sorpresas."
-    },
-    "step2": {
-      "title": "Construimos y entregamos",
-      "desc": "Nuestro equipo comienza de inmediato. Recibirás actualizaciones, un entorno de staging y podrás dar retroalimentación durante todo el proceso."
-    },
-    "step3": {
-      "title": "Tú creces",
-      "desc": "Lanza tus nuevas capacidades y observa cómo mejoran tus métricas. Ofrecemos soporte continuo e iteraciones mientras escalas."
+    "trustLine": "Proyectos a precio fijo. Sin sobrecoste de agencia. El código es tuyo.",
+    "panel": {
+      "header": "Qué obtienes",
+      "m1": "Días, no meses",
+      "m1label": "Tiempo de entrega habitual",
+      "m2": "Precio fijo",
+      "m2label": "Sin cambios de alcance",
+      "m3": "Código fuente incluido",
+      "m3label": "Todo lo construido es tuyo",
+      "m4": "5 idiomas",
+      "m4label": "EN · ES · PT · FR · DE"
     }
   },
+  "stats": {
+    "v1": "3–5 días",
+    "v1label": "Entrega media",
+    "v2": "Precio fijo",
+    "v2label": "Sin costes ocultos",
+    "v3": "El código es tuyo",
+    "v3label": "Transferencia total de PI",
+    "v4": "5 idiomas",
+    "v4label": "Listo para el mundo"
+  },
+  "services": {
+    "label": "— QUÉ HACEMOS",
+    "title": "Tres áreas de práctica. Un resultado: crecimiento.",
+    "subtitle": "No vendemos software. Construimos la infraestructura que hace que tu negocio funcione sin ti.",
+    "s1num": "01",
+    "s1name": "Analítica e Inteligencia",
+    "s1desc": "Deja de adivinar. Convierte tus datos en dashboards en tiempo real que muestran las decisiones que realmente necesitas tomar.",
+    "s2num": "02",
+    "s2name": "Automatización y Flujos",
+    "s2desc": "Cada hora que tu equipo dedica a trabajo repetitivo es una hora que no se invierte en crecer. Automatizamos lo primero para que puedas centrarte en lo segundo.",
+    "s3num": "03",
+    "s3name": "Productos con IA",
+    "s3desc": "Despliega asistentes, extractores y generadores de IA entrenados en el contexto de tu negocio — no prompts genéricos.",
+    "learnMore": "Explorar →",
+    "custom": "¿Necesitas algo específico?",
+    "talk": "Hablemos →"
+  },
+  "howItWorks": {
+    "label": "— CÓMO TRABAJAMOS",
+    "title": "Del briefing al despliegue en días, no en meses.",
+    "subtitle": "Sin sprints de descubrimiento. Sin propuestas interminables. Definimos, construimos y entregamos rápido.",
+    "s1num": "01",
+    "s1title": "Brief y alcance",
+    "s1desc": "Cuéntanos qué necesitas. Lo convertimos en una propuesta clara y a precio fijo en menos de 24 horas.",
+    "s2num": "02",
+    "s2title": "Construir e iterar",
+    "s2desc": "Construimos en abierto. Tienes un enlace de staging desde el primer día y puedes dar feedback en cualquier momento.",
+    "s3num": "03",
+    "s3title": "Entregar y ser dueño",
+    "s3desc": "Te entregamos todo: código fuente, documentación y propiedad intelectual completa. Sin dependencias, sin ataduras."
+  },
   "pricing": {
-    "title": "Precios transparentes, sin sorpresas",
-    "subtitle": "Precios amigables para startups que escalan contigo. No se requieren retenciones para comenzar.",
+    "label": "— MODELOS DE COLABORACIÓN",
+    "title": "Elige cómo trabajamos juntos.",
+    "subtitle": "Precios transparentes. Sin costes ocultos. Cancela cuando quieras.",
     "monthly": "Mensual",
-    "annual": "Anual",
-    "save": "Ahorra 20%",
+    "annual": "Anual (ahorra 20%)",
     "starter": {
-      "name": "Starter",
-      "desc": "Perfecto para startups que necesitan un desarrollo único",
-      "price": "$299",
+      "name": "Proyecto",
+      "desc": "Una entrega de alcance fijo para equipos que saben lo que necesitan.",
+      "price": "Desde $299",
       "priceSuffix": "pago único",
-      "cta": "Comenzar",
+      "cta": "Iniciar un proyecto",
       "features": [
-        "Un dashboard o flujo personalizado",
+        "Un dashboard o flujo de trabajo personalizado",
         "Hasta 3 integraciones de fuentes de datos",
-        "Diseño adaptable a móvil",
+        "Diseño adaptado a móvil",
         "2 semanas de soporte post-lanzamiento",
-        "Código fuente incluido"
+        "Código fuente completo incluido"
       ]
     },
     "growth": {
-      "name": "Growth",
-      "desc": "Alianza continua para equipos en rápido movimiento",
+      "name": "Retainer",
+      "desc": "Una colaboración continua para equipos que se mueven rápido y entregan constantemente.",
       "price": "$499",
       "priceSuffix": "/mes",
-      "cta": "Iniciar Retención",
-      "popular": "Más Popular",
+      "cta": "Iniciar retainer",
+      "popular": "Más solicitado",
       "features": [
-        "Todo lo del plan Starter",
-        "Hasta 4 proyectos por mes",
-        "Entrega prioritaria en 24h",
+        "Todo lo del Plan Proyecto",
+        "Hasta 4 entregables al mes",
+        "Prioridad con entrega en 24h",
         "Revisiones ilimitadas",
-        "Canal dedicado en Slack",
-        "Llamada estratégica mensual"
+        "Canal asíncrono dedicado",
+        "Sesión estratégica mensual"
       ]
     },
     "platform": {
-      "name": "Platform",
-      "desc": "Acceso de autoservicio a todas las herramientas de Pragmas",
+      "name": "Plataforma",
+      "desc": "Acceso self-serve a toda nuestra biblioteca de plantillas, herramientas y automatizaciones.",
       "price": "$49",
       "priceSuffix": "/mes",
-      "cta": "Acceder a la Plataforma",
+      "cta": "Acceder a la plataforma",
       "features": [
-        "Biblioteca completa de plantillas de dashboards",
-        "Flujos de automatización pre-construidos",
-        "Playground de herramientas IA",
+        "Biblioteca completa de plantillas de dashboard",
+        "Flujos de automatización predefinidos",
+        "Playground de herramientas de IA",
         "Comunidad y documentación",
-        "Acceso a API"
+        "Acceso a la API"
       ]
     }
   },
   "faq": {
-    "title": "Preguntas frecuentes",
-    "subtitle": "Todo lo que necesitas saber sobre Pragmas y cómo trabajamos.",
+    "label": "— FAQ",
+    "title": "Preguntas frecuentes.",
     "q1": {
-      "q": "¿Qué tan rápido pueden entregar un proyecto?",
-      "a": "La mayoría de los proyectos Starter se entregan en 5-10 días hábiles. Los clientes del retainer Growth tienen entrega prioritaria de 24-48 horas por solicitud. Los suscriptores de Platform tienen acceso inmediato a todas las plantillas y herramientas."
+      "q": "¿Cuánto tarda una entrega típica?",
+      "a": "La mayoría de los proyectos de nivel básico se completan en 3–5 días hábiles. Los clientes con retainer tienen prioridad: las nuevas solicitudes se definen y se inician en menos de 24 horas."
     },
     "q2": {
-      "q": "¿Qué stack tecnológico utilizan?",
-      "a": "Trabajamos con el stack moderno: Next.js, Supabase, n8n para automatizaciones, Metabase o dashboards React personalizados para análisis, y Anthropic Claude para funcionalidades de IA. Nos adaptamos a tu stack existente cuando es necesario."
+      "q": "¿Qué stack tecnológico usáis?",
+      "a": "Trabajamos con herramientas modernas y de código abierto: Next.js, Supabase, n8n para automatizaciones y Anthropic Claude para funcionalidades de IA. Nos adaptamos a tu stack existente — no imponemos el nuestro."
     },
     "q3": {
       "q": "¿Soy dueño del código y los datos?",
-      "a": "Absolutamente. Todos los entregables son tuyos. Los clientes de Starter y Growth reciben el código fuente completo. Tus datos permanecen en tu infraestructura — nunca almacenamos datos de clientes en nuestros servidores."
+      "a": "Siempre. Cada entregable incluye el código fuente completo y documentación. Tus datos permanecen en tu infraestructura — nunca almacenamos datos de clientes en nuestros sistemas."
     },
     "q4": {
-      "q": "¿Puedo cancelar mi retainer en cualquier momento?",
-      "a": "Sí, sin contratos de permanencia. Cancela cuando quieras con 30 días de aviso. Creemos en ganar tu negocio cada mes con calidad y rapidez."
+      "q": "¿Puedo cancelar mi retainer?",
+      "a": "Sí. Sin permanencia. Cancela con 30 días de preaviso. Nos ganamos tu confianza cada mes con velocidad y calidad — no con contratos."
     }
   },
   "cta": {
-    "title": "¿Listo para construir de manera más inteligente?",
-    "subtitle": "Únete a más de 100 startups que ya utilizan Pragmas para automatizar, analizar y acelerar su crecimiento.",
-    "button": "Inicia tu Proyecto"
+    "title": "¿Listo para dejar de hacer manualmente lo que la IA puede hacer en horas?",
+    "subtitle": "Empieza con un único proyecto. Sin compromiso, sin sprints de descubrimiento, sin pitch de ventas.",
+    "button": "Iniciar un proyecto",
+    "email": "O escríbenos →"
   },
   "footer": {
-    "description": "Herramientas con IA y consultoría digital para startups y PYMEs. Construye más rápido, crece de manera más inteligente.",
+    "description": "Infraestructura de IA y automatización para startups y empresas en crecimiento.",
     "services": "Servicios",
     "company": "Empresa",
     "legal": "Legal",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio",
-    "cookies": "Política de Cookies",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio",
+    "cookies": "Política de cookies",
     "rights": "Todos los derechos reservados."
   }
 }
