@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function BlogSubscribeForm() {
+  const t = useTranslations('blog');
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
@@ -13,9 +15,7 @@ export default function BlogSubscribeForm() {
 
   if (subscribed) {
     return (
-      <p className="text-sm text-[#0A0A0A] font-medium">
-        You're on the list. We'll be in touch.
-      </p>
+      <p className="text-sm text-[#00D4AA] font-medium">{t('subscribeSuccess')}</p>
     );
   }
 
@@ -24,16 +24,16 @@ export default function BlogSubscribeForm() {
       <input
         type="email"
         required
-        placeholder="your@email.com"
+        placeholder={t('subscribePlaceholder')}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="border border-[#E5E5E5] px-4 py-3 text-sm focus:outline-none focus:border-[#0A0A0A] w-full md:w-64 bg-white"
+        className="border border-white/[0.08] px-4 py-3 text-sm text-[#F5F5F5] placeholder-[#555555] focus:outline-none focus:border-white/30 transition-colors w-full md:w-64 bg-[#0A0A0A]"
       />
       <button
         type="submit"
-        className="bg-black text-white px-6 py-3 text-sm hover:bg-gray-900 transition-colors shrink-0"
+        className="bg-[#00D4AA] text-[#0A0A0A] px-6 py-3 text-sm font-bold hover:bg-white transition-colors shrink-0"
       >
-        Subscribe
+        {t('subscribeCta')}
       </button>
     </form>
   );

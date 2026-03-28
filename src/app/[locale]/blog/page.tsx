@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import BlogSubscribeForm from './BlogSubscribeForm';
@@ -9,78 +10,69 @@ export const metadata: Metadata = {
     'Practical guides on AI, automation, and data infrastructure. We write about what we build.',
 };
 
-const articles = [
-  {
-    title: 'How we build a custom analytics dashboard in 4 days',
-    category: 'Analytics',
-    readTime: '8 min read',
-    description:
-      'A step-by-step breakdown of our process: from connecting the data sources to delivering a production-ready dashboard with real-time KPIs.',
-  },
-  {
-    title: 'The 5 workflows every ops team should automate in 2026',
-    category: 'Automation',
-    readTime: '6 min read',
-    description:
-      'Lead routing, invoice processing, onboarding sequences — the specific automations that consistently deliver the highest ROI for growing teams.',
-  },
-  {
-    title: 'Why we charge fixed prices for AI projects (and why it works)',
-    category: 'Business',
-    readTime: '5 min read',
-    description:
-      'Hourly billing creates misaligned incentives. Fixed pricing forces us to scope well, move fast, and deliver — without the ambiguity.',
-  },
-];
+export default async function BlogPage() {
+  const t = await getTranslations('blog');
 
-export default function BlogPage() {
+  const articles = [
+    {
+      title: t('a1title'),
+      category: t('a1category'),
+      readTime: t('a1readTime'),
+      description: t('a1desc'),
+    },
+    {
+      title: t('a2title'),
+      category: t('a2category'),
+      readTime: t('a2readTime'),
+      description: t('a2desc'),
+    },
+    {
+      title: t('a3title'),
+      category: t('a3category'),
+      readTime: t('a3readTime'),
+      description: t('a3desc'),
+    },
+  ];
+
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0A0A0A]">
       <Navbar />
 
       {/* Header */}
-      <section className="max-w-7xl mx-auto px-6 py-24 border-b border-[#E5E5E5]">
-        <span className="text-xs tracking-widest uppercase text-gray-500">— INSIGHTS</span>
-        <h1
-          className="text-4xl md:text-5xl font-semibold text-[#0A0A0A] mt-6 max-w-3xl leading-tight"
-          style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
-        >
-          Practical guides on AI, automation, and data infrastructure.
+      <section className="max-w-7xl mx-auto px-6 py-24 border-b border-white/[0.08]">
+        <span className="text-xs tracking-widest uppercase text-[#00D4AA]">{t('label')}</span>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#F5F5F5] mt-6 max-w-3xl leading-tight">
+          {t('title')}
         </h1>
-        <p className="mt-6 text-lg text-gray-500 max-w-2xl">
-          We write about what we build. Real implementations, real problems, real solutions.
-        </p>
+        <p className="mt-6 text-lg text-[#999999] max-w-2xl">{t('subtitle')}</p>
       </section>
 
       {/* Article grid */}
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {articles.map((article) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/[0.08]">
+          {articles.map((article, i) => (
             <article
               key={article.title}
-              className="border border-[#E5E5E5] p-8 flex flex-col gap-4"
+              className={`p-8 flex flex-col gap-4 hover:bg-white/[0.03] transition-colors ${
+                i < 2 ? 'border-r border-white/[0.08]' : ''
+              }`}
             >
               <div className="flex items-center justify-between">
-                <span className="text-xs uppercase tracking-widest text-gray-500 border border-[#E5E5E5] px-2 py-1">
+                <span className="text-xs uppercase tracking-widest text-[#00D4AA] border border-[#00D4AA]/30 px-2 py-1">
                   {article.category}
                 </span>
-                <span className="text-xs bg-[#FAFAF8] border border-[#E5E5E5] px-2 py-1 text-gray-400">
-                  Coming soon
+                <span className="text-xs border border-white/[0.08] px-2 py-1 text-[#555555]">
+                  {t('comingSoon')}
                 </span>
               </div>
 
-              <h2
-                className="text-base font-semibold text-[#0A0A0A] leading-snug"
-                style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
-              >
-                {article.title}
-              </h2>
+              <h2 className="text-base font-bold text-[#F5F5F5] leading-snug">{article.title}</h2>
 
-              <p className="text-sm text-gray-500 leading-relaxed flex-1">{article.description}</p>
+              <p className="text-sm text-[#999999] leading-relaxed flex-1">{article.description}</p>
 
-              <div className="flex items-center justify-between pt-4 border-t border-[#E5E5E5]">
-                <span className="text-xs text-gray-400">{article.readTime}</span>
-                <span className="text-xs text-gray-400 italic">Not yet published</span>
+              <div className="flex items-center justify-between pt-4 border-t border-white/[0.08]">
+                <span className="text-xs text-[#555555]">{article.readTime}</span>
+                <span className="text-xs text-[#555555] italic">{t('notPublished')}</span>
               </div>
             </article>
           ))}
@@ -89,15 +81,10 @@ export default function BlogPage() {
 
       {/* Subscribe */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
-        <div className="border border-[#E5E5E5] bg-[#FAFAF8] p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+        <div className="border border-white/[0.08] bg-[#111111] p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
-            <h3
-              className="text-xl font-semibold text-[#0A0A0A] mb-2"
-              style={{ fontFamily: 'var(--font-mono, "IBM Plex Mono", monospace)' }}
-            >
-              Subscribe to be notified when we publish.
-            </h3>
-            <p className="text-sm text-gray-500">No spam. Only articles worth reading.</p>
+            <h3 className="text-xl font-bold text-[#F5F5F5] mb-2">{t('subscribeTitle')}</h3>
+            <p className="text-sm text-[#999999]">{t('subscribeSubtitle')}</p>
           </div>
           <BlogSubscribeForm />
         </div>
