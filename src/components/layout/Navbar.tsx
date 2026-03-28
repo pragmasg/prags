@@ -82,19 +82,19 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-8">
               <Link
                 href="/#services"
-                className="text-sm text-[#999999] hover:text-white transition-colors duration-200"
+                className="text-sm text-[#BBBBBB] hover:text-white transition-colors duration-200"
               >
                 {t('services')}
               </Link>
               <Link
                 href="/#pricing"
-                className="text-sm text-[#999999] hover:text-white transition-colors duration-200"
+                className="text-sm text-[#BBBBBB] hover:text-white transition-colors duration-200"
               >
                 {t('pricing')}
               </Link>
               <Link
                 href="/about"
-                className="text-sm text-[#999999] hover:text-white transition-colors duration-200"
+                className="text-sm text-[#BBBBBB] hover:text-white transition-colors duration-200"
               >
                 {t('about')}
               </Link>
@@ -106,7 +106,7 @@ export default function Navbar() {
               <div className="relative">
                 <button
                   onClick={() => setLangOpen(!langOpen)}
-                  className="text-sm text-[#999999] hover:text-white transition-colors duration-200 flex items-center gap-1"
+                  className="text-sm text-[#BBBBBB] hover:text-white transition-colors duration-200 flex items-center gap-1"
                 >
                   {currentLang.label}
                   <span className="text-xs">↓</span>
@@ -126,7 +126,7 @@ export default function Navbar() {
                           className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-colors duration-150 text-left ${
                             currentLocale === locale.code
                               ? 'text-white font-medium bg-white/[0.06]'
-                              : 'text-[#999999] hover:text-white hover:bg-white/[0.04]'
+                              : 'text-[#BBBBBB] hover:text-white hover:bg-white/[0.04]'
                           }`}
                         >
                           <span className="font-semibold text-xs w-6">{locale.label}</span>
@@ -141,7 +141,7 @@ export default function Navbar() {
               {/* Sign in link */}
               <Link
                 href="/login"
-                className="text-sm text-[#999999] hover:text-white transition-colors duration-200"
+                className="text-sm text-[#BBBBBB] hover:text-white transition-colors duration-200"
               >
                 {t('login')}
               </Link>
@@ -149,7 +149,7 @@ export default function Navbar() {
               {/* Get in touch button */}
               <Link
                 href="/get-started"
-                className="bg-[#00D4AA] text-[#0A0A0A] font-semibold text-sm px-4 py-2 hover:bg-white hover:shadow-[0_0_20px_rgba(0,212,170,0.4)] transition-all duration-200"
+                className="bg-[#F97316] text-[#0A0A0A] font-semibold text-sm px-4 py-2 hover:bg-white hover:shadow-[0_0_20px_rgba(0,212,170,0.4)] transition-all duration-200"
               >
                 {t('getStarted')}
               </Link>
@@ -194,21 +194,21 @@ export default function Navbar() {
               <Link
                 href="/#services"
                 onClick={() => setMobileOpen(false)}
-                className="text-base text-[#999999] hover:text-white transition-colors"
+                className="text-base text-[#BBBBBB] hover:text-white transition-colors"
               >
                 {t('services')}
               </Link>
               <Link
                 href="/#pricing"
                 onClick={() => setMobileOpen(false)}
-                className="text-base text-[#999999] hover:text-white transition-colors"
+                className="text-base text-[#BBBBBB] hover:text-white transition-colors"
               >
                 {t('pricing')}
               </Link>
               <Link
                 href="/about"
                 onClick={() => setMobileOpen(false)}
-                className="text-base text-[#999999] hover:text-white transition-colors"
+                className="text-base text-[#BBBBBB] hover:text-white transition-colors"
               >
                 {t('about')}
               </Link>
@@ -216,7 +216,7 @@ export default function Navbar() {
 
             {/* Mobile language switcher */}
             <div className="mb-8">
-              <p className="text-xs uppercase tracking-widest text-[#999999] mb-3">Language</p>
+              <p className="text-xs uppercase tracking-widest text-[#BBBBBB] mb-3">Language</p>
               <div className="flex flex-wrap gap-2">
                 {locales.map((locale) => (
                   <button
@@ -224,8 +224,8 @@ export default function Navbar() {
                     onClick={() => handleLocaleChange(locale.code)}
                     className={`px-3 py-1.5 text-sm border transition-colors ${
                       currentLocale === locale.code
-                        ? 'border-[#00D4AA] text-[#00D4AA]'
-                        : 'border-white/[0.08] text-[#999999] hover:border-white/[0.16] hover:text-white'
+                        ? 'border-[#F97316] text-[#F97316]'
+                        : 'border-white/[0.08] text-[#BBBBBB] hover:border-white/[0.16] hover:text-white'
                     }`}
                   >
                     {locale.label}
@@ -238,14 +238,14 @@ export default function Navbar() {
               <Link
                 href="/login"
                 onClick={() => setMobileOpen(false)}
-                className="text-center py-3 border border-white/[0.08] text-[#999999] text-sm hover:border-white/[0.16] hover:text-white transition-colors"
+                className="text-center py-3 border border-white/[0.08] text-[#BBBBBB] text-sm hover:border-white/[0.16] hover:text-white transition-colors"
               >
                 {t('login')}
               </Link>
               <Link
                 href="/get-started"
                 onClick={() => setMobileOpen(false)}
-                className="text-center py-3 bg-[#00D4AA] text-[#0A0A0A] font-semibold text-sm hover:bg-white transition-colors"
+                className="text-center py-3 bg-[#F97316] text-[#0A0A0A] font-semibold text-sm hover:bg-white transition-colors"
               >
                 {t('getStarted')}
               </Link>

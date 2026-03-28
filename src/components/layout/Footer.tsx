@@ -43,7 +43,7 @@ export default function Footer() {
           </p>
           <Link
             href="/get-started"
-            className="border border-[#00D4AA] text-[#00D4AA] px-6 py-2.5 text-sm hover:bg-[#00D4AA] hover:text-[#0A0A0A] transition-colors duration-200 whitespace-nowrap"
+            className="border border-[#F97316] text-[#F97316] px-6 py-2.5 text-sm hover:bg-[#F97316] hover:text-[#0A0A0A] transition-colors duration-200 whitespace-nowrap"
           >
             Start a project →
           </Link>

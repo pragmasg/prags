@@ -34,14 +34,14 @@ export default function CookiesPage() {
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-6 py-24">
-        <span className="text-xs tracking-widest uppercase text-[#00D4AA]">— LEGAL</span>
+        <span className="text-xs tracking-widest uppercase text-[#F97316]">— LEGAL</span>
         <h1 className="text-4xl font-bold text-[#F5F5F5] mt-6 mb-4">Cookie Policy.</h1>
-        <p className="text-sm text-[#555555] mb-12">Last updated: March 2026</p>
+        <p className="text-sm text-[#888888] mb-12">Last updated: March 2026</p>
 
         <div className="space-y-12 text-sm leading-relaxed">
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">1. What are cookies</h2>
-            <p className="text-[#999999]">
+            <p className="text-[#BBBBBB]">
               Cookies are small text files that a website stores on your device when you visit.
               They serve a range of purposes: keeping you signed in, remembering your preferences,
               or helping site owners understand how visitors use their site. Cookies are not
@@ -52,7 +52,7 @@ export default function CookiesPage() {
 
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">2. Cookies we use</h2>
-            <p className="text-[#999999] mb-6">
+            <p className="text-[#BBBBBB] mb-6">
               We keep our cookie use to the minimum required for the site to function correctly.
               We do not use advertising cookies. We do not build tracking profiles.
             </p>
@@ -79,10 +79,10 @@ export default function CookiesPage() {
                     <span className="text-sm font-medium text-[#F5F5F5] font-mono">{row.category}</span>
                   </div>
                   <div className="px-5 py-4 border-l border-white/[0.08]">
-                    <span className="text-sm text-[#999999]">{row.examples}</span>
+                    <span className="text-sm text-[#BBBBBB]">{row.examples}</span>
                   </div>
                   <div className="px-5 py-4 border-l border-white/[0.08]">
-                    <span className="text-sm text-[#999999]">{row.purpose}</span>
+                    <span className="text-sm text-[#BBBBBB]">{row.purpose}</span>
                   </div>
                 </div>
               ))}
@@ -91,13 +91,13 @@ export default function CookiesPage() {
 
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">3. Third-party cookies</h2>
-            <p className="text-[#999999] mb-4">
+            <p className="text-[#BBBBBB] mb-4">
               Our website is hosted on Vercel. As part of their infrastructure, Vercel may set
               cookies related to edge delivery, bot protection, and their own platform analytics.
               These are governed by Vercel&apos;s own privacy and cookie policies, which you can review
               on the Vercel website.
             </p>
-            <p className="text-[#999999]">
+            <p className="text-[#BBBBBB]">
               We do not embed third-party advertising networks, social media widgets, or analytics
               scripts that would set their own cookies on your device.
             </p>
@@ -105,15 +105,15 @@ export default function CookiesPage() {
 
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">4. Managing cookies</h2>
-            <p className="text-[#999999] mb-4">
+            <p className="text-[#BBBBBB] mb-4">
               You can control and delete cookies through your browser settings. Most browsers allow you to:
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-[#999999] mb-4">
+            <ul className="list-disc pl-6 space-y-2 text-[#BBBBBB] mb-4">
               <li>View and delete individual cookies stored by specific sites</li>
               <li>Block all cookies by default, or block cookies from specific domains</li>
               <li>Set your browser to notify you before a cookie is stored</li>
             </ul>
-            <p className="text-[#999999]">
+            <p className="text-[#BBBBBB]">
               Note that disabling essential cookies will prevent the authenticated areas of the
               site (such as your project dashboard) from working correctly. Preference cookies
               can be disabled without affecting core functionality, though your language setting
@@ -123,9 +123,9 @@ export default function CookiesPage() {
 
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">5. Contact</h2>
-            <p className="text-[#999999]">
+            <p className="text-[#BBBBBB]">
               If you have questions about how we use cookies, please contact us at{' '}
-              <a href="mailto:hello@pragmas.io" className="text-[#00D4AA] hover:underline">
+              <a href="mailto:hello@pragmas.io" className="text-[#F97316] hover:underline">
                 hello@pragmas.io
               </a>
               . We will respond within 5 business days.

@@ -35,21 +35,21 @@ export default async function AiPage() {
 
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 py-24 border-b border-white/[0.08]">
-        <span className="text-xs tracking-widest uppercase text-[#00D4AA]">{t('label')}</span>
+        <span className="text-xs tracking-widest uppercase text-[#F97316]">{t('label')}</span>
         <h1 className="text-4xl md:text-6xl font-bold text-[#F5F5F5] mt-6 max-w-4xl leading-tight">
           {t('title')}
         </h1>
-        <p className="mt-8 text-lg text-[#999999] max-w-2xl leading-relaxed">{t('subtitle')}</p>
+        <p className="mt-8 text-lg text-[#BBBBBB] max-w-2xl leading-relaxed">{t('subtitle')}</p>
         <div className="mt-10 flex flex-wrap gap-4">
           <Link
             href="/get-started"
-            className="bg-[#00D4AA] text-[#0A0A0A] px-8 py-4 text-sm font-bold hover:bg-white transition-colors"
+            className="bg-[#F97316] text-[#0A0A0A] px-8 py-4 text-sm font-bold hover:bg-white transition-colors"
           >
             {t('ctaPrimary')}
           </Link>
           <Link
             href="/#pricing"
-            className="border border-white/[0.08] px-8 py-4 text-sm text-[#999999] hover:border-white/30 hover:text-[#F5F5F5] transition-colors"
+            className="border border-white/[0.08] px-8 py-4 text-sm text-[#BBBBBB] hover:border-white/30 hover:text-[#F5F5F5] transition-colors"
           >
             {t('ctaSecondary')}
           </Link>
@@ -60,13 +60,13 @@ export default async function AiPage() {
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="text-xs tracking-widest uppercase text-[#00D4AA]">{t('includedLabel')}</span>
+            <span className="text-xs tracking-widest uppercase text-[#F97316]">{t('includedLabel')}</span>
             <h2 className="text-3xl font-bold text-[#F5F5F5] mt-6 mb-8">{t('includedTitle')}</h2>
             <ul className="space-y-4">
               {included.map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="text-[#00D4AA] text-sm shrink-0 mt-0.5">&#10003;</span>
-                  <span className="text-sm text-[#999999]">{item}</span>
+                  <span className="text-[#F97316] text-sm shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-sm text-[#BBBBBB]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -75,8 +75,8 @@ export default async function AiPage() {
           {/* Chat interface mockup */}
           <div className="border border-white/[0.08] bg-[#0F0F0F] overflow-hidden">
             <div className="bg-[#111111] border-b border-white/[0.08] px-5 py-3 flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-[#00D4AA]" />
-              <span className="text-xs text-[#555555] font-mono">Pragmas AI Assistant · Online</span>
+              <div className="w-2 h-2 rounded-full bg-[#F97316]" />
+              <span className="text-xs text-[#888888] font-mono">Pragmas AI Assistant · Online</span>
             </div>
             <div className="p-6 space-y-5">
               <div className="flex gap-3 justify-end">
@@ -85,7 +85,7 @@ export default async function AiPage() {
                 </div>
               </div>
               <div className="flex gap-3">
-                <div className="w-7 h-7 bg-[#00D4AA]/10 border border-[#00D4AA]/30 shrink-0 flex items-center justify-center text-xs font-mono text-[#00D4AA]">
+                <div className="w-7 h-7 bg-[#F97316]/10 border border-[#F97316]/30 shrink-0 flex items-center justify-center text-xs font-mono text-[#F97316]">
                   AI
                 </div>
                 <div className="border border-white/[0.08] bg-[#111111] text-sm px-4 py-3 max-w-xs leading-relaxed text-[#F5F5F5]">
@@ -100,18 +100,18 @@ export default async function AiPage() {
                 </div>
               </div>
               <div className="flex gap-3">
-                <div className="w-7 h-7 bg-[#00D4AA]/10 border border-[#00D4AA]/30 shrink-0 flex items-center justify-center text-xs font-mono text-[#00D4AA]">
+                <div className="w-7 h-7 bg-[#F97316]/10 border border-[#F97316]/30 shrink-0 flex items-center justify-center text-xs font-mono text-[#F97316]">
                   AI
                 </div>
                 <div className="border border-white/[0.08] bg-[#111111] text-sm px-4 py-3 max-w-xs leading-relaxed text-[#F5F5F5]">
                   <span className="font-medium">Accessing Billing Settings</span>
                   <br />
-                  <span className="text-[#555555] text-xs">Draft generated · 320 words</span>
+                  <span className="text-[#888888] text-xs">Draft generated · 320 words</span>
                 </div>
               </div>
             </div>
             <div className="border-t border-white/[0.08] px-5 py-3">
-              <p className="text-xs text-[#555555] italic">Illustrative — built on your data, your context</p>
+              <p className="text-xs text-[#888888] italic">Illustrative — built on your data, your context</p>
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default async function AiPage() {
       {/* Process */}
       <section className="bg-[#111111] py-24 border-y border-white/[0.08]">
         <div className="max-w-7xl mx-auto px-6">
-          <span className="text-xs tracking-widest uppercase text-[#00D4AA]">{t('processLabel')}</span>
+          <span className="text-xs tracking-widest uppercase text-[#F97316]">{t('processLabel')}</span>
           <h2 className="text-3xl font-bold text-[#F5F5F5] mt-6 mb-12">{t('processTitle')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-white/[0.08]">
             {process.map((p, i) => (
@@ -128,9 +128,9 @@ export default async function AiPage() {
                 key={p.step}
                 className={`p-8 bg-[#111111] ${i < 3 ? 'border-r border-white/[0.08]' : ''}`}
               >
-                <span className="text-xs text-[#00D4AA] font-mono">{p.step}</span>
+                <span className="text-xs text-[#F97316] font-mono">{p.step}</span>
                 <h3 className="text-base font-bold text-[#F5F5F5] mt-2 mb-3">{p.title}</h3>
-                <p className="text-sm text-[#999999] leading-relaxed">{p.desc}</p>
+                <p className="text-sm text-[#BBBBBB] leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -139,7 +139,7 @@ export default async function AiPage() {
 
       {/* Use cases */}
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <span className="text-xs tracking-widest uppercase text-[#00D4AA]">{t('useCasesLabel')}</span>
+        <span className="text-xs tracking-widest uppercase text-[#F97316]">{t('useCasesLabel')}</span>
         <h2 className="text-3xl font-bold text-[#F5F5F5] mt-6 mb-12">{t('useCasesTitle')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-white/[0.08]">
           {useCases.map((uc, i) => (
@@ -150,7 +150,7 @@ export default async function AiPage() {
               } ${i < 2 ? 'border-b border-white/[0.08]' : ''}`}
             >
               <h3 className="text-base font-bold text-[#F5F5F5] mb-3">{uc.title}</h3>
-              <p className="text-sm text-[#999999] leading-relaxed">{uc.desc}</p>
+              <p className="text-sm text-[#BBBBBB] leading-relaxed">{uc.desc}</p>
             </div>
           ))}
         </div>
@@ -160,10 +160,10 @@ export default async function AiPage() {
       <section className="bg-[#111111] py-24 border-t border-white/[0.08]">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-[#F5F5F5] mb-6">{t('ctaTitle')}</h2>
-          <p className="text-[#999999] mb-10 max-w-xl mx-auto">{t('ctaSubtitle')}</p>
+          <p className="text-[#BBBBBB] mb-10 max-w-xl mx-auto">{t('ctaSubtitle')}</p>
           <Link
             href="/get-started"
-            className="inline-block bg-[#00D4AA] text-[#0A0A0A] px-8 py-4 text-sm font-bold hover:bg-white transition-colors"
+            className="inline-block bg-[#F97316] text-[#0A0A0A] px-8 py-4 text-sm font-bold hover:bg-white transition-colors"
           >
             {t('ctaButton')}
           </Link>

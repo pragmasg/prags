@@ -27,11 +27,11 @@ export default function Stats() {
               className="bg-white/[0.03] border border-white/8 p-8 hover:bg-white/[0.06] hover:border-white/12 transition-all duration-300"
             >
               <span
-                className="text-4xl font-bold text-[#00D4AA] block"
+                className="text-4xl font-bold text-[#F97316] block"
               >
                 {stat.value}
               </span>
-              <span className="text-xs uppercase tracking-widest text-[#999999] mt-2 block">
+              <span className="text-xs uppercase tracking-widest text-[#BBBBBB] mt-2 block">
                 {stat.label}
               </span>
             </motion.div>

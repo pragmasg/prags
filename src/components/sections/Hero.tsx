@@ -16,7 +16,7 @@ function TerminalMockup() {
           <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
           <div className="w-3 h-3 rounded-full bg-[#28C840]" />
           <span
-            className="ml-4 text-xs text-[#999999]"
+            className="ml-4 text-xs text-[#BBBBBB]"
             style={{ fontFamily: 'var(--font-mono, monospace)' }}
           >
             pragmas — workflow runner
@@ -28,28 +28,28 @@ function TerminalMockup() {
           className="p-6 space-y-2 min-h-[260px]"
           style={{ fontFamily: 'var(--font-mono, monospace)' }}
         >
-          <p className="text-[#999999] text-sm">$ pragmas deploy --project invoice-automation</p>
-          <p className="text-[#00D4AA] text-sm">✓ Connected to data source (127 records)</p>
-          <p className="text-[#00D4AA] text-sm">✓ Extracted vendor &amp; amount data</p>
-          <p className="text-[#00D4AA] text-sm">✓ Validated against accounting rules</p>
-          <p className="text-[#00D4AA] text-sm">✓ Posted to accounting system</p>
-          <p className="text-[#555555] text-sm py-1">— — —</p>
+          <p className="text-[#BBBBBB] text-sm">$ pragmas deploy --project invoice-automation</p>
+          <p className="text-[#F97316] text-sm">✓ Connected to data source (127 records)</p>
+          <p className="text-[#F97316] text-sm">✓ Extracted vendor &amp; amount data</p>
+          <p className="text-[#F97316] text-sm">✓ Validated against accounting rules</p>
+          <p className="text-[#F97316] text-sm">✓ Posted to accounting system</p>
+          <p className="text-[#888888] text-sm py-1">— — —</p>
           <p className="text-white text-sm">↳ 127 invoices processed in 1.4s</p>
           <div className="pt-3">
-            <p className="text-[#999999] text-sm">$ pragmas status</p>
+            <p className="text-[#BBBBBB] text-sm">$ pragmas status</p>
           </div>
-          <p className="text-[#999999] text-sm">
-            ● Pipeline: <span className="text-[#00D4AA]">operational</span>
+          <p className="text-[#BBBBBB] text-sm">
+            ● Pipeline: <span className="text-[#F97316]">operational</span>
           </p>
-          <p className="text-[#999999] text-sm">
+          <p className="text-[#BBBBBB] text-sm">
             ● Next run: <span className="text-white">in 14 minutes</span>
           </p>
-          <p className="text-[#999999] text-sm">
-            ● Errors: <span className="text-[#00D4AA]">0</span>
+          <p className="text-[#BBBBBB] text-sm">
+            ● Errors: <span className="text-[#F97316]">0</span>
           </p>
           <div className="flex items-center gap-1 pt-3">
-            <span className="text-[#999999] text-sm">$ </span>
-            <span className="inline-block w-2 h-4 bg-[#00D4AA] animate-[blink_1s_step-end_infinite]" />
+            <span className="text-[#BBBBBB] text-sm">$ </span>
+            <span className="inline-block w-2 h-4 bg-[#F97316] animate-[blink_1s_step-end_infinite]" />
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ function TerminalMockup() {
           >
             3–5 days
           </p>
-          <p className="text-xs uppercase tracking-widest text-[#555555]">Avg. delivery</p>
+          <p className="text-xs uppercase tracking-widest text-[#888888]">Avg. delivery</p>
         </div>
         <div className="bg-[#0F0F0F] hover:bg-[#1A1A1A] transition-colors p-4 border-b border-white/8">
           <p
@@ -72,7 +72,7 @@ function TerminalMockup() {
           >
             Fixed price
           </p>
-          <p className="text-xs uppercase tracking-widest text-[#555555]">No scope creep</p>
+          <p className="text-xs uppercase tracking-widest text-[#888888]">No scope creep</p>
         </div>
         <div className="bg-[#0F0F0F] hover:bg-[#1A1A1A] transition-colors p-4 border-r border-white/8">
           <p
@@ -81,7 +81,7 @@ function TerminalMockup() {
           >
             100% yours
           </p>
-          <p className="text-xs uppercase tracking-widest text-[#555555]">Full IP transfer</p>
+          <p className="text-xs uppercase tracking-widest text-[#888888]">Full IP transfer</p>
         </div>
         <div className="bg-[#0F0F0F] hover:bg-[#1A1A1A] transition-colors p-4">
           <p
@@ -90,7 +90,7 @@ function TerminalMockup() {
           >
             5 languages
           </p>
-          <p className="text-xs uppercase tracking-widest text-[#555555]">EN · ES · PT · FR · DE</p>
+          <p className="text-xs uppercase tracking-widest text-[#888888]">EN · ES · PT · FR · DE</p>
         </div>
       </div>
     </div>
@@ -127,7 +127,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="mb-8"
             >
-              <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-widest border border-[#00D4AA]/30 text-[#00D4AA] bg-[#00D4AA]/5">
+              <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-widest border border-[#F97316]/30 text-[#F97316] bg-[#F97316]/5">
                 <CubeLogo size={14} />
                 ● AI · Analytics · Automation
               </span>
@@ -142,7 +142,7 @@ export default function Hero() {
             >
               <h1 className="text-5xl lg:text-7xl font-bold leading-[1.08] tracking-tight">
                 <span className="text-[#F5F5F5]">The automation gap{'\n'}</span>
-                <span className="text-[#00D4AA]">
+                <span className="text-[#F97316]">
                   is costing you.
                 </span>
               </h1>
@@ -155,7 +155,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
               className="mb-10"
             >
-              <p className="text-[#999999] text-lg leading-relaxed max-w-lg">
+              <p className="text-[#BBBBBB] text-lg leading-relaxed max-w-lg">
                 {t('subtitle')}
               </p>
             </motion.div>
@@ -169,19 +169,19 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row gap-4 items-start mb-10">
                 <Link
                   href="/get-started"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#00D4AA] text-[#0A0A0A] font-bold text-sm hover:bg-white transition-colors duration-200"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#F97316] text-[#0A0A0A] font-bold text-sm hover:bg-white transition-colors duration-200"
                   style={{ boxShadow: '0 0 24px rgba(0,212,170,0.35)' }}
                 >
                   Start a project →
                 </Link>
                 <Link
                   href="#how-it-works"
-                  className="inline-flex items-center gap-2 px-8 py-4 border border-white/16 text-[#999999] text-sm hover:text-white hover:border-white/30 transition-colors duration-200"
+                  className="inline-flex items-center gap-2 px-8 py-4 border border-white/16 text-[#BBBBBB] text-sm hover:text-white hover:border-white/30 transition-colors duration-200"
                 >
                   See how it works
                 </Link>
               </div>
-              <p className="text-xs text-[#555555]">{t('trustLine')}</p>
+              <p className="text-xs text-[#888888]">{t('trustLine')}</p>
             </motion.div>
           </motion.div>
 

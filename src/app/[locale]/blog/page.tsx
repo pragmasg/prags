@@ -40,11 +40,11 @@ export default async function BlogPage() {
 
       {/* Header */}
       <section className="max-w-7xl mx-auto px-6 py-24 border-b border-white/[0.08]">
-        <span className="text-xs tracking-widest uppercase text-[#00D4AA]">{t('label')}</span>
+        <span className="text-xs tracking-widest uppercase text-[#F97316]">{t('label')}</span>
         <h1 className="text-4xl md:text-5xl font-bold text-[#F5F5F5] mt-6 max-w-3xl leading-tight">
           {t('title')}
         </h1>
-        <p className="mt-6 text-lg text-[#999999] max-w-2xl">{t('subtitle')}</p>
+        <p className="mt-6 text-lg text-[#BBBBBB] max-w-2xl">{t('subtitle')}</p>
       </section>
 
       {/* Article grid */}
@@ -58,21 +58,21 @@ export default async function BlogPage() {
               }`}
             >
               <div className="flex items-center justify-between">
-                <span className="text-xs uppercase tracking-widest text-[#00D4AA] border border-[#00D4AA]/30 px-2 py-1">
+                <span className="text-xs uppercase tracking-widest text-[#F97316] border border-[#F97316]/30 px-2 py-1">
                   {article.category}
                 </span>
-                <span className="text-xs border border-white/[0.08] px-2 py-1 text-[#555555]">
+                <span className="text-xs border border-white/[0.08] px-2 py-1 text-[#888888]">
                   {t('comingSoon')}
                 </span>
               </div>
 
               <h2 className="text-base font-bold text-[#F5F5F5] leading-snug">{article.title}</h2>
 
-              <p className="text-sm text-[#999999] leading-relaxed flex-1">{article.description}</p>
+              <p className="text-sm text-[#BBBBBB] leading-relaxed flex-1">{article.description}</p>
 
               <div className="flex items-center justify-between pt-4 border-t border-white/[0.08]">
-                <span className="text-xs text-[#555555]">{article.readTime}</span>
-                <span className="text-xs text-[#555555] italic">{t('notPublished')}</span>
+                <span className="text-xs text-[#888888]">{article.readTime}</span>
+                <span className="text-xs text-[#888888] italic">{t('notPublished')}</span>
               </div>
             </article>
           ))}
@@ -84,7 +84,7 @@ export default async function BlogPage() {
         <div className="border border-white/[0.08] bg-[#111111] p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <h3 className="text-xl font-bold text-[#F5F5F5] mb-2">{t('subscribeTitle')}</h3>
-            <p className="text-sm text-[#999999]">{t('subscribeSubtitle')}</p>
+            <p className="text-sm text-[#BBBBBB]">{t('subscribeSubtitle')}</p>
           </div>
           <BlogSubscribeForm />
         </div>

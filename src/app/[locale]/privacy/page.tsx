@@ -13,24 +13,24 @@ export default function PrivacyPage() {
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-6 py-24">
-        <span className="text-xs tracking-widest uppercase text-[#00D4AA]">— LEGAL</span>
+        <span className="text-xs tracking-widest uppercase text-[#F97316]">— LEGAL</span>
         <h1 className="text-4xl font-bold text-[#F5F5F5] mt-6 mb-4">Privacy Policy</h1>
-        <p className="text-sm text-[#555555] mb-12">Last updated: March 2026</p>
+        <p className="text-sm text-[#888888] mb-12">Last updated: March 2026</p>
 
         <div className="space-y-12 text-sm leading-relaxed">
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">1. Information We Collect</h2>
-            <p className="text-[#999999] mb-4">
+            <p className="text-[#BBBBBB] mb-4">
               We collect information you provide directly to us when you submit a project brief,
               create an account, or contact us. This includes:
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-[#999999]">
+            <ul className="list-disc pl-6 space-y-2 text-[#BBBBBB]">
               <li>Name, email address, and company name</li>
               <li>Project requirements and descriptions you submit through our intake form</li>
               <li>Billing information (processed securely via Stripe — we do not store card details)</li>
               <li>Communications you send to us</li>
             </ul>
-            <p className="text-[#999999] mt-4">
+            <p className="text-[#BBBBBB] mt-4">
               We also collect limited usage data automatically, including IP addresses, browser type,
               pages visited, and referral URLs, to help us understand how visitors use our site.
             </p>
@@ -38,15 +38,15 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">2. How We Use Information</h2>
-            <p className="text-[#999999] mb-4">We use the information we collect to:</p>
-            <ul className="list-disc pl-6 space-y-2 text-[#999999]">
+            <p className="text-[#BBBBBB] mb-4">We use the information we collect to:</p>
+            <ul className="list-disc pl-6 space-y-2 text-[#BBBBBB]">
               <li>Respond to your project inquiries and deliver scope documents</li>
               <li>Process payments and send transactional emails</li>
               <li>Provide access to client project dashboards</li>
               <li>Improve our website and services</li>
               <li>Comply with legal obligations</li>
             </ul>
-            <p className="text-[#999999] mt-4">
+            <p className="text-[#BBBBBB] mt-4">
               We do not sell your personal data. We do not use your information for advertising
               purposes. We will never share your project details with third parties without your
               explicit consent.
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">3. Data Storage</h2>
-            <p className="text-[#999999]">
+            <p className="text-[#BBBBBB]">
               Your data is stored securely using Supabase, an open-source database platform. Data
               is hosted on infrastructure in the United States. We use industry-standard encryption
               in transit (TLS) and at rest. Our website is hosted on Vercel. Transactional emails
@@ -65,24 +65,24 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">4. Third-Party Services</h2>
-            <p className="text-[#999999] mb-4">
+            <p className="text-[#BBBBBB] mb-4">
               We use a limited number of trusted third-party services to operate our business:
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-[#999999]">
+            <ul className="list-disc pl-6 space-y-2 text-[#BBBBBB]">
               <li><strong className="text-[#F5F5F5]">Supabase</strong> — database and authentication</li>
               <li><strong className="text-[#F5F5F5]">Stripe</strong> — payment processing (subject to Stripe&apos;s own privacy policy)</li>
               <li><strong className="text-[#F5F5F5]">Resend</strong> — transactional email delivery</li>
               <li><strong className="text-[#F5F5F5]">Vercel</strong> — website hosting and edge delivery</li>
             </ul>
-            <p className="text-[#999999] mt-4">
+            <p className="text-[#BBBBBB] mt-4">
               Each of these providers has their own privacy policy governing their data handling practices.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">5. Your Rights</h2>
-            <p className="text-[#999999] mb-4">You have the right to:</p>
-            <ul className="list-disc pl-6 space-y-2 text-[#999999]">
+            <p className="text-[#BBBBBB] mb-4">You have the right to:</p>
+            <ul className="list-disc pl-6 space-y-2 text-[#BBBBBB]">
               <li>Request a copy of the personal data we hold about you</li>
               <li>Request correction of inaccurate data</li>
               <li>Request deletion of your data (subject to legal retention requirements)</li>
@@ -93,9 +93,9 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold mb-4 text-[#F5F5F5]">6. Contact</h2>
-            <p className="text-[#999999]">
+            <p className="text-[#BBBBBB]">
               For any privacy-related questions or to exercise your rights, please contact us at{' '}
-              <a href="mailto:privacy@pragmas.io" className="text-[#00D4AA] hover:underline">
+              <a href="mailto:privacy@pragmas.io" className="text-[#F97316] hover:underline">
                 privacy@pragmas.io
               </a>
               . We will respond within 5 business days.

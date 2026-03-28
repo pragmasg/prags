@@ -11,7 +11,7 @@ export default function SocialProof() {
   return (
     <section className="bg-[#0A0A0A] py-20 border-b border-white/[0.08]">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-xs uppercase tracking-widest text-[#00D4AA] mb-4 text-center">
+        <p className="text-xs uppercase tracking-widest text-[#F97316] mb-4 text-center">
           Industries we work with
         </p>
         <p className="text-2xl font-bold text-[#F5F5F5] text-center mb-12">
@@ -22,12 +22,12 @@ export default function SocialProof() {
           {sectors.map((sector, index) => (
             <div
               key={sector.name}
-              className="group relative bg-white/[0.03] border border-white/[0.08] p-6 hover:bg-white/[0.07] hover:border-[#00D4AA]/30 hover:shadow-[0_0_30px_rgba(0,212,170,0.06)] transition-all duration-300 cursor-default animate-[fadeInUp_0.5s_ease-out_both]"
+              className="group relative bg-white/[0.03] border border-white/[0.08] p-6 hover:bg-white/[0.07] hover:border-[#F97316]/30 hover:shadow-[0_0_30px_rgba(0,212,170,0.06)] transition-all duration-300 cursor-default animate-[fadeInUp_0.5s_ease-out_both]"
               style={{ animationDelay: `${index * 0.08}s` }}
             >
-              <div className="w-1.5 h-1.5 bg-[#00D4AA] mb-4" />
+              <div className="w-1.5 h-1.5 bg-[#F97316] mb-4" />
               <p className="text-sm font-semibold text-[#F5F5F5] mb-1.5">{sector.name}</p>
-              <p className="text-xs text-[#999999] leading-relaxed">{sector.desc}</p>
+              <p className="text-xs text-[#BBBBBB] leading-relaxed">{sector.desc}</p>
             </div>
           ))}
         </div>

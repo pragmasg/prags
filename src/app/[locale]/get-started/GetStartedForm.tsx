@@ -53,16 +53,16 @@ export default function GetStartedForm() {
       <main className="min-h-screen bg-[#0A0A0A]">
         <Navbar />
         <div className="max-w-2xl mx-auto px-6 py-32 text-center">
-          <div className="inline-block border border-[#00D4AA]/30 px-4 py-2 text-xs tracking-widest uppercase text-[#00D4AA] mb-8">
+          <div className="inline-block border border-[#F97316]/30 px-4 py-2 text-xs tracking-widest uppercase text-[#F97316] mb-8">
             {t('successLabel')}
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-[#F5F5F5] mb-6">
             {t('successTitle')}
           </h1>
-          <p className="text-[#999999] mb-10 leading-relaxed">{t('successBody')}</p>
+          <p className="text-[#BBBBBB] mb-10 leading-relaxed">{t('successBody')}</p>
           <Link
             href="/"
-            className="inline-block bg-[#00D4AA] text-[#0A0A0A] px-8 py-4 text-sm font-bold hover:bg-white transition-colors"
+            className="inline-block bg-[#F97316] text-[#0A0A0A] px-8 py-4 text-sm font-bold hover:bg-white transition-colors"
           >
             {t('successCta')}
           </Link>
@@ -79,7 +79,7 @@ export default function GetStartedForm() {
       <section className="max-w-7xl mx-auto px-6 py-16 md:py-24">
         {/* Page header */}
         <div className="mb-12">
-          <span className="text-xs tracking-widest uppercase text-[#00D4AA]">{t('label')}</span>
+          <span className="text-xs tracking-widest uppercase text-[#F97316]">{t('label')}</span>
           <h1 className="text-3xl md:text-5xl font-bold text-[#F5F5F5] mt-4">{t('title')}</h1>
         </div>
 
@@ -89,7 +89,7 @@ export default function GetStartedForm() {
             <form onSubmit={handleSubmit} className="space-y-10">
               {/* Name + Company */}
               <div>
-                <label className="block text-xs uppercase tracking-widest text-[#555555] mb-4">
+                <label className="block text-xs uppercase tracking-widest text-[#888888] mb-4">
                   {t('aboutLabel')}
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -99,21 +99,21 @@ export default function GetStartedForm() {
                     value={form.name}
                     onChange={set('name')}
                     required
-                    className="w-full border border-white/[0.08] px-4 py-3 text-sm text-[#F5F5F5] placeholder-[#555555] focus:outline-none focus:border-white/30 transition-colors bg-transparent"
+                    className="w-full border border-white/[0.08] px-4 py-3 text-sm text-[#F5F5F5] placeholder-[#888888] focus:outline-none focus:border-white/30 transition-colors bg-transparent"
                   />
                   <input
                     type="text"
                     placeholder={t('companyPlaceholder')}
                     value={form.company}
                     onChange={set('company')}
-                    className="w-full border border-white/[0.08] px-4 py-3 text-sm text-[#F5F5F5] placeholder-[#555555] focus:outline-none focus:border-white/30 transition-colors bg-transparent"
+                    className="w-full border border-white/[0.08] px-4 py-3 text-sm text-[#F5F5F5] placeholder-[#888888] focus:outline-none focus:border-white/30 transition-colors bg-transparent"
                   />
                 </div>
               </div>
 
               {/* Project type */}
               <div>
-                <label className="block text-xs uppercase tracking-widest text-[#555555] mb-4">
+                <label className="block text-xs uppercase tracking-widest text-[#888888] mb-4">
                   {t('typeLabel')}
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -124,8 +124,8 @@ export default function GetStartedForm() {
                       onClick={() => setRadio('projectType', type)}
                       className={`text-left px-4 py-3 text-sm border transition-colors ${
                         form.projectType === type
-                          ? 'border-[#00D4AA] bg-[#00D4AA]/10 text-[#00D4AA]'
-                          : 'border-white/[0.08] text-[#999999] hover:border-white/30 hover:text-[#F5F5F5]'
+                          ? 'border-[#F97316] bg-[#F97316]/10 text-[#F97316]'
+                          : 'border-white/[0.08] text-[#BBBBBB] hover:border-white/30 hover:text-[#F5F5F5]'
                       }`}
                     >
                       {type}
@@ -136,7 +136,7 @@ export default function GetStartedForm() {
 
               {/* Bottleneck */}
               <div>
-                <label className="block text-xs uppercase tracking-widest text-[#555555] mb-4">
+                <label className="block text-xs uppercase tracking-widest text-[#888888] mb-4">
                   {t('bottleneckLabel')}
                 </label>
                 <textarea
@@ -145,13 +145,13 @@ export default function GetStartedForm() {
                   onChange={set('bottleneck')}
                   required
                   rows={4}
-                  className="w-full border border-white/[0.08] px-4 py-3 text-sm text-[#F5F5F5] placeholder-[#555555] focus:outline-none focus:border-white/30 transition-colors resize-none bg-transparent"
+                  className="w-full border border-white/[0.08] px-4 py-3 text-sm text-[#F5F5F5] placeholder-[#888888] focus:outline-none focus:border-white/30 transition-colors resize-none bg-transparent"
                 />
               </div>
 
               {/* Budget */}
               <div>
-                <label className="block text-xs uppercase tracking-widest text-[#555555] mb-4">
+                <label className="block text-xs uppercase tracking-widest text-[#888888] mb-4">
                   {t('budgetLabel')}
                 </label>
                 <div className="flex flex-wrap gap-3">
@@ -162,8 +162,8 @@ export default function GetStartedForm() {
                       onClick={() => setRadio('budget', b)}
                       className={`px-4 py-2 text-sm border transition-colors ${
                         form.budget === b
-                          ? 'border-[#00D4AA] bg-[#00D4AA]/10 text-[#00D4AA]'
-                          : 'border-white/[0.08] text-[#999999] hover:border-white/30 hover:text-[#F5F5F5]'
+                          ? 'border-[#F97316] bg-[#F97316]/10 text-[#F97316]'
+                          : 'border-white/[0.08] text-[#BBBBBB] hover:border-white/30 hover:text-[#F5F5F5]'
                       }`}
                     >
                       {b}
@@ -174,7 +174,7 @@ export default function GetStartedForm() {
 
               {/* Timeline */}
               <div>
-                <label className="block text-xs uppercase tracking-widest text-[#555555] mb-4">
+                <label className="block text-xs uppercase tracking-widest text-[#888888] mb-4">
                   {t('timelineLabel')}
                 </label>
                 <div className="flex flex-wrap gap-3">
@@ -185,8 +185,8 @@ export default function GetStartedForm() {
                       onClick={() => setRadio('timeline', tl)}
                       className={`px-4 py-2 text-sm border transition-colors ${
                         form.timeline === tl
-                          ? 'border-[#00D4AA] bg-[#00D4AA]/10 text-[#00D4AA]'
-                          : 'border-white/[0.08] text-[#999999] hover:border-white/30 hover:text-[#F5F5F5]'
+                          ? 'border-[#F97316] bg-[#F97316]/10 text-[#F97316]'
+                          : 'border-white/[0.08] text-[#BBBBBB] hover:border-white/30 hover:text-[#F5F5F5]'
                       }`}
                     >
                       {tl}
@@ -199,11 +199,11 @@ export default function GetStartedForm() {
               <div>
                 <button
                   type="submit"
-                  className="bg-[#00D4AA] text-[#0A0A0A] px-8 py-4 text-sm font-bold hover:bg-white transition-colors w-full sm:w-auto"
+                  className="bg-[#F97316] text-[#0A0A0A] px-8 py-4 text-sm font-bold hover:bg-white transition-colors w-full sm:w-auto"
                 >
                   {t('submit')}
                 </button>
-                <p className="text-xs text-[#555555] mt-4">{t('disclaimer')}</p>
+                <p className="text-xs text-[#888888] mt-4">{t('disclaimer')}</p>
               </div>
             </form>
           </div>
@@ -216,7 +216,7 @@ export default function GetStartedForm() {
               <ol className="space-y-6 mb-10">
                 {nextSteps.map((step, i) => (
                   <li key={i} className="flex gap-4">
-                    <span className="text-xs text-[#00D4AA] font-mono shrink-0 mt-0.5">
+                    <span className="text-xs text-[#F97316] font-mono shrink-0 mt-0.5">
                       0{i + 1}
                     </span>
                     <span className="text-sm text-[#F5F5F5] leading-relaxed">{step}</span>
@@ -227,8 +227,8 @@ export default function GetStartedForm() {
               <div className="border-t border-white/[0.08] pt-8 space-y-3">
                 {props.map((prop) => (
                   <div key={prop} className="flex items-start gap-3">
-                    <span className="text-[#00D4AA] text-sm shrink-0">&#10003;</span>
-                    <span className="text-sm text-[#999999]">{prop}</span>
+                    <span className="text-[#F97316] text-sm shrink-0">&#10003;</span>
+                    <span className="text-sm text-[#BBBBBB]">{prop}</span>
                   </div>
                 ))}
               </div>

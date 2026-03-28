@@ -41,7 +41,7 @@ function PricingCard({
     <div
       className={`flex flex-col p-8 relative ${
         isPopular
-          ? 'bg-white/[0.06] border border-[#00D4AA]/50'
+          ? 'bg-white/[0.06] border border-[#F97316]/50'
           : 'bg-white/[0.03] border border-white/[0.08] hover:border-white/[0.15] transition-all duration-300'
       }`}
       style={isPopular ? { boxShadow: '0 0 40px rgba(0,212,170,0.1)' } : undefined}
@@ -49,9 +49,9 @@ function PricingCard({
       {/* Popular top bar and badge */}
       {isPopular && popular && (
         <>
-          <div className="absolute -top-px left-0 right-0 h-0.5 bg-[#00D4AA]" />
-          <span className="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-[#00D4AA] font-semibold mb-4">
-            <span className="w-1.5 h-1.5 bg-[#00D4AA] rounded-full animate-pulse" />
+          <div className="absolute -top-px left-0 right-0 h-0.5 bg-[#F97316]" />
+          <span className="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-[#F97316] font-semibold mb-4">
+            <span className="w-1.5 h-1.5 bg-[#F97316] rounded-full animate-pulse" />
             {popular}
           </span>
         </>
@@ -59,16 +59,16 @@ function PricingCard({
 
       {/* Header */}
       <h3 className="text-sm font-semibold text-[#F5F5F5] mb-1">{name}</h3>
-      <p className="text-xs text-[#999999] leading-relaxed mb-6">{desc}</p>
+      <p className="text-xs text-[#BBBBBB] leading-relaxed mb-6">{desc}</p>
 
       {/* Price */}
       <div className="py-6 border-y border-white/[0.08] mb-6">
         <div className="flex items-end gap-2">
           <span className="text-4xl font-bold text-[#F5F5F5]">{displayPrice}</span>
-          <span className="text-sm text-[#999999] mb-1">{priceSuffix}</span>
+          <span className="text-sm text-[#BBBBBB] mb-1">{priceSuffix}</span>
         </div>
         {isAnnual && !isOneTime && (
-          <p className="text-xs text-[#00D4AA] mt-2">Save ${Math.round(numericPrice * 0.2 * 12)}/year</p>
+          <p className="text-xs text-[#F97316] mt-2">Save ${Math.round(numericPrice * 0.2 * 12)}/year</p>
         )}
       </div>
 
@@ -77,8 +77,8 @@ function PricingCard({
         href="/get-started"
         className={`w-full py-3 text-sm text-center transition-colors mb-8 ${
           isPopular
-            ? 'bg-[#00D4AA] text-[#0A0A0A] font-bold hover:bg-white'
-            : 'font-medium border border-white/[0.16] text-[#F5F5F5] hover:border-[#00D4AA]/50 hover:text-[#00D4AA]'
+            ? 'bg-[#F97316] text-[#0A0A0A] font-bold hover:bg-white'
+            : 'font-medium border border-white/[0.16] text-[#F5F5F5] hover:border-[#F97316]/50 hover:text-[#F97316]'
         }`}
         style={isPopular ? { boxShadow: '0 0 20px rgba(0,212,170,0.3)' } : undefined}
       >
@@ -88,8 +88,8 @@ function PricingCard({
       {/* Features */}
       <ul className="space-y-4 flex-1">
         {features.map((feature, i) => (
-          <li key={i} className="flex items-start gap-3 text-sm text-[#999999]">
-            <span className="text-[#00D4AA] mt-0.5 flex-shrink-0 font-mono">✓</span>
+          <li key={i} className="flex items-start gap-3 text-sm text-[#BBBBBB]">
+            <span className="text-[#F97316] mt-0.5 flex-shrink-0 font-mono">✓</span>
             <span className="leading-snug">{feature}</span>
           </li>
         ))}
@@ -157,13 +157,13 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section header */}
         <div className="mb-12">
-          <p className="text-xs uppercase tracking-widest text-[#00D4AA] mb-6">
+          <p className="text-xs uppercase tracking-widest text-[#F97316] mb-6">
             {t('label')}
           </p>
           <h2 className="text-3xl lg:text-5xl font-bold text-[#F5F5F5] leading-tight mb-4">
             {t('title')}
           </h2>
-          <p className="text-[#999999] text-sm mb-8">
+          <p className="text-[#BBBBBB] text-sm mb-8">
             {t('subtitle')}
           </p>
 
@@ -172,7 +172,7 @@ export default function Pricing() {
             <button
               onClick={() => setIsAnnual(false)}
               className={`px-4 py-1.5 text-xs font-medium transition-all ${
-                !isAnnual ? 'bg-[#00D4AA] text-[#0A0A0A]' : 'text-[#999999] hover:text-white'
+                !isAnnual ? 'bg-[#F97316] text-[#0A0A0A]' : 'text-[#BBBBBB] hover:text-white'
               }`}
             >
               {t('monthly')}
@@ -180,7 +180,7 @@ export default function Pricing() {
             <button
               onClick={() => setIsAnnual(true)}
               className={`px-4 py-1.5 text-xs font-medium transition-all ${
-                isAnnual ? 'bg-[#00D4AA] text-[#0A0A0A]' : 'text-[#999999] hover:text-white'
+                isAnnual ? 'bg-[#F97316] text-[#0A0A0A]' : 'text-[#BBBBBB] hover:text-white'
               }`}
             >
               {t('annual')}
@@ -200,7 +200,7 @@ export default function Pricing() {
           <div>
             <p className="text-xs uppercase tracking-widest text-[#888888] font-semibold mb-2">— Enterprise</p>
             <h3 className="text-xl font-bold text-[#F5F5F5] mb-2">Custom engagement</h3>
-            <p className="text-sm text-[#999999] max-w-xl">
+            <p className="text-sm text-[#BBBBBB] max-w-xl">
               For organizations with complex infrastructure, compliance requirements, or multi-team rollouts.
               Dedicated team, SLA included, custom pricing.
             </p>
@@ -214,11 +214,11 @@ export default function Pricing() {
         </div>
 
         {/* Bottom note */}
-        <p className="text-xs text-[#555555] mt-6">
+        <p className="text-xs text-[#888888] mt-6">
           All prices in USD.{' '}
           <a
             href="mailto:hello@pragmas.io"
-            className="text-[#999999] hover:text-[#F5F5F5] transition-colors"
+            className="text-[#BBBBBB] hover:text-[#F5F5F5] transition-colors"
           >
             Need a custom arrangement? See Enterprise above or email us.
           </a>

@@ -42,24 +42,24 @@ export default async function AboutPage() {
 
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <span className="text-xs tracking-widest uppercase text-[#00D4AA]">{t('label')}</span>
+        <span className="text-xs tracking-widest uppercase text-[#F97316]">{t('label')}</span>
         <h1 className="text-4xl md:text-6xl font-bold text-[#F5F5F5] mt-6 max-w-4xl leading-tight">
           {t('title')}
         </h1>
-        <p className="mt-8 text-lg text-[#999999] max-w-2xl leading-relaxed">{t('subtitle')}</p>
+        <p className="mt-8 text-lg text-[#BBBBBB] max-w-2xl leading-relaxed">{t('subtitle')}</p>
       </section>
 
       {/* Values */}
       <section className="bg-[#111111] py-24 border-y border-white/[0.08]">
         <div className="max-w-7xl mx-auto px-6">
-          <span className="text-xs tracking-widest uppercase text-[#00D4AA] mb-12 block">
+          <span className="text-xs tracking-widest uppercase text-[#F97316] mb-12 block">
             {t('valuesLabel')}
           </span>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.06]">
             {values.map((value) => (
               <div key={value.title} className="bg-[#111111] p-10">
                 <h3 className="text-lg font-bold text-[#F5F5F5] mb-4">{value.title}</h3>
-                <p className="text-[#999999] leading-relaxed text-sm">{value.body}</p>
+                <p className="text-[#BBBBBB] leading-relaxed text-sm">{value.body}</p>
               </div>
             ))}
           </div>
@@ -69,7 +69,7 @@ export default async function AboutPage() {
       {/* Stack */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <span className="text-xs tracking-widest uppercase text-[#00D4AA]">{t('stackLabel')}</span>
+          <span className="text-xs tracking-widest uppercase text-[#F97316]">{t('stackLabel')}</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#F5F5F5] mt-6 mb-12">
             {t('stackTitle')}
           </h2>
@@ -83,7 +83,7 @@ export default async function AboutPage() {
               >
                 <div>
                   <p className="font-bold text-[#F5F5F5] text-sm mb-1">{tech.name}</p>
-                  <p className="text-sm text-[#999999]">{tech.note}</p>
+                  <p className="text-sm text-[#BBBBBB]">{tech.note}</p>
                 </div>
               </div>
             ))}
@@ -94,7 +94,7 @@ export default async function AboutPage() {
       {/* Comparison */}
       <section className="bg-[#111111] py-24 border-y border-white/[0.08]">
         <div className="max-w-7xl mx-auto px-6">
-          <span className="text-xs tracking-widest uppercase text-[#00D4AA]">{t('diffLabel')}</span>
+          <span className="text-xs tracking-widest uppercase text-[#F97316]">{t('diffLabel')}</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#F5F5F5] mt-6 mb-12">
             {t('diffTitle')}
           </h2>
@@ -102,19 +102,19 @@ export default async function AboutPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-white/[0.08]">
-                  <th className="text-left py-4 pr-8 text-[#555555] font-normal w-1/4"></th>
-                  <th className="text-left py-4 pr-8 text-[#00D4AA] font-semibold">{t('colUs')}</th>
-                  <th className="text-left py-4 pr-8 text-[#555555] font-normal">{t('colAgency')}</th>
-                  <th className="text-left py-4 text-[#555555] font-normal">{t('colFl')}</th>
+                  <th className="text-left py-4 pr-8 text-[#888888] font-normal w-1/4"></th>
+                  <th className="text-left py-4 pr-8 text-[#F97316] font-semibold">{t('colUs')}</th>
+                  <th className="text-left py-4 pr-8 text-[#888888] font-normal">{t('colAgency')}</th>
+                  <th className="text-left py-4 text-[#888888] font-normal">{t('colFl')}</th>
                 </tr>
               </thead>
               <tbody>
                 {comparison.map((r) => (
                   <tr key={r.row} className="border-b border-white/[0.08]">
-                    <td className="py-5 pr-8 text-[#555555]">{r.row}</td>
+                    <td className="py-5 pr-8 text-[#888888]">{r.row}</td>
                     <td className="py-5 pr-8 text-[#F5F5F5] font-medium">{r.us}</td>
-                    <td className="py-5 pr-8 text-[#999999]">{r.agency}</td>
-                    <td className="py-5 text-[#999999]">{r.fl}</td>
+                    <td className="py-5 pr-8 text-[#BBBBBB]">{r.agency}</td>
+                    <td className="py-5 text-[#BBBBBB]">{r.fl}</td>
                   </tr>
                 ))}
               </tbody>
@@ -128,11 +128,11 @@ export default async function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="text-3xl font-bold text-[#F5F5F5]">{t('ctaTitle')}</h2>
-            <p className="text-[#999999] mt-2">{t('ctaSubtitle')}</p>
+            <p className="text-[#BBBBBB] mt-2">{t('ctaSubtitle')}</p>
           </div>
           <Link
             href="/get-started"
-            className="shrink-0 bg-[#00D4AA] text-[#0A0A0A] px-8 py-4 text-sm font-bold hover:bg-white transition-colors"
+            className="shrink-0 bg-[#F97316] text-[#0A0A0A] px-8 py-4 text-sm font-bold hover:bg-white transition-colors"
           >
             {t('ctaButton')}
           </Link>
