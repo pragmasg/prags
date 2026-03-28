@@ -4,75 +4,66 @@ import CubeLogo from '@/components/ui/CubeLogo';
 
 export default function Footer() {
   const t = useTranslations('footer');
+
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     services: [
       { label: 'Analytics & Intelligence', href: '/services/analytics' },
-      { label: 'Automation & Workflows',   href: '/services/automation' },
-      { label: 'AI-Powered Products',      href: '/services/ai' },
-      { label: 'Start a project',          href: '/get-started' },
+      { label: 'Automation & Workflows', href: '/services/automation' },
+      { label: 'AI-Powered Products', href: '/services/ai' },
+      { label: 'Start a project', href: '/get-started' },
     ],
     company: [
-      { label: 'About',    href: '/about' },
-      { label: 'Pricing',  href: '/#pricing' },
-      { label: 'Blog',     href: '/blog' },
-      { label: 'Careers',  href: '/careers' },
+      { label: 'About', href: '/about' },
+      { label: 'Pricing', href: '/#pricing' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'Careers', href: '/careers' },
     ],
     legal: [
       { label: t('privacy'), href: '/privacy' },
-      { label: t('terms'),   href: '/terms' },
+      { label: t('terms'), href: '/terms' },
       { label: t('cookies'), href: '/cookies' },
     ],
   };
 
   return (
-    <footer className="bg-[#050D1A] text-[#EDE8E0]">
-
-      {/* Top brand strip */}
-      <div className="border-b border-[rgba(148,163,184,0.07)]">
-        <div className="max-w-7xl mx-auto px-6 py-14 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
-
+    <footer className="bg-[#0A0A0A] text-white">
+      {/* Brand strip */}
+      <div className="border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-3 group">
-            <CubeLogo size={28} />
-            <span
-              className="text-[14px] font-bold tracking-[0.2em] uppercase text-[#EDE8E0] group-hover:text-[#C9A84C] transition-colors duration-300"
-              style={{ fontFamily: 'var(--font-display)' }}
-            >
+            <CubeLogo size={32} />
+            <span className="text-lg font-semibold tracking-widest uppercase text-white">
               Pragmas
             </span>
           </Link>
-
-          <p className="text-[13px] text-[#4A5B72] max-w-sm leading-relaxed">
+          <p className="text-sm text-gray-400 max-w-sm leading-relaxed">
             {t('description')}
           </p>
-
           <Link
             href="/get-started"
-            className="flex-shrink-0 border border-[rgba(201,168,76,0.3)] text-[#C9A84C] px-6 py-2.5 text-[12px] font-medium tracking-wide hover:bg-[rgba(201,168,76,0.08)] transition-all duration-200"
+            className="border border-[#00D4AA] text-[#00D4AA] px-6 py-2.5 text-sm hover:bg-[#00D4AA] hover:text-[#0A0A0A] transition-colors duration-200 whitespace-nowrap"
           >
             Start a project →
           </Link>
         </div>
       </div>
 
-      {/* Main links */}
+      {/* Main footer links */}
       <div className="max-w-7xl mx-auto px-6">
-        <div className="py-14 grid grid-cols-2 md:grid-cols-4 gap-12">
-
-          {/* Services */}
+        <div className="py-12 grid grid-cols-2 md:grid-cols-4 gap-10">
+          {/* Services column */}
           <div>
-            <h4
-              className="text-[10px] uppercase tracking-[0.2em] text-[#4A5B72] font-mono mb-6"
-            >
+            <h4 className="text-xs uppercase tracking-widest text-gray-500 mb-5">
               {t('services')}
             </h4>
-            <ul className="space-y-3.5">
+            <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-[13px] text-[#4A5B72] hover:text-[#EDE8E0] transition-colors duration-200"
+                    className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -81,17 +72,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Company column */}
           <div>
-            <h4 className="text-[10px] uppercase tracking-[0.2em] text-[#4A5B72] font-mono mb-6">
+            <h4 className="text-xs uppercase tracking-widest text-gray-500 mb-5">
               {t('company')}
             </h4>
-            <ul className="space-y-3.5">
+            <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-[13px] text-[#4A5B72] hover:text-[#EDE8E0] transition-colors duration-200"
+                    className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -100,17 +91,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Legal column */}
           <div>
-            <h4 className="text-[10px] uppercase tracking-[0.2em] text-[#4A5B72] font-mono mb-6">
+            <h4 className="text-xs uppercase tracking-widest text-gray-500 mb-5">
               {t('legal')}
             </h4>
-            <ul className="space-y-3.5">
+            <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-[13px] text-[#4A5B72] hover:text-[#EDE8E0] transition-colors duration-200"
+                    className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -119,47 +110,54 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
+          {/* Social column */}
           <div>
-            <h4 className="text-[10px] uppercase tracking-[0.2em] text-[#4A5B72] font-mono mb-6">
-              Connect
+            <h4 className="text-xs uppercase tracking-widest text-gray-500 mb-5">
+              Follow
             </h4>
-            <ul className="space-y-3.5">
-              {[
-                { label: 'LinkedIn', href: 'https://linkedin.com/company/pragmasio' },
-                { label: 'X (Twitter)', href: 'https://twitter.com/pragmasio' },
-                { label: 'GitHub', href: 'https://github.com/pragmasio' },
-              ].map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[13px] text-[#4A5B72] hover:text-[#EDE8E0] transition-colors duration-200 flex items-center gap-1.5 group"
-                  >
-                    {link.label}
-                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" className="opacity-0 group-hover:opacity-60 transition-opacity -translate-y-0.5">
-                      <path d="M1 8L8 1M8 1H3M8 1v5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
-                    </svg>
-                  </a>
-                </li>
-              ))}
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="https://linkedin.com/company/pragmasio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/pragmasio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
+                >
+                  X (Twitter)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/pragmasio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
+                >
+                  GitHub
+                </a>
+              </li>
             </ul>
           </div>
-
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-[rgba(148,163,184,0.07)] py-7 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-[11px] text-[#2A3B52] font-mono">
+        <div className="border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-gray-600">
             © {currentYear} Pragmas. {t('rights')}
           </p>
-          <div className="flex items-center gap-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-40" />
-            <p className="text-[10px] text-[#2A3B52] tracking-[0.2em] uppercase font-mono">
-              AI · Analytics · Automation
-            </p>
-          </div>
+          <p className="text-xs text-gray-600 tracking-widest uppercase">
+            AI · Analytics · Automation
+          </p>
         </div>
       </div>
     </footer>
